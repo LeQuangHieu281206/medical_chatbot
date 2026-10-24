@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Du lieu lon va model — khong dua vao git vi GitHub chan file >100 MB.
+# Phan nay duoc phan phoi qua file medical_chatbot_windows.zip o muc Releases
+# (tao bang scripts/pack_windows.sh).
+models/
+data/raw/
+data/processed/
+app/db/chroma_db/
+*.zip
+
+# Model da chon tren may cuc bo (do scripts/chon_model.ps1 ghi)
+ollama_model.txt
+
+# IDE / he thong
+.zcode/
+.DS_Store
+Thumbs.db

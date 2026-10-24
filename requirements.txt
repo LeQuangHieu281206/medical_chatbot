@@ -1,0 +1,9 @@
+streamlit==1.66.0
+chromadb==1.5.9
+ollama==0.6.3
+sentence-transformers==6.1.0
+torch==2.14.1
+transformers==5.20.1
+# Chi can khi build lai vector DB (app/services/ingest_vimedaqa.py)
+datasets
+tqdm

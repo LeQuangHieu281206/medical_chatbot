@@ -1,0 +1,200 @@
+import re
+import time
+from dataclasses import dataclass, field
+
+import ollama
+
+from app.services.ner import extract_entities
+from app.services.topic_filter import TopicFilter, TopicResult
+
+LLM_MODEL = "qwen3.5:4b"
+TOP_K = 3
+MAX_DOC_CHARS = 500
+MAX_QUESTION_CHARS = 500
+MAX_NEW_TOKENS = 400
+KEEP_ALIVE = "30m"
+
+REFUSAL = (
+    "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. "
+    "Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+)
+DISCLAIMER = (
+    "Lưu ý: thông tin trên chỉ mang tính tham khảo, không thay thế chẩn đoán "
+    "hay tư vấn của bác sĩ. Nếu triệu chứng nặng hoặc kéo dài, hãy đến cơ sở y tế."
+)
+EMERGENCY = (
+    "Nếu đây là tình huống khẩn cấp đang xảy ra, hãy gọi 115 hoặc đưa người bệnh "
+    "đến cơ sở y tế gần nhất ngay, không chờ câu trả lời của chatbot."
+)
+DOSE_REPLY = (
+    "Liều dùng thuốc phụ thuộc vào tuổi, cân nặng, bệnh nền, tình trạng gan thận "
+    "và dạng bào chế cụ thể, nên tôi không đưa con số liều cho từng trường hợp. "
+    "Bạn hãy làm theo hướng dẫn sử dụng in trên nhãn hoặc tờ hướng dẫn của đúng sản phẩm "
+    "đang dùng, hoặc hỏi dược sĩ, bác sĩ, đặc biệt với trẻ em, phụ nữ có thai, "
+    "người cao tuổi và người có bệnh gan, thận."
+    "\n\n"
+    "Nếu nghi ngờ đã uống quá liều, hãy đến cơ sở y tế ngay."
+)
+SYSTEM_PROMPT = (
+    "Bạn là trợ lý cung cấp thông tin sức khoẻ bằng tiếng Việt. "
+    "Chỉ trả lời dựa trên phần TÀI LIỆU THAM KHẢO được cung cấp. "
+    "Nếu tài liệu không đủ để trả lời, hãy nói rõ là chưa đủ thông tin và khuyên người dùng gặp bác sĩ. "
+    "Không tự chẩn đoán, không kê đơn. "
+    "Tuyệt đối không nêu liều lượng thuốc bằng số (mg, ml, viên, mg/kg), kể cả khi tài liệu có. "
+    "Không khuyên đưa bất kỳ vật gì vào miệng người đang co giật và không khuyên giữ chặt họ. "
+    "Không bịa thêm thông tin ngoài tài liệu. "
+    "Trả lời ngắn gọn, tối đa khoảng 150 từ, dùng gạch đầu dòng ngắn. "
+    "Không tự thêm lời nhắc cuối câu, hệ thống sẽ tự thêm."
+)
+
+# Câu hỏi về liều lượng thuốc: trả lời cố định, không để mô hình sinh số liệu
+DOSE_RE = re.compile(
+    r"\bliều\b|\b(mg|mcg|µg|ml)\b|(bao nhiêu|mấy)\s+(viên|gói|ống|giọt|thìa|muỗng|mg|ml)",
+    re.IGNORECASE,
+)
+# Dấu hiệu có thể khẩn cấp: thêm cảnh báo cố định lên đầu câu trả lời
+RED_FLAG_RE = re.compile(
+    r"khó thở|đau ngực|co giật|ngất|bất tỉnh|chảy máu nhiều|nôn ra máu|"
+    r"đi ngoài ra máu|méo miệng|liệt nửa người|đột quỵ|quá liều|ngộ độc",
+    re.IGNORECASE,
+)
+
+UNSAFE_LINE_RE = re.compile(
+    r"vật mềm|hàm răng|nhét|đè lưỡi|cắn lưỡi|nhân trung|bấm huyệt", re.IGNORECASE
+)
+SEIZURE_NOTE = "- Không đưa bất kỳ vật gì vào miệng người đang co giật và không giữ chặt họ."
+
+
+def sanitize_answer(text: str, question: str) -> str:
+    """Bỏ các dòng chứa lời khuyên sơ cứu đã biết là không an toàn."""
+    kept = [ln for ln in text.split("\n") if not UNSAFE_LINE_RE.search(ln)]
+    text = "\n".join(kept).strip()
+    if "co giật" in (question + " " + text).lower() and "vào miệng" not in text:
+        text += "\n" + SEIZURE_NOTE
+    return text
+
+@dataclass
+class Answer:
+    text: str
+    allowed: bool
+    topic: TopicResult | None = None
+    entities: list = field(default_factory=list)
+    sources: list = field(default_factory=list)
+    timings: dict = field(default_factory=dict)
+
+
+class MedicalChatbot:
+    def __init__(self):
+        self.topic = TopicFilter()
+        self.embedder = self.topic.embedder
+        self.collection = self.topic.collection
+
+    def warmup(self):
+        """Nạp sẵn NER và qwen để các câu hỏi sau không phải chờ nạp mô hình."""
+        extract_entities("đau đầu")
+        ollama.chat(
+            model=LLM_MODEL,
+            messages=[{"role": "user", "content": "ping"}],
+            think=False,
+            keep_alive=KEEP_ALIVE,
+            options={"num_predict": 1},
+        )
+
+    def retrieve(self, question: str, entities: list, use_entities: bool = True) -> list:
+        query = question
+        if use_entities and entities:
+            query += " " + " ".join(dict.fromkeys(e["text"] for e in entities))
+        emb = self.embedder.encode(
+            [f"query: {query}"], normalize_embeddings=True
+        ).tolist()
+        res = self.collection.query(
+            query_embeddings=emb,
+            n_results=TOP_K,
+            include=["documents", "metadatas", "distances"],
+        )
+        docs = []
+        for doc, meta, dist in zip(
+            res["documents"][0], res["metadatas"][0], res["distances"][0]
+        ):
+            docs.append({
+                "text": doc[:MAX_DOC_CHARS],
+                "question": meta.get("question", ""),
+                "link": meta.get("link", ""),
+                "distance": dist,
+            })
+        return docs
+
+    def generate(self, question: str, entities: list, docs: list):
+        ctx = "\n\n".join(f"[{i}] {d['text']}" for i, d in enumerate(docs, 1))
+        ent = ", ".join(f"{e['text']} ({e['label']})" for e in entities) or "không có"
+        user = (
+            f"Thực thể y tế nhận diện: {ent}\n\n"
+            f"TÀI LIỆU THAM KHẢO:\n{ctx}\n\n"
+            f"CÂU HỎI: {question}"
+        )
+        resp = ollama.chat(
+            model=LLM_MODEL,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": user},
+            ],
+            think=False,
+            keep_alive=KEEP_ALIVE,
+            options={"temperature": 0.2, "num_ctx": 4096, "num_predict": MAX_NEW_TOKENS},
+        )
+        text = re.sub(r"<think>.*?</think>", "", resp["message"]["content"],
+                      flags=re.DOTALL).strip()
+        # Bỏ đoạn "Lưu ý ..." do mô hình tự thêm (code sẽ thêm lời nhắc chuẩn)
+        parts = text.split("\n\n")
+        if len(parts) > 1 and re.match(r"^\W*Lưu ý[:\s]", parts[-1]):
+            text = "\n\n".join(parts[:-1]).strip()
+        stats = {
+            "prompt_tokens": getattr(resp, "prompt_eval_count", None),
+            "gen_tokens": getattr(resp, "eval_count", None),
+            "prompt_s": round((getattr(resp, "prompt_eval_duration", 0) or 0) / 1e9, 1),
+            "gen_s": round((getattr(resp, "eval_duration", 0) or 0) / 1e9, 1),
+        }
+        return text, stats
+
+    def ask(self, question: str, use_entities: bool = True) -> Answer:
+        question = question.strip()[:MAX_QUESTION_CHARS]
+        if not question:
+            return Answer("Bạn hãy nhập câu hỏi về sức khoẻ nhé.", allowed=False)
+
+        timings = {}
+
+        def timed(name, fn, *args, **kwargs):
+            t0 = time.perf_counter()
+            out = fn(*args, **kwargs)
+            timings[name] = round((time.perf_counter() - t0) * 1000)
+            return out
+
+        topic = timed("loc_chu_de", self.topic.check, question)
+        if not topic.allowed:
+            return Answer(REFUSAL, False, topic, timings=timings)
+
+        entities = timed("ner", extract_entities, question)
+        prefix = EMERGENCY + "\n\n" if RED_FLAG_RE.search(question) else ""
+
+        if DOSE_RE.search(question):
+            timings["nhanh"] = "cau hoi ve lieu, khong goi qwen"
+            return Answer(prefix + DOSE_REPLY, True, topic, entities, [], timings)
+
+        docs = timed("truy_xuat", self.retrieve, question, entities, use_entities)
+
+        try:
+            text, stats = timed("qwen", self.generate, question, entities, docs)
+            text = sanitize_answer(text, question)
+            timings["qwen_chi_tiet"] = stats
+        except Exception as e:
+            text = f"Xin lỗi, hệ thống đang gặp sự cố khi tạo câu trả lời ({type(e).__name__})."
+            return Answer(prefix + text, True, topic, entities, docs, timings)
+
+        sources, seen = [], set()
+        for d in docs:
+            key = d["link"] or d["question"]
+            if key not in seen:
+                seen.add(key)
+                sources.append(d)
+
+        return Answer(f"{prefix}{text}\n\n{DISCLAIMER}", True, topic, entities, sources, timings)
