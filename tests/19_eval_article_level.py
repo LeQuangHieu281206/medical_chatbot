@@ -89,6 +89,61 @@ def main():
     miss_article = sum(1 for a in article_ranks if a is None)
     print(f"Không thấy đúng bài trong top {TOP_K}: {miss_article} câu")
 
+    # ============================================================
+    # TẠO VÀ LƯU ẢNH SO SÁNH TRUY XUẤT RAG CHO BÁO CÁO & COLAB
+    # ============================================================
+    try:
+        import os
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+        os.makedirs("charts_output", exist_ok=True)
+        plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'sans-serif']
+        plt.rcParams['axes.unicode_minus'] = False
+        fig, ax = plt.subplots(figsize=(9, 5.5), dpi=300)
+
+        metrics = ['Recall@1', 'Recall@2', 'Recall@3', 'Recall@10', 'MRR@10']
+        p_mrr = sum(1 / r for r in passage_ranks if r) / n
+        a_mrr = sum(1 / r for r in article_ranks if r) / n
+        passage_scores = [rate(passage_ranks, 1)*100, rate(passage_ranks, 2)*100, 
+                          rate(passage_ranks, 3)*100, rate(passage_ranks, 10)*100, p_mrr*100]
+        article_scores = [rate(article_ranks, 1)*100, rate(article_ranks, 2)*100, 
+                          rate(article_ranks, 3)*100, rate(article_ranks, 10)*100, a_mrr*100]
+
+        x = np.arange(len(metrics))
+        width = 0.35
+
+        rects1 = ax.bar(x - width/2, passage_scores, width, label='Mức đoạn văn (Passage-level)', 
+                        color='#1f77b4', alpha=0.85, edgecolor='black')
+        rects2 = ax.bar(x + width/2, article_scores, width, label='Mức bài viết (Article-level)', 
+                        color='#9467bd', alpha=0.85, edgecolor='black')
+
+        for rect in rects1:
+            h = rect.get_height()
+            ax.annotate(f'{h:.1f}%', xy=(rect.get_x() + rect.get_width() / 2, h),
+                        xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=9, fontweight='bold')
+
+        for rect in rects2:
+            h = rect.get_height()
+            ax.annotate(f'{h:.1f}%', xy=(rect.get_x() + rect.get_width() / 2, h),
+                        xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=9, fontweight='bold', color='#4a148c')
+
+        ax.set_title(f'So sánh độ phủ truy xuất RAG thực tế ({n} câu hỏi ViMedAQA)', fontsize=12, fontweight='bold', pad=15)
+        ax.set_ylabel('Tỷ lệ Recall@K / Điểm MRR (%)', fontsize=11, fontweight='bold')
+        ax.set_xticks(x)
+        ax.set_xticklabels(metrics, fontsize=10, fontweight='bold')
+        ax.set_ylim(60, 105)
+        ax.legend(loc='lower right', frameon=True, fontsize=10, facecolor='white')
+        ax.grid(axis='y', linestyle=':', alpha=0.6)
+
+        out_fig = "charts_output/danh_gia_19_truy_xuat_rag.png"
+        plt.tight_layout()
+        plt.savefig(out_fig, dpi=300)
+        plt.close()
+        print(f"\n[XONG] Đã tạo ảnh kết quả: {out_fig}")
+    except ImportError:
+        print("\n[CHÚ Ý] Cần matplotlib để tạo ảnh đồ thị: pip install matplotlib")
+
 
 if __name__ == "__main__":
     main()

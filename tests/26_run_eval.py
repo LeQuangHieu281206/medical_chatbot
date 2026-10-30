@@ -117,6 +117,65 @@ def main():
     out_path.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nĐã lưu chi tiết: {out_path}")
 
+    # ============================================================
+    # TẠO VÀ LƯU ẢNH ĐÁNH GIÁ PIPELINE ĐẦU-CUỐI CHO BÁO CÁO & COLAB
+    # ============================================================
+    try:
+        import os
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+        os.makedirs("charts_output", exist_ok=True)
+        plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'sans-serif']
+        plt.rcParams['axes.unicode_minus'] = False
+
+        fig, ax1 = plt.subplots(figsize=(11, 6), dpi=300)
+
+        g_names = list(by_group.keys())
+        g_pass_rates = [sum(r["ok"] for r in by_group[g]) / len(by_group[g]) * 100 for g in g_names]
+        g_times = [sum(r["secs"] for r in by_group[g]) / len(by_group[g]) for g in g_names]
+        g_labels = [f"{g.upper()}\n({len(by_group[g])} câu)" for g in g_names]
+
+        x = np.arange(len(g_names))
+        width = 0.42
+
+        bars = ax1.bar(x, g_pass_rates, width, color='#1f77b4', alpha=0.85, edgecolor='black', label='Tỷ lệ đạt chuẩn (%)')
+        ax1.set_ylabel('Tỷ lệ câu trả lời đạt chuẩn (%)', color='#1f77b4', fontsize=11, fontweight='bold')
+        ax1.set_ylim(0, 118)
+        ax1.tick_params(axis='y', labelcolor='#1f77b4')
+
+        for bar, val in zip(bars, g_pass_rates):
+            ax1.text(bar.get_x() + bar.get_width()/2, val + 2, f'{val:.0f}%', 
+                     ha='center', va='bottom', fontsize=9, fontweight='bold', color='#1f77b4')
+
+        ax2 = ax1.twinx()
+        line = ax2.plot(x, g_times, color='#d62728', marker='o', linewidth=2.5, markersize=8, label='Thời gian TB (giây)')
+        ax2.set_ylabel('Thời gian phản hồi TB (giây)', color='#d62728', fontsize=11, fontweight='bold')
+        ax2.set_ylim(0, max(g_times + [10]) * 1.25)
+        ax2.tick_params(axis='y', labelcolor='#d62728')
+        ax2.grid(False)
+
+        for i, t in enumerate(g_times):
+            ax2.annotate(f'{t:.1f}s', xy=(x[i], t), xytext=(0, 7), textcoords="offset points",
+                         ha='center', fontsize=9, fontweight='bold', color='#d62728')
+
+        ax1.set_title(f'Đánh giá an toàn & hiệu năng Pipeline ({len(rows)} câu hỏi thực tế | Rò rỉ liều: {n_leak})', 
+                      fontsize=12, fontweight='bold', pad=15)
+        ax1.set_xticks(x)
+        ax1.set_xticklabels(g_labels, fontsize=9.5, fontweight='bold')
+
+        lines1, labels1 = ax1.get_legend_handles_labels()
+        lines2, labels2 = ax2.get_legend_handles_labels()
+        ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left', frameon=True, facecolor='white')
+
+        out_fig = f"charts_output/danh_gia_26_pipeline_an_toan_{suffix}.png"
+        plt.tight_layout()
+        plt.savefig(out_fig, dpi=300)
+        plt.close()
+        print(f"\n[XONG] Đã tạo ảnh kết quả: {out_fig}")
+    except ImportError:
+        print("\n[CHÚ Ý] Cần matplotlib để tạo ảnh đồ thị: pip install matplotlib")
+
 
 if __name__ == "__main__":
     main()
