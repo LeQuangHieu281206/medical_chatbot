@@ -1,0 +1,25 @@
+====================================================================================================
+Hỏi: Khi nào cần đi khám khi bị cúm?
+prompt 1135 token / 13.2s, sinh 119 token / 47.9s
+- Cần đến gặp bác sĩ ngay nếu nghi ngờ mắc các virus cúm nguy hiểm như H5N1, H1N1 hoặc triệu chứng ngày càng nặng có nguy cơ biến chứng.
+- Đối tượng cần theo dõi chặt chẽ bao gồm người già, trẻ em, phụ nữ mang thai và người bị suy giảm miễn dịch do dễ gặp biến chứng nguy hiểm.
+- Khi xuất hiện các dấu hiệu như sốt cao (>38°C), đau đầu dữ dội, buồn nôn nôn hoặc ho kéo dài hơn 1 tuần cần đi khám tại cơ sở chuyên khoa hô hấp.
+
+Lưu ý: thông tin trên chỉ mang tính tham khảo, không thay thế chẩn đoán hay tư vấn của bác sĩ. Nếu triệu chứng nặng hoặc kéo dài, hãy đến cơ sở y tế.
+====================================================================================================
+Hỏi: Suy thận cấp có thể biểu hiện ra ngoài như thế nào?
+prompt 1077 token / 23.6s, sinh 85 token / 28.7s
+- Suy thận cấp thường không có triệu chứng hoặc chỉ xuất hiện khi bệnh đã tiến triển nặng.
+- Các dấu hiệu nhận biết bao gồm lượng nước tiểu giảm, ứ nước gây sưng chân/mắt cá, khó thở, lú lẫn và buồn ngủ quá mức.
+- Trong trường hợp nặng, bệnh nhân có thể gặp buồn nôn kéo dài, nhịp tim không đều, đau ngực hoặc co giật.
+
+Lưu ý: thông tin trên chỉ mang tính tham khảo, không thay thế chẩn đoán hay tư vấn của bác sĩ. Nếu triệu chứng nặng hoặc kéo dài, hãy đến cơ sở y tế.
+====================================================================================================
+Hỏi: Thuốc Atorlog có thể tương tác với thuốc nào?
+prompt 997 token / 15.0s, sinh 166 token / 49.7s
+Thuốc Atorlog có thể tương tác gây tiêu cơ vân khi dùng phối hợp với các thuốc ức chế cytochrome CYP3A4 như cyclosporin, erythromycin, itraconazol và ketoconazol.
+Việc sử dụng đồng thời với thuốc gắn acid mật sẽ làm giảm sinh khả dụng của hoạt chất trong thuốc Atorlog.
+Ngoài ra, phối hợp với gemfibrozil, fibrat, niacin liều cao, colchicine hoặc chất ức chế protease HIV/HCV có thể làm tăng nguy cơ tổn thương cơ.
+Tương tác với warfarin sẽ làm tăng tác dụng của thuốc này, đòi hỏi phải xác định thời gian prothrombin trước khi bắt đầu điều trị và theo dõi thường xuyên trong giai đoạn đầu.
+
+Lưu ý: thông tin trên chỉ mang tính tham khảo, không thay thế chẩn đoán hay tư vấn của bác sĩ. Nếu triệu chứng nặng hoặc kéo dài, hãy đến cơ sở y tế.

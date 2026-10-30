@@ -1,0 +1,80 @@
+[
+  {
+    "i": 1,
+    "group": "off",
+    "q": "Cách nấu phở bò ngon nhất?",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 0.4,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  },
+  {
+    "i": 2,
+    "group": "off",
+    "q": "Giá vàng hôm nay bao nhiêu?",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 0.0,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  },
+  {
+    "i": 3,
+    "group": "off",
+    "q": "Làm sao để sửa xe máy bị xịt lốp?",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 0.1,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  },
+  {
+    "i": 4,
+    "group": "off",
+    "q": "Viết cho tôi một đoạn code Python tính giai thừa.",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 0.0,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  },
+  {
+    "i": 5,
+    "group": "off",
+    "q": "Thời tiết Hà Nội cuối tuần này thế nào?",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 0.0,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  },
+  {
+    "i": 6,
+    "group": "off",
+    "q": "Con chó nhà tôi bị sốt và bỏ ăn, phải làm sao?",
+    "expect": "refuse",
+    "ok": true,
+    "leak": false,
+    "secs": 2.8,
+    "gen_tokens": null,
+    "prompt_tokens": null,
+    "sources": 0,
+    "text": "Xin lỗi, tôi chỉ hỗ trợ các câu hỏi liên quan đến sức khoẻ và y tế. Bạn có thể hỏi tôi về triệu chứng, bệnh, thuốc, phòng bệnh hoặc dinh dưỡng nhé."
+  }
+]

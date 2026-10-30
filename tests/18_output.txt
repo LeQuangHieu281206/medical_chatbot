@@ -1,0 +1,174 @@
+R@1=0.736  R@2=0.846  R@3=0.886
+
+====================================================================================================
+KHÔNG TÌM THẤY TRONG TOP 10 (16 câu, hiển thị 16)
+----------------------------------------------------------------------------------------------------
+Hỏi   : Làm thế nào để sử dụng thuốc Concor® hiệu quả?
+Đúng  : [2] Thuốc nên được bảo quản không quá 30oC. Không dùng thuốc sau khi hết hạn sử dụng và để thu
+Hạng  : None
+Top1  : d=0.104 Concor® - Hướng dẫn dùng thuốc Concor® - Cách dùng Thuốc Concor® nên được sử dụng vào buổi
+Top2  : d=0.106 Concor® - Hướng dẫn dùng thuốc Concor® - Liều dùng - Điều trị tăng huyết áp và bệnh mạch v
+Top3  : d=0.108 Concor® - Đối với với phụ nữ có thai và cho con bú Trong thời gian mang thai, bạn chỉ nên 
+----------------------------------------------------------------------------------------------------
+Hỏi   : Quá trình nào mà thận không tham gia?
+Đúng  : [1] Mỗi người chúng ta đa phần được sinh ra với hai quả thận. Các cơ quan này nằm hai bên cột 
+Hạng  : None
+Top1  : d=0.114 Thận - Cấu tạo của thận Nephron là đơn vị cấu trúc và chức năng của thận. Mỗi quả thận 
+Top2  : d=0.122 Hệ tiết niệu - Cấu trúc hệ tiết niệu - Thận Nước tiểu được hình thành trong thận thông qua
+Top3  : d=0.124 Thận - Chức năng của thận - Bài tiết chất thải Công việc của thận là lọc máu cho cơ
+----------------------------------------------------------------------------------------------------
+Hỏi   : Uống thuốc sắc từ cây bông ổi cần lưu ý gì?
+Đúng  : [3] - Hái 15 cái hoa tươi, rửa kỹ và ngâm nước muối 15 phút. - Đem hoa sắc với 400ml nước tron
+Hạng  : None
+Top1  : d=0.099 Bông ổi - Cách dùng và liều dùng - Sắc uống, tán bột hoặc giã đắp ngoài. - Tùy theo từng b
+Top2  : d=0.108 Bông ổi - Một số cách sử dụng vị thuốc - Điều trị chứng đau răng - Thành phần của bài thuố
+Top3  : d=0.112 Cây ổi - Cách dùng và liều dùng Tùy thuộc vào mục đích sử dụng mà có thể dùng các bộ phận 
+----------------------------------------------------------------------------------------------------
+Hỏi   : Làm gì để có thể cải thiện chức năng sinh hoạt của người bệnh?
+Đúng  : [1] - Chuyên viên vật lí trị liệu có thể hướng dẫn những bài tập an toàn, thích hợp. Để tăng c
+Hạng  : None
+Top1  : d=0.107 Rối loạn nhận thức thần kinh nhẹ - Chăm sóc sức khỏe ngay tại nhà cho người bị rối loạn nh
+Top2  : d=0.113 Alzheimer - Người chăm sóc làm gì để giúp đỡ bệnh nhân Alzheimer? Bên cạnh đó bệnh nhân cũ
+Top3  : d=0.114 Rối loạn chức năng não sau hóa trị - Điều trị bệnh như thế nào? - Kiểm soát triệu chứng củ
+----------------------------------------------------------------------------------------------------
+Hỏi   : Phải làm gì khi xuất hiện triệu chứng bất thường khi sử dụng thuốc Amitriptylin?
+Đúng  : [2] - Để thuốc tránh xa tầm tay của trẻ em và thú cưng trong nhà. - Bảo quản thuốc ở nơi khô r
+Hạng  : None
+Top1  : d=0.096 Amitriptylin - Hướng dẫn sử dụng Amitriptylin - Cách dùng - Thuốc có thể dùng theo đường u
+Top2  : d=0.101 Amitriptylin - Lưu ý khi dùng thuốc - Lưu ý trên người bệnh đã từng bị động kinh; tình trạ
+Top3  : d=0.103 Ameflu đa triệu chứng - Lưu ý khi sử dụng thuốc Ameflu đa triệu chứng Sau đây là một số lư
+----------------------------------------------------------------------------------------------------
+Hỏi   : Suy thận cấp có thể biểu hiện ra ngoài như thế nào?
+Đúng  : [1] Các triệu chứng của suy thận khi có biến chứng - Tiểu ít, rối loạn tri giác,… - Phù có thể
+Hạng  : None
+Top1  : d=0.093 Suy thận cấp - Suy thận cấp là gì? Thận là cơ quan nằm phần dưới thắt lưng. Chúng có chức 
+Top2  : d=0.100 Suy thận cấp - Bệnh có thể dẫn đến những biến chứng nào? Các biến chứng tiềm ẩn của suy th
+Top3  : d=0.103 Suy thận cấp - Nguyên nhân nào dẫn đến bệnh suy thận cấp? Suy thận cấp có thể xảy ra khi: 
+----------------------------------------------------------------------------------------------------
+Hỏi   : Khi nào còn lại cảm thấy đau kéo dài hay khó chơi thể thao, thì phải làm gì?
+Đúng  : [1] Nếu bạn nghi ngờ có thể có gãy xương, hãy đưa con bạn đi khám bác sĩ ngay lập tức. Đồng th
+Hạng  : None
+Top1  : d=0.114 Giãn dây chằng - Giãn dây chằng do chấn thương trong thể dục thể thao - Nếu tiếp tục luyện
+Top2  : d=0.118 Giãn dây chằng - Giãn dây chằng do chấn thương trong thể dục thể thao - Tập luyện thể thao
+Top3  : d=0.120 Cơ vuông thắt lưng - Một số điều cần lưu ý Khi bị đau cơ vuông thắt lưng kéo dài, không gi
+----------------------------------------------------------------------------------------------------
+Hỏi   : Cà độc dược là loại dược liệu có đặc điểm gì?
+Đúng  : [3] Bộ phận sử dụng: hoa và lá.
+Hạng  : None
+Top1  : d=0.080 Cà độc dược - Mô tả dược liệu - Đặc điểm tự nhiên Đây là loại cây thân thảo, sống hằng năm
+Top2  : d=0.103 Cà độc dược - Liều dùng, tác dụng phụ - Tác dụng phụ: Trong quá trình sử dụng thuốc, người
+Top3  : d=0.107 Cà độc dược - Mô tả dược liệu - Phân bố, thu hái, chế biến - Cây Cà độc dược mọc hoang khắ
+----------------------------------------------------------------------------------------------------
+Hỏi   : Ngoài Phụ tử, bài thuốc Tứ nghịch thang còn chứa những dược liệu nào khác?
+Đúng  : [3] (Cụ thể là chứng nôn, tiêu chảy, ra mồ hôi nhiều, chân tay lạnh, mạch nhỏ khó bắt). Phụ tử
+Hạng  : None
+Top1  : d=0.132 Phụ tử - Một số bài thuốc kinh nghiệm - Trị lạnh, phù thũng Phụ tử chế 12 g, Nhục quế 4 g,
+Top2  : d=0.139 Bạch thược - Bài thuốc kinh nghiệm - Thuốc bổ máu Có tác dụng với chứng: Thiếu máu, da xan
+Top3  : d=0.140 Phụ tử - Công dụng - Y học hiện đại - Kháng viêm: thuốc sắc Phụ tử cho súc vật viêm khớp u
+----------------------------------------------------------------------------------------------------
+Hỏi   : Trong trường hợp nào cần đến cơ sở y tế để khám?
+Đúng  : [1] Viêm tai giữa thường gặp ở trẻ con và người lớn cũng có thể mắc bệnh này. Hầu hết các trườ
+Hạng  : None
+Top1  : d=0.094 Đa xơ cứng (ở trẻ em) - Khi nào cần đi khám? Nếu trẻ có bất cứ triệu chứng nào được liệt k
+Top2  : d=0.101 Chấn thương sọ não - Xử lý tại nhà có được không? Khi nào cần gặp bác sĩ? Khi có biểu hiện
+Top3  : d=0.103 Chóng mặt - Bạn sẽ cần phải xét nghiệm? Có lẽ. Bác sĩ sẽ bắt đầu thăm khám trước, sau đó s
+----------------------------------------------------------------------------------------------------
+Hỏi   : Đâu là cách lây bệnh hiếm gặp?
+Đúng  : [1] Người thường bị bệnh thông qua tiếp xúc với máu và dịch tiết của động vật bị bệnh. Việc xả
+Hạng  : None
+Top1  : d=0.122 Hắc lào - Chẩn đoán bệnh hắc lào như thế nào? - Yếu tố gợi ý - Tiếp xúc thân mật với người
+Top2  : d=0.123 Hắc lào - Chẩn đoán bệnh hắc lào như thế nào? - Triệu chứng Tùy vào vị trí mắc bệnh mà sẽ 
+Top3  : d=0.125 Tả - Cách thức lây truyền bệnh tả Đường lây quan trọng nhất là từ người sang người qua tru
+----------------------------------------------------------------------------------------------------
+Hỏi   : Lỗ bầu dục là gì và nó có thể để lại biến chứng như thế nào?
+Đúng  : [1] - Có lỗ thông giữa hai buồng tim. Một số người mắc bệnh tim Ebstein có lỗ thông giữa hai b
+Hạng  : None
+Top1  : d=0.119 Crohn - Những biến chứng có thể xảy ra của bệnh Crohn? - Tạo lỗ rò Rò là đường thông nối b
+Top2  : d=0.126 Không có phôi thai - Có biến chứng nào cho những lần mang thai về sau hay không? Bất kỳ tr
+Top3  : d=0.129 Crohn - Những biến chứng có thể xảy ra của bệnh Crohn? - Rò hậu môn Rò hậu môn là một vết 
+----------------------------------------------------------------------------------------------------
+Hỏi   : Cây sậy là gì?
+Đúng  : [3] Lô căn tươi 30g, Trúc nhự 9g, Gạo tẻ 8g. Nấu đến khi gạo nhừ, lọc bỏ bã, thêm ít nước cốt 
+Hạng  : None
+Top1  : d=0.082 Cây sậy - Giới thiệu về cây Sậy - Đặc điểm sinh trưởng và thu hái Cây Sậy mọc hoang ở nhữn
+Top2  : d=0.085 Cây sậy - Giới thiệu về cây Sậy - Mô tả toàn cây Sậy là cây sống lâu năm, thân thảo, rễ bò
+Top3  : d=0.106 Cây sậy - Thành phần hóa học và tác dụng - Thành phần hóa học - Lá: chứa cenlulose 21,45%;
+----------------------------------------------------------------------------------------------------
+Hỏi   : U mềm lây là bệnh lý gì?
+Đúng  : [1] U mềm lây là một bệnh nhiễm trùng do một loại vi rút thuộc nhóm Poxvirus gây nên, biểu hiệ
+Hạng  : None
+Top1  : d=0.132 U nguyên bào thần kinh đệm - Bệnh nhân cần được thực hiện những xét nghiệm cận lâm sàng nà
+Top2  : d=0.133 U não - Chẩn đoán u não như thế nào? Đầu tiên, bác sĩ sẽ thăm khám cũng như khai thác bệnh
+Top3  : d=0.134 U nang buồng trứng - Chẩn đoán u nang buồng trứng Chẩn đoán có hay không có u nang buồng t
+----------------------------------------------------------------------------------------------------
+Hỏi   : Suy thận là gì?
+Đúng  : [1] Lượng đường trong máu cao có thể làm tổn thương thận và lâu ngày có thể dẫn đến suy thận.
+Hạng  : None
+Top1  : d=0.076 Suy thận - Bệnh suy thận là gì? - Tổng quan về thận Mỗi người chúng ta đa phần được sinh r
+Top2  : d=0.078 Suy thận - Bệnh suy thận là gì? - Bệnh suy thận là gì? Suy thận (thuật ngữ hiện nay thường
+Top3  : d=0.084 Suy thận cấp - Suy thận cấp là gì? Thận là cơ quan nằm phần dưới thắt lưng. Chúng có chức 
+----------------------------------------------------------------------------------------------------
+Hỏi   : Khiến dẫn đến sự ra mồ hôi quá mức, bối rối hoặc đói là gì?
+Đúng  : [1] Các dấu hiệu và triệu chứng của NET tụy chức năng phụ thuộc vào loại hormone được tạo ra. 
+Hạng  : None
+Top1  : d=0.131 Đổ mồ hôi toàn thân - Nguyên nhân gây đổ mồ hôi toàn thân Hệ thần kinh sẽ tự động kích hoạ
+Top2  : d=0.133 Đổ mồ hôi toàn thân - Đổ mồ hôi toàn thân là gì? Việc cơ thể đổ mồ hôi nhiều là tình trạng
+Top3  : d=0.137 Đổ mồ hôi toàn thân - Một số lưu ý khi điều trị đổ mồ hôi toàn thân Khi điều trị bệnh đổ m
+====================================================================================================
+TÌM THẤY NHƯNG KHÔNG PHẢI HẠNG 1 (116 câu, hiển thị 8)
+----------------------------------------------------------------------------------------------------
+Hỏi   : Dược liệu Tỳ bà diệp thường được sử dụng để chữa bệnh gì?
+Đúng  : [3] - Chữa ho. - Nôn mửa. - Giúp sự tiêu hóa. - Phụ nữ có thai nôn mửa. - Rửa vết thương. >> T
+Hạng  : 4
+Top1  : d=0.077 Tỳ bà diệp - Công dụng - Cách dùng và liều dùng Tùy thuộc vào mục đích sử dụng mà có thể d
+Top2  : d=0.087 Tỳ bà diệp - Một số bài thuốc kinh nghiệm - Trị Tỳ Vị hư yếu, nôn ói Bán hạ 4g, Mao căn 80
+Top3  : d=0.090 Cây tỳ bà - Cách dùng và liều dùng - Trị trúng thử (cảm nắng) đầu váng, hoa mắt Tỳ bà diệp
+----------------------------------------------------------------------------------------------------
+Hỏi   : Cây Đại tướng quân có những tác dụng gì?
+Đúng  : [3] - Không nên quá lạm dụng dược liệu vì sẽ gây ngộ độc. - Nếu ăn phải hành của dược liệu hoặ
+Hạng  : 4
+Top1  : d=0.088 Đại tướng quân - Giới thiệu về cây Đại tướng quân - Mô tả toàn cây Đại tướng quân là cây t
+Top2  : d=0.090 Đại tướng quân - Giới thiệu về cây Đại tướng quân - Đặc điểm sinh trưởng và thu hái Cây Đạ
+Top3  : d=0.092 Đại tướng quân - Thành phần hóa học và tác dụng - Tác dụng y học hiện đại Thân cây Đại tướ
+----------------------------------------------------------------------------------------------------
+Hỏi   : Viễn chí có đặc điểm gì về hình dạng và kích thước?
+Đúng  : [3] Viễn chí là rễ khô của cây Viễn chí lá nhỏ. Chỉ lựa chọn thân to và thịt đầy. Hình ống dài
+Hạng  : 3
+Top1  : d=0.121 Viễn chí - Giới thiệu Viễn chí - Mô tả toàn cây Đây là cây thảo ưa sáng, thường mọc trên đ
+Top2  : d=0.137 Viễn chí - Giới thiệu Viễn chí - Đặc điểm sinh trưởng và thu hái Viễn chí phân bố chủ yếu 
+Top3  : d=0.140 Viễn chí - Giới thiệu Viễn chí - Bộ phận làm thuốc bào chế Viễn chí là rễ khô của cây Viễn
+----------------------------------------------------------------------------------------------------
+Hỏi   : Tác dụng của Khiếm thực là gì?
+Đúng  : [3] - Khiếm thực có vị ngọt tính bình. Quy kinh Tỳ, Thận. - Theo sách Bản kinh: “ngọt, bình sá
+Hạng  : 7
+Top1  : d=0.083 Khiếm thực - Tác dụng của Khiếm thực - Theo Y học cổ truyền - Khiếm thực là vị thuốc có tá
+Top2  : d=0.107 Khiếm thực - Khiếm thực là gì? - Đặc điểm nhận diện Khiếm thực là loại thực vật có hoa thu
+Top3  : d=0.116 Khiếm thực - Kiêng kỵ - Theo sách Bản Thảo Diễn Nghĩa: Ăn nhiều Khiếm thực không tốt cho T
+----------------------------------------------------------------------------------------------------
+Hỏi   : Thuốc Atorlog có thể tương tác với thuốc nào?
+Đúng  : [2] Các tương tác thuốc đã được báo cáo như: - Tiêu cơ vân, viêm ở người điều trị phối hợp sta
+Hạng  : 3
+Top1  : d=0.088 Atorlog - Atorlog là thuốc gì? Atorlog 20 mg được sản xuất bởi Công ty Công ty cổ phần Dượ
+Top2  : d=0.095 Atorvastatin - Thuốc atorvastatin (Lipitor, Atovast) tương tác với thuốc gì? Atorvastatin 
+Top3  : d=0.099 Atorlog - Tương tác thuốc Các tương tác thuốc đã được báo cáo như: - Tiêu cơ vân, viêm ở n
+----------------------------------------------------------------------------------------------------
+Hỏi   : Oxytocin cũng có liên quan đến một tác dụng nào khác trong quản lý hành vi?
+Đúng  : [0] Oxytocin đã được đề xuất như một phương pháp điều trị có khả thi cho chứng ám ảnh sợ xã hộ
+Hạng  : 3
+Top1  : d=0.111 Oxytocin - Những tác động khác của hormone oxytocin: - Hormone oxytocin và cảm xúc Khi oxy
+Top2  : d=0.119 Oxytocin - Những tác động khác của hormone oxytocin: - Oxytocin, hormone tình yêu Năm 2012
+Top3  : d=0.121 Oxytocin - Triển vọng của hormone oxytocin trong tương lai: - Liệu pháp tâm thần Oxytocin 
+----------------------------------------------------------------------------------------------------
+Hỏi   : DHEA thường được sử dụng với hy vọng gì?
+Đúng  : [0] Một vài nghiên cứu đã chỉ ra rằng những phụ nữ bị rậm lông và hội chứng buồng trứng đa nan
+Hạng  : 5
+Top1  : d=0.098 DHEA - Một số vấn đề liên quan khác - Những đối tượng có khả năng có lợi khi sử dụng DHEA 
+Top2  : d=0.102 Hormone DHEA - Có nên dùng thuốc bổ sung DHEA hay không? - Đánh giá tổng quan Nhiều người 
+Top3  : d=0.102 Hormone DHEA - Hormone DHEA ở người có tác dụng điều trị các vấn đề về sức khỏe hay không?
+----------------------------------------------------------------------------------------------------
+Hỏi   : Nếu có triệu chứng chảy máu tiêu hóa dưới thì nên làm gì?
+Đúng  : [1] Chảy máu tiêu hóa dưới – thường liên quan đến đi tiêu ra máu. Máu có thể là máu đỏ tươi, m
+Hạng  : 2
+Top1  : d=0.071 Xuất huyết tiêu hóa dưới - Khi nào chảy máu tiêu hóa dưới cần được cấp cứu ngay? Bất kì tì
+Top2  : d=0.083 Xuất huyết tiêu hóa dưới - Chảy máu tiêu hóa dưới là gì? Nguyên nhân do đâu? Chảy máu tiêu
+Top3  : d=0.083 Xuất huyết tiêu hóa dưới - Đi tiêu ra máu khi nào cần nhập viện ngay? Chảy máu tiêu hóa dư

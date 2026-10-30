@@ -1,0 +1,112 @@
+====================================================================================================
+Hỏi: Khi nào cần đi khám khi bị cúm?
+  Thực thể: cúm
+  [cũ ] 3 đoạn, 1201 ký tự, truy xuất 737 ms
+     d=0.080 [ViMedAQA] Cảm cúm - Khi nào cần gặp bác sĩ?
+     d=0.083 [ViMedAQA] Cúm gia cầm - Khi nào đi khám bác sĩ?
+     d=0.100 [vietnamese-medical-qa] Bác sĩ cho tôi hỏi, khi đi khám sức khỏe cần lưu ý gì để có kết quả chính x
+  [mới] 5 đoạn, 2201 ký tự, truy xuất 83 ms
+     d=0.080 [ViMedAQA] Cảm cúm - Khi nào cần gặp bác sĩ?
+     d=0.102 [ViMedAQA] Biến chứng của bệnh cảm cúm
+     d=0.103 [ViMedAQA] Triệu chứng cảm cúm - Triệu chứng bệnh cúm
+     d=0.083 [ViMedAQA] Cúm gia cầm - Khi nào đi khám bác sĩ?
+     d=0.100 [vietnamese-medical-qa] Bác sĩ cho tôi hỏi, khi đi khám sức khỏe cần lưu ý gì để có kết quả chính x
+
+  --- Câu trả lời [cũ ] ---
+  prompt 626 token / 8.1s, sinh 137 token / 44.1s
+  - Cần gặp bác sĩ ngay nếu nghi ngờ mắc các virus cúm nguy hiểm như H5N1, H1N1 hoặc triệu chứng ngày càng nặng.
+  - Nên đến cơ sở y tế có chuyên khoa hô hấp để được chẩn đoán chính xác và điều trị phù hợp.
+  - Bạn nên đi khám khi có triệu chứng sốt, ho, đau nhức cơ thể sau khi ở hoặc du lịch vùng dịch cúm gia cầm.
+  - Việc tự chẩn đoán tại nhà không an toàn vì các biến chứng của cúm có thể đe dọa tính mạng.
+  - Hãy liên hệ với bác sĩ để được hướng dẫn cụ thể dựa trên tình trạng sức khỏe hiện tại của bạn.
+
+  --- Câu trả lời [mới] ---
+  prompt 917 token / 21.6s, sinh 139 token / 57.0s
+  - Cần gặp bác sĩ ngay nếu nghi ngờ mắc các virus cúm nguy hiểm như H5N1, H1N1 hoặc triệu chứng ngày càng nặng.  
+  - Nên đến cơ sở y tế có chuyên khoa hô hấp để được chẩn đoán chính xác và điều trị phù hợp.  
+  - Đối tượng cần theo dõi chặt chẽ bao gồm người già, trẻ em, phụ nữ mang thai và người suy giảm miễn dịch.  
+  - Biến chứng nguy hiểm có thể xảy ra như viêm phổi, suy hô hấp nếu không chữa kịp thời.  
+  - Cần đi khám ngay khi có sốt, ho, đau nhức cơ thể sau khi ở hoặc du lịch đến khu vực có dịch cúm gà.
+====================================================================================================
+Hỏi: Suy thận cấp có thể biểu hiện ra ngoài như thế nào?
+  Thực thể: Suy thận cấp
+  [cũ ] 3 đoạn, 1400 ký tự, truy xuất 61 ms
+     d=0.091 [ViMedAQA] Suy thận cấp là gì?
+     d=0.105 [ViMedAQA] Suy tuyến thượng thận - Suy thượng thận cấp
+     d=0.108 [vietnamese-medical-qa] Tôi không tiểu tiện được, đi khám bác sĩ chẩn đoán bị suy thận cấp và đã lọ
+  [mới] 5 đoạn, 2341 ký tự, truy xuất 97 ms
+     d=0.091 [ViMedAQA] Suy thận cấp là gì?
+     d=0.107 [ViMedAQA] Suy thận cấp - Bệnh có thể dẫn đến những biến chứng nào?
+     d=0.109 [ViMedAQA] Suy thận cấp - Triệu chứng của bệnh
+     d=0.105 [ViMedAQA] Suy tuyến thượng thận - Suy thượng thận cấp
+     d=0.108 [vietnamese-medical-qa] Tôi không tiểu tiện được, đi khám bác sĩ chẩn đoán bị suy thận cấp và đã lọ
+
+  --- Câu trả lời [cũ ] ---
+  prompt 638 token / 20.3s, sinh 91 token / 34.1s
+  - Chất thải và các chất trong máu bị mất cân bằng khi thận không thể lọc được.
+  - Tình trạng này phát triển nhanh chóng, thường chỉ trong vòng vài ngày.
+  - Bệnh phổ biến nhất ở những người đã nhập viện.
+  - Nguyên nhân cụ thể cần được tìm hiểu rõ qua khám bác sĩ chuyên khoa Nội thận.
+  - Thời gian hồi phục có thể kéo dài từ tuần đến tháng nếu nguyên nhân được loại bỏ.
+
+  --- Câu trả lời [mới] ---
+  prompt 914 token / 21.4s, sinh 155 token / 47.6s
+  - Bệnh có thể không có triệu chứng hoặc xuất hiện các dấu hiệu như lượng nước tiểu giảm và ứ nước gây sưng chân, mắt cá chân.
+  - Người bệnh có thể gặp khó thở do ứ dịch trong phổi, buồn nôn kéo dài, lú lẫn hoặc buồn ngủ quá mức.
+  - Các biểu hiện khác bao gồm nhịp tim không đều, đau ngực hoặc ép tim, yếu cơ và trong trường hợp nặng là co giật hay hôn mê.
+  - Một số biến chứng tiềm ẩn có thể dẫn đến tích tụ dịch gây khó thở, tổn thương thận vĩnh viễn hoặc mất chức năng thận.
+  - Tình trạng này cần được điều trị kịp thời bởi bác sĩ chuyên khoa Nội thận để xác định nguyên nhân và hướng xử lý phù hợp.
+  - Không đưa bất kỳ vật gì vào miệng người đang co giật và không giữ chặt họ.
+====================================================================================================
+Hỏi: Thuốc Atorlog có thể tương tác với thuốc nào?
+  Thực thể: Thuốc Atorlog
+  [cũ ] 3 đoạn, 1337 ký tự, truy xuất 47 ms
+     d=0.089 [ViMedAQA] Atorlog là thuốc gì?
+     d=0.090 [ViMedAQA] Thuốc atorvastatin (Lipitor, Atovast) tương tác với thuốc gì?
+     d=0.119 [vietnamese-medical-qa] Tôi nam, 66t. tôi vừa bị rối loạn cương vừa bị rối loạn lo âu. Tôi có đi kh
+  [mới] 5 đoạn, 2278 ký tự, truy xuất 57 ms
+     d=0.089 [ViMedAQA] Atorlog là thuốc gì?
+     d=0.098 [ViMedAQA] Atorlog - Tương tác thuốc
+     d=0.103 [ViMedAQA] Đối tượng chống chỉ định dùng Atorlog
+     d=0.090 [ViMedAQA] Thuốc atorvastatin (Lipitor, Atovast) tương tác với thuốc gì?
+     d=0.119 [vietnamese-medical-qa] Tôi nam, 66t. tôi vừa bị rối loạn cương vừa bị rối loạn lo âu. Tôi có đi kh
+====================================================================================================
+Hỏi: Tỳ bà diệp thường được dùng để chữa bệnh gì?
+  Thực thể: Tỳ bà diệp
+  [cũ ] 3 đoạn, 1500 ký tự, truy xuất 43 ms
+     d=0.083 [ViMedAQA] Tỳ bà diệp - Công dụng - Cách dùng và liều dùng
+     d=0.095 [ViMedAQA] Cây tỳ bà - Cách dùng và liều dùng - Trị trúng thử (cảm nắng) đầu váng, hoa
+     d=0.129 [vietnamese-medical-qa] Dạo gần đây bắt đầu vào mùa mưa tôi hay bị nổi mẩn ngứa khắp người, nổi nhữ
+  [mới] 5 đoạn, 2224 ký tự, truy xuất 55 ms
+     d=0.083 [ViMedAQA] Tỳ bà diệp - Công dụng - Cách dùng và liều dùng
+     d=0.095 [ViMedAQA] Tỳ bà diệp - Công dụng - Y học hiện đại
+     d=0.096 [ViMedAQA] Tỳ bà diệp - Một số bài thuốc kinh nghiệm - Trị Tỳ Vị hư yếu, nôn ói
+     d=0.095 [ViMedAQA] Cây tỳ bà - Cách dùng và liều dùng - Trị trúng thử (cảm nắng) đầu váng, hoa
+     d=0.129 [vietnamese-medical-qa] Dạo gần đây bắt đầu vào mùa mưa tôi hay bị nổi mẩn ngứa khắp người, nổi nhữ
+====================================================================================================
+Hỏi: Bệnh tiểu đường type 2 có triệu chứng gì?
+  Thực thể: tiểu đường type 2
+  [cũ ] 3 đoạn, 1500 ký tự, truy xuất 35 ms
+     d=0.070 [ViMedAQA] Triệu chứng đái tháo đường type 2
+     d=0.077 [ViMedAQA] Đái tháo đường type 2 - Những biến chứng nguy hiểm của tiểu đường type 2
+     d=0.091 [ViHealthQA] Bệnh tiểu đường biểu hiện như thế nào?
+  [mới] 5 đoạn, 2500 ký tự, truy xuất 50 ms
+     d=0.070 [ViMedAQA] Triệu chứng đái tháo đường type 2
+     d=0.077 [ViMedAQA] Đái tháo đường type 2 - Những biến chứng nguy hiểm của tiểu đường type 2
+     d=0.088 [ViMedAQA] Đái tháo đường type 2 - Đo đường huyết để xác định tiểu đường type 2
+     d=0.098 [ViMedAQA] Dấu hiệu đái tháo đường
+     d=0.091 [ViHealthQA] Bệnh tiểu đường biểu hiện như thế nào?
+====================================================================================================
+Hỏi: Paracetamol là thuốc gì?
+  Thực thể: Paracetamol
+  [cũ ] 3 đoạn, 1284 ký tự, truy xuất 28 ms
+     d=0.103 [ViMedAQA] Acemol 325 mg là thuốc gì? Hoạt chất chính là gì?
+     d=0.106 [ViMedAQA] Children’s Tylenol là thuốc gì?
+     d=0.100 [vietnamese-medical-qa] Chào dược sĩ,
+Chồng em bị dị ứng với paracetamol. Vậy dược sĩ cho em hỏi ng
+  [mới] 4 đoạn, 1765 ký tự, truy xuất 55 ms
+     d=0.103 [ViMedAQA] Acemol 325 mg là thuốc gì? Hoạt chất chính là gì?
+     d=0.114 [ViMedAQA] Acemol 325 mg - Những lưu ý trong quá trình dùng thuốc
+     d=0.106 [ViMedAQA] Children’s Tylenol là thuốc gì?
+     d=0.100 [vietnamese-medical-qa] Chào dược sĩ,
+Chồng em bị dị ứng với paracetamol. Vậy dược sĩ cho em hỏi ng
