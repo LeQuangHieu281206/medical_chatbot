@@ -2,15 +2,18 @@ import os
 from dataclasses import dataclass
 
 import chromadb
-import ollama
 import re
 import unicodedata
 from sentence_transformers import SentenceTransformer
 
+from app.services import llm
+
 DB_PATH = "app/db/chroma_db"
-COLLECTION = "medical_kb"
+# Mặc định dùng bản đã bổ sung vaccine/dinh dưỡng (medical_kb_v3). Muốn quay lại
+# bản cũ thì chạy: KB_COLLECTION=medical_kb .venv/bin/python app/api/server.py
+COLLECTION = os.getenv("KB_COLLECTION", "medical_kb_v3")
 EMBED_MODEL = "intfloat/multilingual-e5-small"
-LLM_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.5:4b")
+LLM_MODEL = llm.OLLAMA_MODEL      # giữ tên cũ cho code/test đang import
 
 PASS_MAX = 0.12      # nhỏ hơn hoặc bằng: chắc chắn là y tế
 REJECT_MIN = 0.14    # lớn hơn: chắc chắn ngoài chủ đề
@@ -55,16 +58,16 @@ class TopicFilter:
 
     def _ask_llm(self, query: str) -> bool:
         try:
-            resp = ollama.chat(
-                model=LLM_MODEL,
-                messages=[
+            text = llm.chat(
+                [
                     {"role": "system", "content": CLASSIFIER_PROMPT},
                     {"role": "user", "content": query},
                 ],
-                think=False,
-                options={"temperature": 0, "num_predict": 8},
+                temperature=0,
+                max_tokens=8,
+                fast=True,          # phân loại chỉ cần model rẻ, đừng dùng model lớn
             )
-            return resp["message"]["content"].strip().upper().startswith("YES")
+            return text.strip().upper().startswith("YES")
         except Exception as e:
             print("Lỗi gọi LLM phân loại:", e)
             return False  # lỗi thì từ chối cho an toàn
