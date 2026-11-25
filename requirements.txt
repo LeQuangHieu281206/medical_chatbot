@@ -1,4 +1,6 @@
 streamlit==1.66.0
+fastapi==0.144.0
+uvicorn==0.54.0
 chromadb==1.5.9
 ollama==0.6.3
 sentence-transformers==6.1.0
@@ -7,3 +9,5 @@ transformers==5.20.1
 # Chi can khi build lai vector DB (app/services/ingest_vimedaqa.py)
 datasets
 tqdm
+# Chi can khi dung Gemini (LLM_PROVIDER=gemini|auto)
+google-genai

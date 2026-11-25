@@ -1,0 +1,8 @@
+Tổng số câu: 300000
+Số tệp: 6
+Số câu mỗi tệp: 50000
+Phân bổ: 36000 câu cho mỗi miền trong tám miền chính; 12000 câu giao thoa.
+Mỗi dòng là một câu; mã hóa UTF-8; kết thúc dòng bằng LF.
+Số câu trùng lặp toàn bộ corpus: 0
+Độ dài nhỏ nhất: 11 từ
+Độ dài lớn nhất: 30 từ

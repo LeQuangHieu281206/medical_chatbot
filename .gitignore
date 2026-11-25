@@ -11,6 +11,7 @@ models/
 data/raw/
 data/processed/
 app/db/chroma_db/
+app/db/chroma_db.bak/
 *.zip
 
 # Model da chon tren may cuc bo (do scripts/chon_model.ps1 ghi)
@@ -20,3 +21,30 @@ ollama_model.txt
 .zcode/
 .DS_Store
 Thumbs.db
+
+# graphify (knowledge graph artifacts)
+graphify-out/
+
+# Corpus tho (lon, dung lai duoc bang build_vietnamese_corpus.py)
+data/corpus/
+data/sources/corpus_mau/
+
+# Khoa API / cau hinh ca nhan
+.env
+
+# Ban ghi tho cua crawler — tai lai duoc bang scripts/build_*.py
+data/sources/vinmec/html/
+data/sources/vinmec/index*.jsonl
+data/audit/backup/
+data/sources/vinmec/sitemaps/
+data/sources/duocthu/raw/
+
+# Node / frontend build
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Log va ket qua tam khi do luong
+*.log
+tests/*_output*.txt

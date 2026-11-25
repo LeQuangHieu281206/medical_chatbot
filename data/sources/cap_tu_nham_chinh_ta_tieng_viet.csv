@@ -1,0 +1,531 @@
+sai,dung,loai,ca_hai_deu_la_tu_that
+đo,do,d_d,1
+da,đã,d_d,1
+đỏ,do,d_d,1
+dược,được,d_d,1
+dâu,đâu,d_d,1
+dây,đây,d_d,1
+dạo,đạo,d_d,1
+dàn,đàn,d_d,1
+dạn,đạn,d_d,1
+dập,đập,d_d,1
+dày,đầy,d_d,1
+dở,đỡ,d_d,1
+dắt,đắt,d_d,1
+dừng,đừng,d_d,1
+dồn,đồn,d_d,1
+dọc,đọc,d_d,1
+dưa,đưa,d_d,1
+dám,đám,d_d,1
+dạ,đá,d_d,1
+dâu,đầu,d_d,1
+dốc,đốc,d_d,1
+dôi,đôi,d_d,1
+dẻ,đẻ,d_d,1
+dập,đạp,d_d,1
+dậy,đậy,d_d,1
+dỗ,đỗ,d_d,1
+dỗ,đổ,d_d,1
+dày,đày,d_d,1
+dầm,đầm,d_d,1
+dương,đương,d_d,1
+dường,đường,d_d,1
+dò,đò,d_d,1
+dấu,đấu,d_d,1
+dẫm,đẫm,d_d,1
+dở,đổ,d_d,1
+dọc,độc,d_d,1
+điều,diều,d_d,1
+dơi,đời,d_d,1
+đồi,dồi,d_d,1
+đổi,dổi,d_d,1
+đau,dâu,d_d,1
+đầu,dầu,d_d,1
+đá,da,d_d,1
+đan,dan,d_d,1
+đậm,dậm,d_d,1
+đặt,dạt,d_d,1
+đàn,dàn,d_d,1
+nghỉ,nghĩ,hoi_nga,1
+sửa,sữa,hoi_nga,1
+bảo,bão,hoi_nga,1
+lẻ,lẽ,hoi_nga,1
+vẻ,vẽ,hoi_nga,1
+sẻ,sẽ,hoi_nga,1
+mã,mả,hoi_nga,1
+củ,cũ,hoi_nga,1
+bữa,bửa,hoi_nga,1
+chữa,chửa,hoi_nga,1
+ngả,ngã,hoi_nga,1
+rủ,rũ,hoi_nga,1
+cổ,cỗ,hoi_nga,1
+mở,mỡ,hoi_nga,1
+vỡ,vở,hoi_nga,1
+lỗ,lỡ,hoi_nga,1
+rẽ,rẻ,hoi_nga,1
+trẻ,trễ,hoi_nga,1
+bổng,bỗng,hoi_nga,1
+quẩn,quẫn,hoi_nga,1
+mẫu,mẩu,hoi_nga,1
+mẫn,mẩn,hoi_nga,1
+bẻ,bẽ,hoi_nga,1
+mũ,mủ,hoi_nga,1
+cữ,cứ,dau_thanh,1
+ngủ,ngũ,hoi_nga,1
+nữa,nửa,hoi_nga,1
+mãi,mải,hoi_nga,1
+nổi,nỗi,hoi_nga,1
+rỗ,rổ,hoi_nga,1
+nổ,nỗ,hoi_nga,1
+võ,vỏ,hoi_nga,1
+lãng,lảng,hoi_nga,1
+vãng,vảng,hoi_nga,1
+quãng,quảng,hoi_nga,1
+bảng,bẵng,hoi_nga,1
+tĩnh,tỉnh,hoi_nga,1
+vẫn,vẩn,hoi_nga,1
+cũng,củng,hoi_nga,1
+nghía,nghĩa,khac,1
+lảng,lãng,hoi_nga,1
+dẫu,dẩu,hoi_nga,1
+rẫy,rảy,hoi_nga,1
+giửa,giữa,hoi_nga,0
+ngỉ,nghỉ,khac,0
+ngỉ,nghĩ,khac,0
+chẵng,chẳng,hoi_nga,0
+cãm,cảm,hoi_nga,0
+của,cũa,hoi_nga,0
+sâu,xâu,s_x,1
+sào,xào,s_x,1
+sáo,xáo,s_x,1
+sổ,xổ,s_x,1
+sương,xương,s_x,1
+sả,xả,s_x,1
+sử,xử,s_x,1
+sinh,xinh,s_x,1
+sát,xát,s_x,1
+sơ,xơ,s_x,1
+sẻ,xẻ,s_x,1
+sứ,xứ,s_x,1
+sao,xao,s_x,1
+sách,xách,s_x,1
+sôi,xôi,s_x,1
+sung,xung,s_x,1
+súc,xúc,s_x,1
+sắn,xắn,s_x,1
+song,xong,s_x,1
+sanh,xanh,s_x,1
+suất,xuất,s_x,1
+sỉ,xỉ,s_x,1
+si,xì,s_x,1
+sóc,xóc,s_x,1
+sắt,xắt,s_x,1
+sui,xui,s_x,1
+sông,xông,s_x,1
+sói,xói,s_x,1
+sốc,xốc,s_x,1
+sốt,xốt,s_x,1
+xả,sả,s_x,1
+xáo,sáo,s_x,1
+xẻ,sẻ,s_x,1
+xăm,săm,s_x,1
+xà,sà,s_x,1
+xét,sét,s_x,1
+xếp,sếp,s_x,1
+xỉ,sỉ,s_x,1
+xong,song,s_x,1
+xông,sông,s_x,1
+xốt,sốt,s_x,1
+xóc,sóc,s_x,1
+xắt,sắt,s_x,1
+xay,say,s_x,1
+xát,sát,s_x,1
+xào,sào,s_x,1
+xâu,sâu,s_x,1
+xương,sương,s_x,1
+xinh,sinh,s_x,1
+xúc,súc,s_x,1
+xứ,sứ,s_x,1
+xơ,sơ,s_x,1
+sảy,xảy,s_x,1
+trẻ,chẻ,tr_ch,1
+trả,chả,tr_ch,1
+trăng,chăng,tr_ch,1
+trưa,chưa,tr_ch,1
+tre,che,tr_ch,1
+trục,chục,tr_ch,1
+tranh,chanh,tr_ch,1
+trị,chị,tr_ch,1
+trong,chong,tr_ch,1
+trán,chán,tr_ch,1
+trai,chai,tr_ch,1
+trầu,chầu,tr_ch,1
+trút,chút,tr_ch,1
+trì,chì,tr_ch,1
+trâu,châu,tr_ch,1
+trước,chước,tr_ch,1
+trở,chở,tr_ch,1
+truyền,chuyền,tr_ch,1
+trấn,chấn,tr_ch,1
+trình,chình,tr_ch,1
+trực,chực,tr_ch,1
+trang,chang,tr_ch,1
+tránh,chánh,tr_ch,1
+trồng,chồng,tr_ch,1
+trí,chí,tr_ch,1
+tráo,cháo,tr_ch,1
+trưa,chừa,tr_ch,1
+trật,chật,tr_ch,1
+trổ,chỗ,tr_ch,1
+trúc,chúc,tr_ch,1
+trọn,chọn,tr_ch,1
+trụ,chủ,tr_ch,1
+bàn,bàng,n_ng,1
+bản,bảng,n_ng,1
+bán,báng,n_ng,1
+lan,lang,n_ng,1
+làn,làng,n_ng,1
+tan,tang,n_ng,1
+tán,táng,n_ng,1
+hàn,hàng,n_ng,1
+màn,màng,n_ng,1
+mạn,mạng,n_ng,1
+vạn,vạng,n_ng,1
+vân,vâng,n_ng,1
+san,sang,n_ng,1
+đàn,đàng,n_ng,1
+đan,đang,n_ng,1
+lăn,lăng,n_ng,1
+cân,căng,n_ng,1
+căn,căng,n_ng,1
+trăn,trăng,n_ng,1
+chăn,chăng,n_ng,1
+dân,dâng,n_ng,1
+tân,tâng,n_ng,1
+cán,cáng,n_ng,1
+ran,rang,n_ng,1
+rạn,rạng,n_ng,1
+hôn,hông,n_ng,1
+hun,hung,n_ng,1
+con,cong,n_ng,1
+mặn,mạng,n_ng,1
+đàng,đàn,n_ng,1
+săn,săng,n_ng,1
+lân,lăng,n_ng,1
+cạn,càng,n_ng,1
+mòn,mòng,n_ng,1
+tàn,tàng,n_ng,1
+bạc,bạt,c_t,1
+bác,bát,c_t,1
+khác,khát,c_t,1
+mác,mát,c_t,1
+rác,rát,c_t,1
+lác,lát,c_t,1
+sốc,sốt,c_t,1
+móc,mót,c_t,1
+cốc,cốt,c_t,1
+bốc,bốt,c_t,1
+vóc,vót,c_t,1
+cục,cụt,c_t,1
+lộc,lột,c_t,1
+mộc,một,c_t,1
+tạc,tạt,c_t,1
+đắc,đắt,c_t,1
+độc,đột,c_t,1
+bực,bật,c_t,1
+nạc,nạt,c_t,1
+vạc,vạt,c_t,1
+tắc,tắt,c_t,1
+lạc,lạt,c_t,1
+nhạc,nhạt,c_t,1
+mạc,mạt,c_t,1
+vác,vát,c_t,1
+góc,gót,c_t,1
+bọc,bột,c_t,1
+thóc,thót,c_t,1
+chốc,chót,c_t,1
+mốc,mốt,c_t,1
+nóc,nốt,c_t,1
+tốc,tốt,c_t,1
+mức,mứt,c_t,1
+mặc,mặt,c_t,1
+các,cát,c_t,1
+đặc,đạt,c_t,1
+bức,bứt,c_t,1
+lực,lụt,c_t,1
+rực,rụt,c_t,1
+móc,mốt,c_t,1
+lắc,lắt,c_t,1
+đạc,đạt,c_t,1
+bạc,bát,c_t,1
+sắc,sắt,c_t,1
+vạch,vạt,c_t,1
+nạc,nát,c_t,1
+mác,mạt,c_t,1
+bị,bì,dau_thanh,1
+bác,bạc,dau_thanh,1
+nói,nổi,dau_thanh,1
+nghi,nghỉ,dau_thanh,1
+ngáy,ngày,dau_thanh,1
+mười,muối,dau_thanh,1
+tám,tâm,dau_thanh,1
+khóa,khoa,dau_thanh,1
+giẫm,giảm,hoi_nga,1
+chi,chị,dau_thanh,1
+chì,chị,dau_thanh,1
+phẩy,phần,khac,1
+đã,đá,dau_thanh,1
+đỏ,đó,dau_thanh,1
+đẩy,đẫy,dau_thanh,1
+đổi,đội,dau_thanh,1
+dễ,dế,dau_thanh,1
+giả,giá,dau_thanh,1
+hả,há,dau_thanh,1
+hỏi,hói,dau_thanh,1
+khả,khá,dau_thanh,1
+khổ,khố,dau_thanh,1
+lạ,lá,dau_thanh,1
+lẻ,lè,dau_thanh,1
+lỗ,lố,dau_thanh,1
+lộ,lố,dau_thanh,1
+mả,má,dau_thanh,1
+mở,mơ,dau_thanh,1
+mỡ,mớ,dau_thanh,1
+nợ,nở,dau_thanh,1
+nội,nổi,dau_thanh,1
+nói,nồi,dau_thanh,1
+nó,nọ,dau_thanh,1
+nhỏ,nhọ,dau_thanh,1
+quả,quá,dau_thanh,1
+rổ,rỗ,dau_thanh,1
+sở,sợ,dau_thanh,1
+số,sỗ,dau_thanh,1
+tả,tá,dau_thanh,1
+tẻ,té,dau_thanh,1
+tủ,tú,dau_thanh,1
+tự,tứ,dau_thanh,1
+vả,vá,dau_thanh,1
+vẻ,vé,dau_thanh,1
+vỏ,võ,dau_thanh,1
+vợ,vỡ,dau_thanh,1
+vụ,vũ,dau_thanh,1
+xả,xá,dau_thanh,1
+cả,cá,dau_thanh,1
+cổ,cố,dau_thanh,1
+củ,cú,dau_thanh,1
+dở,dỡ,dau_thanh,1
+cảm,cám,dau_thanh,1
+cảm,cạm,dau_thanh,1
+bàn,bạn,dau_thanh,1
+bán,bạn,dau_thanh,1
+báo,bạo,dau_thanh,1
+cắn,cặn,dau_thanh,1
+chủ,chú,dau_thanh,1
+đậu,dầu,dau_thanh,1
+gạo,gáo,dau_thanh,1
+gặp,gấp,dau_thanh,1
+họ,hò,dau_thanh,1
+học,hóc,dau_thanh,1
+khá,khả,dau_thanh,1
+lạc,lác,dau_thanh,1
+lẫn,lấn,dau_thanh,1
+lạnh,lành,dau_thanh,1
+mặn,mẫn,dau_thanh,1
+mẹ,mẻ,dau_thanh,1
+mơ,mờ,dau_thanh,1
+mùa,múa,dau_thanh,1
+nặng,nắng,dau_thanh,1
+nằm,nắm,dau_thanh,1
+nấu,nâu,dau_thanh,1
+ngủ,ngụ,dau_thanh,1
+nhà,nhá,dau_thanh,1
+nhớ,nhỡ,dau_thanh,1
+phá,phả,dau_thanh,1
+phở,phố,dau_thanh,1
+răng,rằng,dau_thanh,1
+rẻ,rẽ,dau_thanh,1
+sáng,sang,dau_thanh,1
+sâu,sầu,dau_thanh,1
+thở,thợ,dau_thanh,1
+thủ,thú,dau_thanh,1
+tím,tìm,dau_thanh,1
+tôi,tội,dau_thanh,1
+vừa,vựa,dau_thanh,1
+yếu,yểu,dau_thanh,1
+khng,không,khac,0
+đượck,được,khac,0
+nhìu,nhiều,khac,0
+hok,không,khac,0
+ko,không,khac,0
+k,không,khac,0
+dc,được,khac,0
+đc,được,khac,0
+mik,mình,khac,0
+bik,biết,khac,0
+thik,thích,khac,0
+thui,thôi,khac,0
+zậy,vậy,khac,0
+dzậy,vậy,khac,0
+j,gì,khac,0
+rùi,rồi,khac,0
+ùi,rồi,khac,0
+lun,luôn,khac,0
+luông,luôn,khac,0
+nhoé,nhé,khac,0
+nháy,nhé,khac,0
+đươc,được,khac,0
+đuọc,được,khac,0
+đượcc,được,khac,0
+khôg,không,khac,0
+khônng,không,khac,0
+khong,không,khac,0
+koong,không,khac,0
+khôn,không,n_ng,1
+ngườiì,người,khac,0
+ngườii,người,khac,0
+họcj,học,khac,0
+làg,là,khac,0
+vậyy,vậy,khac,0
+cũg,cũng,khac,0
+củngg,củng,khac,0
+đanggg,đang,khac,0
+thànhf,thành,khac,0
+xinchaò,xin chào,khac,0
+chàoo,chào,khac,0
+cámơn,cảm ơn,khac,0
+cãm ơn,cảm ơn,khac,0
+cảm on,cảm ơn,khac,0
+xin lổi,xin lỗi,khac,0
+lổi,lỗi,khac,0
+xuất sắt,xuất sắc,khac,1
+suất sắc,xuất sắc,khac,1
+sơ xuất,sơ suất,khac,1
+sát nhập,sáp nhập,khac,1
+chỉnh chu,chỉn chu,khac,0
+chính chắn,chín chắn,khac,1
+trân thành,chân thành,khac,1
+chân trọng,trân trọng,khac,1
+bổ xung,bổ sung,khac,1
+chia sẽ,chia sẻ,khac,1
+chia xẻ,chia sẻ,khac,1
+giành dụm,dành dụm,khac,1
+dấu diếm,giấu giếm,khac,0
+thăm quan,tham quan,khac,1
+chuẩn đoán,chẩn đoán,khac,1
+triệu trứng,triệu chứng,khac,1
+bàng quan,bàng quang,khac,1
+vô hình chung,vô hình trung,khac,1
+chín mùi,chín muồi,khac,1
+tựu chung,tựu trung,khac,1
+sử lý,xử lý,khac,1
+xử dụng,sử dụng,khac,1
+sáng lạn,xán lạn,khac,1
+vững trãi,vững chãi,khac,0
+trãi nghiệm,trải nghiệm,khac,0
+trãi qua,trải qua,khac,0
+suông sẻ,suôn sẻ,khac,1
+xảy thai,sảy thai,khac,1
+cọ sát,cọ xát,khac,1
+xúc tích,súc tích,khac,1
+dành giật,giành giật,khac,1
+dấu kín,giấu kín,khac,1
+chuyền thống,truyền thống,khac,1
+chuyền thông,truyền thông,khac,1
+chuẩn bệnh,chẩn bệnh,khac,1
+chuẩn trị,chẩn trị,khac,1
+bệnh nhân,bệnh nhơn,khac,0
+tiểu đường,tiểu đườg,khac,0
+đường huyết,đườg huyết,khac,0
+triệu chứng,triệu trứng,khac,0
+phẫu thuật,phẩu thuật,khac,0
+cấp cứu,cấp cúu,khac,0
+bệnh viện,bệnh viẹn,khac,0
+sức khỏe,sức khoẻe,khac,0
+sức khoẻ,sức khẻo,khac,0
+dinh dưỡng,dinh dưởng,khac,0
+tập luyện,tập luyệng,khac,0
+kẽm,kẻm,hoi_nga,0
+dễ,để,d_d,1
+dành,đành,d_d,1
+dại,đại,d_d,1
+dọn,đón,d_d,1
+dài,đài,d_d,1
+trải,chải,tr_ch,1
+trợ,chợ,tr_ch,1
+trung,chung,tr_ch,1
+trống,chống,tr_ch,1
+trà,chà,tr_ch,1
+trùng,chùng,tr_ch,1
+trận,chận,tr_ch,1
+trưởng,chưởng,tr_ch,1
+tràng,chàng,tr_ch,1
+trôi,chồi,tr_ch,1
+trông,chông,tr_ch,1
+trứng,chứng,tr_ch,1
+ngăn,ngang,n_ng,1
+thân,thăng,n_ng,1
+hân,hăng,n_ng,1
+văn,văng,n_ng,1
+cắt,các,c_t,1
+chắc,chặt,c_t,1
+gạc,gạt,c_t,1
+ngọc,ngọt,c_t,1
+phúc,phút,c_t,1
+đúc,đút,c_t,1
+bịch,bịt,c_t,1
+mực,mứt,c_t,1
+học,hót,c_t,1
+chạc,chặt,c_t,1
+tịch,tịt,c_t,1
+ngạc,ngạt,c_t,1
+nhức,nhứt,c_t,1
+gãy,gảy,dau_thanh,1
+dữ,dự,dau_thanh,1
+bị,bí,dau_thanh,1
+bì,bí,dau_thanh,1
+tính,tĩnh,dau_thanh,1
+bóng,bỏng,dau_thanh,1
+tủi,túi,dau_thanh,1
+chi,chí,dau_thanh,1
+chì,chỉ,dau_thanh,1
+tá,tạ,dau_thanh,1
+chạy,chảy,dau_thanh,1
+nhỉ,nhi,khac,1
+sai xót,sai sót,khac,1
+sảy ra,xảy ra,khac,1
+sót xa,xót xa,khac,1
+dấu giếm,giấu giếm,khac,1
+nghành,ngành,khac,0
+sẳn,sẵn,hoi_nga,0
+trãi,trải,khac,0
+phẩu,phẫu,khac,0
+cúu,cứu,khac,0
+viẹn,viện,khac,0
+khẻo,khỏe,khac,0
+dưởng,dưỡng,khac,0
+luyệng,luyện,khac,0
+bónn,bón,khac,0
+thỡ,thở,khac,0
+hắp,hấp,khac,0
+mậch,mạch,khac,0
+thậnn,thận,khac,0
+đườg,đường,khac,0
+bệng,bệnh,khac,0
+phổ,phổi,khac,1
+bụng,bùng,khac,1
+đậu,đầu,khac,1
+đọc,độc,khac,1
+bện,bệnh,khac,1
+ấp,áp,khac,1
+lượn,lượng,khac,1
+xoi,soi,s_x,1
+giục,dục,khac,1
+non,nôn,khac,1
+khan,khang,khac,1
+giành,dành,khac,1
+dấu,giấu,khac,1
+chuẩn,chẩn,khac,1
+sáp,sát,khac,1
+chắp,chấp,khac,1
+muồi,mùi,khac,1
+suông,suôn,khac,1

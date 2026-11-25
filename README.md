@@ -1,4 +1,4 @@
-# Medical Chatbot — Trợ lý y tế tiếng Việt (chạy hoàn toàn local)
+# Medical Chatbot — Trợ lý y tế tiếng Việt (chạy local, có thể bật Gemini)
 
 Chatbot tư vấn y tế tiếng Việt với kiến trúc RAG, chạy **hoàn toàn trên máy cá nhân** (không gửi dữ liệu đi đâu):
 
@@ -97,6 +97,59 @@ streamlit run app/ui.py
 
 ---
 
+## Giao diện Next.js (khuyến nghị)
+
+Ngoài Streamlit, repo có giao diện web mới trong `frontend/` (Next.js 16 + Tailwind 4) dùng
+cùng pipeline RAG. Cần chạy 2 tiến trình:
+
+```bash
+# Terminal 1 — cầu nối Python (nạp model như Streamlit)
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.api.server:app --host 127.0.0.1 --port 8000
+
+# Terminal 2 — giao diện
+cd frontend
+npm install
+npm run dev        # mở http://localhost:3000
+```
+
+Thiết kế bám theo `DESIGN-claude.md` (nền kem, serif cho tiêu đề, coral cho CTA,
+bề mặt tối cho điểm nhấn). Lịch sử hội thoại lưu trong trình duyệt; không gửi dữ liệu
+ra ngoài. Streamlit vẫn dùng được song song.
+
+## Dùng thêm Gemini (tuỳ chọn)
+
+Mặc định app chạy hoàn toàn local bằng Ollama. Có thể bật thêm Gemini để so sánh
+chất lượng hoặc làm phương án dự phòng, qua `app/services/llm.py`.
+
+```bash
+.venv/bin/pip install google-genai          # chỉ cần khi dùng Gemini
+export LLM_PROVIDER=gemini                  # ollama (mặc định) | gemini | auto
+export GEMINI_API_KEY=...                   # lấy ở https://aistudio.google.com/apikey
+export GEMINI_MODEL=gemini-2.5-flash        # tên model đổi khá nhanh, kiểm tra lại
+```
+
+| `LLM_PROVIDER` | Hành vi |
+|---|---|
+| `ollama` (mặc định) | chỉ chạy trên máy, không gửi dữ liệu ra ngoài |
+| `gemini` | chỉ dùng Gemini |
+| `auto` | thử Ollama trước, lỗi thì chuyển Gemini (nếu có key) |
+
+Lưu ý:
+
+- **Bộ lọc chủ đề luôn chạy local.** Câu ngoài chủ đề bị từ chối thì không bao giờ
+  rời khỏi máy.
+- **Giao diện có menu chọn model** ở góc trên bên phải (Qwen / Gemini). Lựa chọn
+  áp dụng cho **từng câu hỏi**, không phải biến môi trường, nên đổi model giữa
+  chừng vẫn so sánh được. Gemini chỉ hiện khi `GEMINI_API_KEY` đã có.
+- **Dữ liệu bệnh nhân**: free tier của Gemini dùng nội dung để cải thiện sản phẩm;
+  chỉ paid tier mới không dùng. Cân nhắc trước khi bật với dữ liệu thật.
+- **Số đo**: ghi kèm `provider`/`model` (đã có trong `stats`) vì Google có thể đổi
+  model ngầm, làm số liệu cũ không còn so sánh được.
+
+---
+
 ## Đổi model sau khi cài
 
 - **Windows**: nhấp đúp `scripts\chon_model.bat` — chọn model mới, script tự tải và lưu lại.
@@ -121,24 +174,43 @@ streamlit run app/ui.py
 
 ```
 app/
-  ui.py                 # Giao diện Streamlit (chạy lệnh chính)
+  ui.py                 # Giao diện Streamlit (tuỳ chọn)
+  api/server.py         # FastAPI bridge cho giao diện Next.js (SSE)
   services/
     pipeline.py         # Luồng RAG: lọc chủ đề → NER → truy hồi → sinh → lọc an toàn
     topic_filter.py     # Lọc chủ đề + hằng số model (OLLAMA_MODEL)
+    llm.py              # Cầu nối LLM: Ollama (local) hoặc Gemini (API key)
     ner.py              # NER y tế local
+    normalizer.py       # Chuẩn hoá câu hỏi: teencode, khôi phục dấu, sửa tên thuốc gõ sai
+    red_flags.py        # Nhận diện dấu hiệu cấp cứu + lời khuyên sơ cứu theo nhóm
     ingest*.py          # Script build vector DB từ dữ liệu
   db/chroma_db/         # Vector database (đóng gói sẵn trong Release)
 data/
-  processed/            # KB đã xử lý (kb.jsonl, ...)
+  DATA_CONTRACT.md     # Luật chất lượng dữ liệu + ngưỡng + số đo hiện tại
+  sources/              # Nguồn: Dược thư (mirror Bạch Mai), red_flags.jsonl, ...
+  processed/            # KB đã xử lý (kb.jsonl, kb_drugs_full.jsonl, drug_names.json, ...)
   raw/                  # Dữ liệu thô (không đóng gói)
 models/
   ner_model/            # Model NER (giải nén từ ner_model.zip)
   ner_model.zip
 scripts/
+  validate_data.py      # Cổng kiểm tra dữ liệu: sai luật hard thì exit 1
+  build_drug_index.py   # Cào + lập danh mục chuyên luận Dược thư
+  build_drug_qa.py      # Sinh KB thuốc (5 khía cạnh mỗi hoạt chất)
+  build_vinmec_qa.py    # Cào bài Vinmec cho chủ đề vaccine / dinh dưỡng
+  eval_retrieval_semantic.py  # Đo truy hồi theo ngữ nghĩa đáp án (thước đo chính)
+  build_drug_names.py   # Danh mục tên thuốc cho việc sửa lỗi gõ
   chon_model.ps1/.bat   # Dò cấu hình → gợi ý → tải model Ollama
   cai_dat_app.ps1/.bat  # Cài đặt toàn bộ app trên Windows
   chay_app.bat          # Chạy app (nhấp đúp)
   pack_windows.sh       # (Linux) Đóng gói medical_chatbot_windows.zip
+frontend/               # Giao diện Next.js (App Router, Tailwind 4)
+                        # hiệu ứng: bot-avatars (avatar "đang làm việc"),
+                        # thinking-orbs (orb khi đang trả lời), torph (morph nhãn model)
+  src/app/              # layout, page, globals.css, api/chat (proxy SSE)
+  src/components/chat/  # sidebar, header, composer, message, sources
+  src/hooks/use-chat.ts # trạng thái + stream câu trả lời
+  src/lib/              # SSE client, localStorage store, types
 tests/                  # Các script thí nghiệm
 ```
 

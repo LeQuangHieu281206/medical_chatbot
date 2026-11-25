@@ -1,0 +1,295 @@
+teencode,nghia,loai,khong_mo_rong,bien_the_go,vi_du
+k,không,teencode,kali|vitamin|kẽm|ung thư,k|ko|kh|khg|hok,bs ơi em uống thuốc này mà k thấy đỡ đau đầu
+ko,không,teencode,cô|khô,ko|k|kh|khg|hok,tối qua em sốt 39 độ mà uống hạ sốt ko hạ
+kh,không,go_nhanh,khách hàng|kế hoạch|khoa học,kh|k|ko|khg,em đang cho con bú thì có dùng thuốc này đc kh ạ
+khg,không,go_nhanh,,khg|k|ko|kh,em xét nghiệm máu sáng nay mà bs bảo khg sao
+hok,không,teencode,,hok|k|ko|hem,dạ em đau bụng âm ỉ từ sáng tới giờ hok ăn gì nổi
+hem,không,teencode,,hem|hok|k|ko,uống kháng sinh lúc đói có bị cồn ruột hem bác sĩ
+dc,được,teencode,di căn|địa chỉ|điều chỉnh,dc|đc|đk|dk,em bị đau dạ dày thì uống sữa tươi có dc không ạ
+dk,được,teencode,đăng ký|điều kiện|dự kiến,dk|đk|dc|đc,bầu 3 tháng đầu uống paracetamol hạ sốt có dk k bs
+ntn,như thế nào,teencode,,ntn|ntnao|nhưthếnào,kết quả xét nghiệm máu của em như vậy là bị sao ntn ạ
+ntnao,như thế nào,teencode,,ntnao|ntn,em cần kiêng ăn gì và uống thuốc ra sao ntnao bác sĩ
+vs,với,teencode,vệ sinh|vắc xin|vi sinh,vs|vơi|với,em bị viêm họng uống thuốc kháng sinh vs giảm đau chung dc k
+j,gì,teencode,,j|gi|gì|z,bác sĩ xem giúp em chỉ số men gan cao như vậy có sao j k
+z,vậy,teencode,,z|v|vậy|zậy,sao em uống thuốc 3 ngày rồi mà vẫn ho nhiều z bác sĩ
+zay,vậy,teencode,,zay|zậy|vậy|z,bé nhà em đi ngoài phân lỏng 4 lần một ngày có nguy hiểm zay bs
+v,vậy,go_nhanh,vitamin|vùng|viên,v|z|vậy,nếu chỉ số huyết áp 150/95 thì có cần uống thuốc ngay k v ạ
+r,rồi,teencode,,r|òi|rùi|rồi,em mới đi siêu âm ổ bụng về sáng nay r ạ
+rui,rồi,teencode,rủi|rủi ro|rũi,rui|rùi|r|rồi,con em uống hết 1 liều hạ sốt lúc 8h tối rui mà giờ lại sốt lại
+oi,rồi,teencode,ôi|ối|ỏi|nước ối,oi|òi|r|rồi,em bị trễ kinh 10 ngày thử que lên 2 vạch mờ oi bs
+ch,chưa,go_nhanh,cửa hàng|câu hỏi|chỉ huy,ch|chua|chưa,kết quả chụp x quang phổi của mẹ em có vấn đề gì ch ạ
+cx,cũng,teencode,,cx|cg|cũng,mấy hôm nay em cx hay bị chóng mặt mỗi khi đứng dậy đột ngột
+cg,cũng,go_nhanh,cô gái|cảm giác|cố gắng,cg|cx|cũng,hôm nào trở trời là khớp gối của em cg đau nhức khó chịu
+lun,luôn,teencode,lùn|lún,lun|luôn|luon,em ăn đồ cay nóng xong là bụng đau quặn lên lun ạ
+wa,quá,teencode,,wa|wá|qua|quá,bs ơi răng khôn của em sưng đau nhức buốt lên tận đầu wa
+nhiu,nhiều,teencode,,nhiu|nhìu|nhiều,ngày nào em cũng rụng tóc nhiu lắm có phải thiếu chất k bs
+bnhiu,bao nhiêu,teencode,,bnhiu|bn|bnh|baonhiêu,huyết áp bình thường của người lớn tuổi là bnhiu vậy bác sĩ
+bnh,bao nhiêu,go_nhanh,,bnh|bnhiu|bn,bé 12kg sốt 39 độ thì uống gói hạ sốt hàm lượng bnh mg ạ
+bn,bệnh nhân,viet_tat,bao nhiêu|bên|bạn,bn|bệnhnhân,mẹ em là bn tiểu đường tuýp 2 mới phát hiện tháng trước
+bs,bác sĩ,viet_tat,bổ sung|bẩm sinh|bữa sáng,bs|bsi|bsĩ|bácsĩ,chào bs cho em hỏi kết quả siêu âm tuyến giáp này ạ
+bsi,bác sĩ,go_nhanh,,bsi|bs|bsĩ,bsi tư vấn giúp em đơn thuốc này uống trước hay sau ăn ạ
+bv,bệnh viện,viet_tat,bảo vệ|bài viết|bệnh viện,bv|bvien|bviện,tình trạng đau ngực trái của bố em có cần đi bv cấp cứu ngay k
+bvien,bệnh viện,go_nhanh,,bvien|bv|bviện,sáng mai em định lên bvien khám tổng quát thì cần nhịn ăn k ạ
+pk,phòng khám,viet_tat,phụ khoa|phân khu,pk|phongkham|phòngkhám,em mới đi siêu âm ở pk tư gần nhà mà bác sĩ nói chưa rõ
+mk,mình,teencode,mật khẩu|mắt kính,mk|mik|mh|mình,dạo này mk hay bị mất ngủ ban đêm và đau mỏi vai gáy
+mik,mình,teencode,,mik|mk|mh|mình,mik bị dị ứng hải sản nổi mề đay khắp người thì bôi gì đỡ
+mh,mình,go_nhanh,màn hình|minh họa|mồ hôi,mh|mk|mik|mình,mh uống thuốc kháng sinh 5 ngày rồi mà họng vẫn còn rát
+mng,mọi người,go_nhanh,,mng|mn|moinguoi,mng cho em hỏi khám tiêu hóa ở đâu tốt tại hà nội ạ
+mn,mọi người,go_nhanh,màng não|mãn nhãn|một nửa,mn|mng|moinguoi,mn ơi có ai từng bị trào ngược dạ dày gây ho khan chưa ạ
+ngta,người ta,go_nhanh,,ngta|ngườita,em đi đo huyết áp ở hiệu thuốc ngta bảo hơi cao 145/90
+ng,người,go_nhanh,ngủ|ngứa|ngực|ngọt,ng|người|ngươi,tự nhiên em thấy mệt mỏi rã rời hết cả ng từ chiều qua
+e,em,go_nhanh,vitamin e|e.coli,e|em,bs ơi e đang mang thai tuần thứ 12 bị cảm cúm có sao k
+a,anh,go_nhanh,vitamin a|axit|à|ạ,a|anh,chào bs a cho em hỏi bố em bị đau thắt lưng lan xuống chân
+c,chị,go_nhanh,vitamin c|viêm gan c|cô,c|chị|chi,bs ơi c gái em mới sinh mổ được 5 ngày mà vết mổ hơi rỉ dịch
+t,tôi,go_nhanh,tháng|tuần|thuốc,t|tui|tôi,mấy hôm nay t bị đau nhức răng hàm không ngủ nổi
+tui,tôi,teencode,túi|tủi|tụi,tui|t|tôi,bs ơi tui uống cà phê vào là tim đập nhanh hồi hộp lắm
+b,bạn,go_nhanh,viêm gan b|vitamin b,b|bn|bạn,hôm trước b có bảo uống men vi sinh sau kháng sinh 2 tiếng đúng k
+ck,chồng,teencode,chuyển khoản|chuyên khoa|chu kỳ,ck|chồng|chong,ck em dạo này hay bị đau tức hạ sườn phải sau khi uống bia
+vk,vợ,teencode,vũ khí|vô căn,vk|vợ|vo,vk em bầu 28 tuần đi test tiểu đường thai kỳ chỉ số hơi cao
+gd,gia đình,go_nhanh,giai đoạn|giám đốc|giao dịch,gd|gđ|giadinh|giađình,tiền sử gd em có bố và bác ruột đều bị tăng huyết áp
+ib,nhắn tin riêng,teencode,,ib|inbox,em đã ib gửi ảnh kết quả xét nghiệm máu cho bác sĩ rồi ạ
+rep,trả lời,teencode,rep này|rep đó|rep rồi,rep|reply,bác sĩ xem giúp em tin nhắn và rep giúp em với em đang lo quá
+tks,cảm ơn,teencode,,tks|thanks|tk|camon,dạ em hiểu cách dùng thuốc rồi tks bác sĩ nhiều ạ
+ak,ạ,teencode,,ak|ạ|a,em uống thuốc này buổi tối trước khi đi ngủ đúng k ak
+ah,ạ,teencode,à|hà,ah|ạ|ak,bác sĩ cho em hỏi vết thương khâu mấy ngày thì cắt chỉ ah
+uk,ừ,teencode,,uk|uh|ừ|uhm,dạ uk em sẽ theo dõi thêm nhiệt độ của bé trong đêm nay
+uh,ừ,teencode,,uh|uk|ừ|uhm,dạ uh hôm qua em có ăn đồ lạnh nên sáng nay mới đau bụng
+bik,biết,teencode,,bik|bit|bít|biết,em k bik mình bị đau ruột thừa hay chỉ đau bụng giun thông thường
+bit,biết,teencode,bít|bịt,bit|bik|bít|biết,làm sao để bit mình bị thiếu máu thiếu sắt hay thiếu canxi ạ
+hiu,hiểu,teencode,hiu hiu,hiu|hỉu|hiểu,bs giải thích rõ như vậy em đã hiu nguyên nhân gây bệnh rồi ạ
+nhma,nhưng mà,go_nhanh,,nhma|nhưngmà|nhg,em bôi thuốc mỡ 3 hôm rồi nhma nốt mẩn đỏ vẫn chưa lặn
+nhg,nhưng,go_nhanh,,nhg|nhma|nhưng,con em hết sốt rồi nhg vẫn biếng ăn và quấy khóc nhiều
+vsai,vệ sinh,go_nhanh,,vsai|vs|vesinh,sau khi đi tiểu em đều vsai sạch sẽ mà vẫn bị ngứa rát
+nc,nước,go_nhanh,nói chuyện|nghiên cứu|nâng cao,nc|nước|nuoc,mỗi ngày em uống hơn 2 lít nc mà vẫn thấy khô miệng khát nước
+nch,nói chuyện,go_nhanh,,nch|nc|noichuyen,em bị khàn tiếng mất giọng 4 ngày nay nch rất khó khăn
+trg,trong,go_nhanh,trường|trưởng|trứng,trg|trog|trong,trg đơn thuốc bác sĩ kê có 2 loại viên nang uống sáng chiều
+trog,trong,go_nhanh,,trog|trg|trong,em thấy có cục hạch nhỏ nổi lên ở trog vùng cổ bên trái
+trc,trước,go_nhanh,,trc|trước|truoc,thuốc dạ dày này uống trc ăn 30 phút hay uống sau ăn ạ
+dg,đang,go_nhanh,đường|đồng|đáng,dg|đg|dag|đag,em dg cho bé bú mẹ hoàn toàn thì có uống thuốc cảm cúm được k
+dag,đang,go_nhanh,,dag|đag|dg|đg,mẹ em dag điều trị thuốc loãng xương thì có uống thêm canxi được k
+lm,làm,go_nhanh,lâm|lầm|lắm,lm|làm|lam,bị thủy đậu kiêng gió kiêng nước như thế nào cho đúng lm ạ
+ns,nói,go_nhanh,nội soi|nghệ sĩ|năm sinh,ns|nói|noi,hôm qua đi siêu âm bác sĩ ns thai nhi phát triển bình thường ạ
+trogngay,trong ngày,go_nhanh,,trogngay|trongngày,tổng lượng thuốc bé uống trogngay không được vượt quá 4 gói đúng k bs
+hnay,hôm nay,go_nhanh,,hnay|hômnay|homnay,từ sáng hnay em thấy đau âm ỉ vùng hố chậu phải
+hqua,hôm qua,go_nhanh,,hqua|hômqua|homqua,bé nhà em bắt đầu sốt cao kèm ho có đờm từ tối hqua
+hkia,hôm kia,go_nhanh,,hkia|hômkia|homkia,em bị ngã trật cổ chân từ hkia mà nay vẫn sưng to
+nmai,ngày mai,go_nhanh,,nmai|ngaymai|ngàymai,nmai em đi nội soi dạ dày thì tối nay mấy giờ phải nhịn ăn ạ
+bh,bây giờ,go_nhanh,bảo hiểm|bệnh học|bão hòa,bh|bâygiờ|baygio|h,từ lúc uống thuốc tới bh là 2 tiếng rồi mà vẫn chưa giảm đau
+h,giờ,go_nhanh,huyết|họng|ho,h|giờ|gio,bé uống thuốc hạ sốt lúc 7 h tối thì mấy h được uống liều tiếp theo
+p,phút,go_nhanh,phổi|phân|phòng,p|ph|phút|phut,em bị đau thắt ngực trái khoảng 5 p rồi tự hết thì có nguy hiểm k
+ph,phút,go_nhanh,phổi|phân|phòng|phụ,ph|p|phút|phut,mỗi lần chạy bộ khoảng 15 ph là em lại thấy khó thở thở dốc
+thg,tháng,go_nhanh,thường|thẳng|thùng,thg|tháng|thang,kinh nguyệt của em 2 thg nay không đều hay bị chậm 10 ngày
+bsang,buổi sáng,go_nhanh,,bsang|buổisáng,em uống viên sắt và canxi cùng lúc vào bsang có giảm hấp thu k
+btrua,buổi trưa,go_nhanh,,btrua|buổitrưa,cứ tầm btrua nắng nóng là em lại bị đau đầu hoa mắt
+bchieu,buổi chiều,go_nhanh,,bchieu|buổichiều,bé nhà em cứ đến bchieu là lại hâm hấp sốt 37.9 độ
+btoi,buổi tối,go_nhanh,,btoi|buổitối,thuốc mỡ máu uống vào btoi sau bữa ăn hay trước khi ngủ ạ
+bth,bình thường,viet_tat,,bth|bthg|binhthuong|bìnhthường,nhịp tim lúc nghỉ ngơi của em đo được 78 lần/phút có bth k bs
+bthg,bình thường,go_nhanh,,bthg|bth|binhthuong,hôm nay bé ăn ngủ lại bthg rồi thì có cần uống hết đơn thuốc k ạ
+bt,bình thường,viet_tat,bài tập|bản thân|bác trai,bt|bth|bthg,kết quả xét nghiệm nước tiểu ghi âm tính hết là bt đúng k bác sĩ
+tc,triệu chứng,viet_tat,tài chính|tổ chức|tiêu chuẩn|tiểu cầu,tc|trieuchung|triệuchứng,em chỉ bị đau họng nhẹ chứ chưa có tc sốt hay khó thở
+tchung,triệu chứng,go_nhanh,,tchung|tc|triệuchứng,ngoài buồn nôn buổi sáng em không còn tchung gì khác ạ
+chieu,triệu chứng,sai_chinh_ta,chiều|chiếu|chiêu,chieu|chiệu|triệu,em hay bị chieu chứng tê bì đầu ngón tay lúc ngủ dậy
+xot,sốt,sai_chinh_ta,xót|xót xa,xot|xốt|sốt,từ tối qua con em bị xot cao liên tục uống thuốc không hạ
+hodom,ho có đờm,go_nhanh,,hodom|hođờm,bé hodom khò khè nhiều về đêm thì có nên dùng siro long đờm k
+xung,sưng,sai_chinh_ta,xung quanh|xung đột,xung|sưng,chân răng của em bị xung đỏ lên nhai cơm rất đau
+suong,xương,sai_chinh_ta,sương mù|hạt sương,suong|sương|xương,em bị ngã chống tay xuống đất giờ đau nhức ở cổ tay sợ nứt suong
+xuong,sương,sai_chinh_ta,xương khớp|xương sống,xuong|xương|sương,sáng sớm em đi thể dục dính xuong lạnh về là ho ngay
+xo,sơ,sai_chinh_ta,xơ gan|xơ vữa,xo|xơ|sơ,em mới bị bỏng nước sôi nhẹ chỉ phồng rộp xo ngoài da thôi ạ
+ngut,ngực,sai_chinh_ta,ngut này|ngut đó|ngut rồi,ngut|ngựt|ngực,mỗi lần hít sâu vào là em thấy nhói đau ở bên ngut trái
+ruoc,ruột,sai_chinh_ta,rước đèn|rước dâu,ruoc|ruộc|ruột,bác sĩ siêu âm bảo em bị viêm ruoc thừa giai đoạn sớm cần mổ
+thuot,thuốc,sai_chinh_ta,thướt tha,thuot|thuốt|thuốc,em uống hết vỉ thuot này rồi có cần mua thêm uống tiếp k bs
+tut,tức,sai_chinh_ta,tụt huyết áp|tụt đường,tut|tứt|tức,tối nằm ngủ em hay bị tut ngực khó thở phải kê cao gối
+chit,chích,sai_chinh_ta,chít khăn|chít eo,chit|chít|chích,bé nhà em mới đi chit mũi 6 trong 1 về chiều nay bị sốt nhẹ
+binh,bệnh,sai_chinh_ta,bình tĩnh|bình thường|cái bình,binh|bịnh|bệnh,em bị binh đau dạ dày mấy năm nay uống thuốc nam k đỡ
+nhut,nhức,sai_chinh_ta,nhút nhát,nhut|nhứt|nhức,mấy hôm nay trời lạnh răng hàm của em đau nhut buốt tận óc
+set,xét,sai_chinh_ta,sấm sét|sét đánh,set|sét|xét,em muốn đi set nghiệm máu kiểm tra chức năng gan thận ạ
+xat,sát,sai_chinh_ta,xát muối|cọ xát,xat|xát|sát,vết trầy ở chân em dùng cồn đỏ xat trùng được không bác sĩ
+trich,chích,sai_chinh_ta,trích dẫn|trích lục,trich|trích|chích,con em đến tháng đi trich ngừa vắc xin viêm não nhật bản ạ
+trung,chứng,sai_chinh_ta,trúng gió|trúng độc|tập trung,trung|trứng|chứng,uống thuốc huyết áp này có gây tác dụng phụ hay biến trung gì k bs
+chuyen,truyền,sai_chinh_ta,chuyện trò|di chuyển,chuyen|chuyền|truyền,mẹ em bị suy nhược cơ thể có nên vào viện chuyen đạm hoa quả k ạ
+tran,chán,sai_chinh_ta,tràn đầy|tràn dịch,tran|trán|chán,bé nhà em mấy ngày nay bị tran ăn bỏ bú ngủ li bì bác sĩ ơi
+chan,trán,sai_chinh_ta,chăn màn|chân tay,chan|chán|trán,em sờ thấy chan bé nóng hầm hập nhưng chân tay lại lạnh toát
+xai,sai,sai_chinh_ta,xài tiền|xài đồ,xai|sài|sai,em lỡ uống xai liều thuốc buổi sáng thành 2 viên thì có sao k
+sai,xài,sai_chinh_ta,sai lầm|sai sót,sai|sài|xài,tuýp thuốc bôi ngoài da này sai cho trẻ sơ sinh được không ạ
+siu,siêu,sai_chinh_ta,siu lòng,siu|siêu,em mới đi siu âm thai 12 tuần về mà chỉ số mờ da gáy hơi cao
+tiu,tiêu,sai_chinh_ta,tiu nghỉu,tiu|tiêu,bé ăn sữa công thức bị tiu chảy phân xanh có nên đổi sữa k ạ
+thiu,thiếu,sai_chinh_ta,thiu ngủ|cơm thiu,thiu|thiếu,em hay chóng mặt đi khám bác sĩ bảo bị thiu máu thiếu sắt
+soang,xoang,sai_chinh_ta,,soang|xoang,em bị viêm soang trán nên cứ nằm điều hòa là nhức giữa hai lông mày
+xay,sảy,sai_chinh_ta,xay sinh tố|xay thịt,xay|sảy|sẩy,bầu 3 tháng đầu ăn rau ngót có sợ bị xay thai không bác sĩ
+suat,xuất,sai_chinh_ta,suất ăn|công suất,suat|xuất,con em sốt cao 3 ngày nghi sốt suat huyết thì khi nào đi xét nghiệm máu
+chung,trứng,sai_chinh_ta,chung cư|nói chung,chung|trứng,em đi siêu âm canh ngày rụng chung mà niêm mạc tử cung hơi mỏng
+cho,trở,sai_chinh_ta,cho đi|cho về,cho|trở,bé uống thuốc 2 ngày rồi mà bệnh vẫn không đỡ còn cho nặng hơn
+chai,trái,sai_chinh_ta,chai lọ|chai nước,chai|trái,em hay bị đau nhói vùng ngực bên chai mỗi khi thức khuya làm việc
+che,trễ,sai_chinh_ta,che nắng|che mưa,che|trễ,tháng này em bị che kinh 5 ngày rồi thử que vẫn chưa thấy 2 vạch
+gian,dãn,sai_chinh_ta,thời gian|gian lận,gian|dãn|giãn,chân em nổi nhiều gân xanh ngoằn ngoèo như bị gian tĩnh mạch
+dan,giãn,sai_chinh_ta,dân cư|hướng dẫn,dan|giãn|dãn,em chơi cầu lông bị lật cổ chân bác sĩ bảo dan dây chằng nhẹ
+chuandoan,chẩn đoán,sai_chinh_ta,,chuandoan|chuẩnđoán|chẩnđoán,bác sĩ chuandoan em bị viêm dạ dày trào ngược cấp tính
+chuan,chẩn đoán,sai_chinh_ta,chuẩn xác|tiêu chuẩn,chuan|chuẩn|chẩn,kết quả siêu âm như vậy thì bác sĩ chuan bệnh gì cho em ạ
+ramau,ra máu âm đạo,go_nhanh,,ramau|ramáu,em đang mang thai 8 tuần tự nhiên bị ramau nâu ít ở quần lót
+dauvai,đau vai gáy,go_nhanh,,dauvai|đauvaigáy,em ngồi máy tính nhiều nên bị dauvai lan xuống cánh tay phải
+daulung,đau thắt lưng,go_nhanh,,daulung|đaulưng,mẹ em bị daulung cúi xuống rất khó khăn chụp phim bảo thoái hóa
+noiman,nổi mẩn đỏ,go_nhanh,,noiman|nổimẩn,da em tự nhiên bị noiman ngứa từng mảng ở lưng và bụng
+meday,nổi mề đay,go_nhanh,,meday|mềđay,em uống thuốc kháng sinh xong bị dị ứng nổi meday sưng cả môi
+bammau,bầm tím,go_nhanh,,bammau|bầmtím,tự nhiên ở đùi em xuất hiện vết bammau to dù không va đập vào đâu
+dd,dạ dày,viet_tat,di động|dinh dưỡng|đầy đủ,dd|daday|dạdày,em bị trào ngược dd thực quản uống thuốc mãi không khỏi hẳn
+dt,đại tràng,viet_tat,điện thoại|điều trị|doanh thu,dt|đt|daitrang|đạitràng,em bị viêm dt co thắt cứ ăn đồ tanh lạnh là đau bụng đi ngoài
+tnddq,trào ngược dạ dày thực quản,viet_tat,,tnddq|traonguoc|tràongược,em bị tnddq nên sáng dậy cổ họng lúc nào cũng nhiều đờm
+hp,vi khuẩn hp dạ dày,viet_tat,hạnh phúc|hải phòng|học phần,hp|h.p|vikhuânhp,em test hơi thở dương tính với hp thì có cần điều trị ngay k bs
+ha,huyết áp,viet_tat,hà|hạ|nhà|hả,ha|huyetap|huyếtáp,sáng nay mẹ em đo ha tại nhà thấy lên 160/100 mmHg
+tha,tăng huyết áp,viet_tat,tha thứ|thả|thà,tha|tanghuyetap|tănghuyếtáp,bố em bị tha 5 năm nay đang uống thuốc đều mỗi sáng
+tuitha,tụt huyết áp,go_nhanh,,tuitha|tụthuyếtáp|tutha,em hay bị tuitha vào buổi trưa làm chân tay bủn rủn vã mồ hôi
+dtd,đái tháo đường,viet_tat,diễn đàn|điện thoại di động,dtd|đtđ|dtđ|tieuduong,bác em bị dtd biến chứng sang mờ mắt và tê bì bàn chân
+dtdtk,đái tháo đường thai kỳ,viet_tat,,dtdtk|đtđtk|tieuduongthaiky,em bị dtdtk thì nên ăn kiêng tinh bột như thế nào để con vẫn tăng cân
+td,tiểu đường,viet_tat,tình dục|theo dõi|tác dụng|tự do,td|tđ|tieuduong|tiểuđường,mẹ em bị bệnh td nên vết xước ở chân rất lâu lành
+dh,đường huyết,viet_tat,đại học|đồng hồ|điều hòa,dh|đh|duonghuyet|đườnghuyết,sáng nay lúc đói em thử dh mao mạch được 7.2 mmol/L
+nmct,nhồi máu cơ tim,viet_tat,,nmct|nhoimaucotim|nhồimáucơtim,bố em từng đặt stent mạch vành sau cơn nmct cách đây 2 năm
+tbmmn,tai biến mạch máu não,viet_tat,,tbmmn|taibien|taibiến|độtquỵ,ông nội em bị tbmmn nhẹ liệt nửa người bên trái đang tập vật lý trị liệu
+bmv,bệnh mạch vành,viet_tat,,bmv|benhmachvanh|bệnhmạchvành,em đi khám tim mạch bác sĩ chẩn đoán thiếu máu cơ tim do bmv
+dtn,đau thắt ngực,viet_tat,doanh thu|điện thoại,dtn|đtn|dauthatnguc,mỗi khi gắng sức bố em hay có cơn dtn lan lên vai trái
+rln,rối loạn nhịp tim,viet_tat,,rln|rlnt|roiloannhiptim,em hay bị hồi hộp đánh trống ngực đi đo điện tim bảo rln
+suytm,suy giãn tĩnh mạch,viet_tat,,suytm|suytinhmach|suytĩnhmạch,em đứng bán hàng cả ngày nên bị suytm chân nổi gân xanh đau nhức
+sxh,sốt xuất huyết,viet_tat,,sxh|sốtxuấthuyết|sotxuathuyet,khu nhà em đang có dịch sxh mà con em sốt cao 2 ngày chưa hạ
+vgb,viêm gan b,viet_tat,,vgb|viemganb|viêmganb,em bị nhiễm vgb mạn tính nhưng men gan vẫn bình thường thì có phải uống thuốc k
+vgc,viêm gan c,viet_tat,,vgc|viemganc|viêmganc,bố em xét nghiệm dương tính vgc thì điều trị phác đồ mất bao lâu ạ
+gnm,gan nhiễm mỡ,viet_tat,,gnm|gannhiemmo|gannhiễmmỡ,em đi siêu âm bụng tổng quát bác sĩ bảo bị gnm độ 2
+mmm,máu nhiễm mỡ,viet_tat,,mmm|maunhiemmo|máunhiễmmỡ,kết quả xét nghiệm mỡ máu của em cao bị mmm thì kiêng ăn gì ạ
+vlt,viêm lộ tuyến,viet_tat,,vlt|vltctc|viemlotuyen,em đi khám phụ khoa bác sĩ bảo bị vlt cổ tử cung độ 2
+vpk,viêm phụ khoa,viet_tat,,vpk|viemphukhoa|viêmphụkhoa,em đang điều trị vpk bằng thuốc đặt âm đạo thì có quan hệ được k
+vad,viêm âm đạo,viet_tat,,vad|viemamdao|viêmâmđạo,em bị vad do nấm tái đi tái lại nhiều lần rất khó chịu
+btdn,buồng trứng đa nang,viet_tat,,btdn|btđn|pcos,em bị btdn kinh nguyệt thưa thì có khó có con tự nhiên không bác sĩ
+uxotc,u xơ tử cung,viet_tat,,uxotc|uxơtửcung,mẹ em siêu âm có nhân uxotc kích thước 35mm thì có cần mổ chưa ạ
+unangbt,u nang buồng trứng,viet_tat,,unangbt|unangbuồngtrứng,em đi khám phát hiện unangbt trái 4cm dạng nang nước lành tính
+tntc,thai ngoài tử cung,viet_tat,,tntc|tnut|thaingoaitucung,em trễ kinh đau bụng dưới một bên nên rất sợ bị tntc bác sĩ ạ
+tsg,tiền sản giật,viet_tat,,tsg|tiensangiat|tiềnsảngiật,em bầu 32 tuần bị phù chân và huyết áp cao có phải dấu hiệu tsg k
+dmdg,đo độ mờ da gáy,viet_tat,,dmdg|đmđg|domodagay,thai 12 tuần em đi dmdg kết quả 1.4mm như vậy là an toàn đúng k bs
+kcc,kỳ kinh cuối,viet_tat,,kcc|kinhcuoi|kỳkinhcuối,ngày đầu kcc của em là 15/10 thì nay thai được mấy tuần rồi ạ
+nds,ngày dự sinh,viet_tat,,nds|ngaydusinh|ngàydựsinh,siêu âm mốc 12 tuần và 22 tuần cho ra nds chênh nhau 4 ngày có sao k bs
+ivf,thụ tinh trong ống nghiệm,viet_tat,,ivf|i.v.f,vợ chồng em đang chuẩn bị làm ivf thì cần bổ sung vitamin gì trước ạ
+iui,bơm tinh trùng vào buồng tử cung,viet_tat,,iui|i.u.i,sau khi bơm iui 10 ngày em thử que lên 1 vạch đậm 1 vạch mờ
+tcm,tay chân miệng,viet_tat,,tcm|taychanmieng|taychânmiệng,lớp mầm non của bé có bạn bị tcm nay bé nhà em nổi mụn nước ở lòng bàn tay
+vtg,viêm tai giữa,viet_tat,,vtg|viemtaigiua|viêmtaigiữa,bé nhà em sau đợt sổ mũi giờ kêu đau tai khóc đêm sợ bị vtg quá
+vpq,viêm phế quản,viet_tat,,vpq|viemphequan|viêmphếquản,con em bị vpq thở khò khè bác sĩ kê khí dung ngày 2 lần
+vtpq,viêm tiểu phế quản,viet_tat,,vtpq|vtp|viemtieuphequan,bé 6 tháng tuổi bị vtpq thì chăm sóc tại nhà thế nào cho nhanh khỏi
+vphoi,viêm phổi,viet_tat,,vphoi|viêmphổi|viemphoi,trẻ bị vphoi nhẹ có nhất thiết phải nằm viện tiêm kháng sinh không ạ
+va,viêm vòm họng,viet_tat,và|vào|vả|vá|vạ,va|v.a|viemva,bé nhà em bị viêm va quá phát ngủ ngáy to và hay nghẹt mũi
+vmn,viêm màng não,viet_tat,,vmn|viemmangnao|viêmmàngnão,trẻ sốt cao đau đầu cứng gáy nôn vọt có phải biểu hiện của vmn k bs
+rlth,rối loạn tiêu hóa,viet_tat,,rlth|roiloantieuhoa|rốiloạntiêuhóa,bé uống kháng sinh xong bị rlth đi phân sống nhiều ngày
+rlkn,rối loạn kinh nguyệt,viet_tat,,rlkn|roiloankinhnguyet,sau khi ngừng thuốc tránh thai khẩn cấp em bị rlkn mất 2 tháng
+rltd,rối loạn tiền đình,viet_tat,,rltd|rltđ|roiloantiendinh,mẹ em bị rltd cứ thay đổi tư thế nằm là hoa mắt chóng mặt buồn nôn
+rlau,rối loạn lo âu,viet_tat,,rlau|roiloanloau,em hay hồi hộp khó thở về đêm đi khám tim bình thường bác sĩ bảo rlau
+tvdd,thoát vị đĩa đệm,viet_tat,,tvdd|tvđđ|thoatvidiadem,em bị tvdd cột sống thắt lưng l4 l5 đau lan xuống mông và đùi
+thcs,thoái hóa cột sống,viet_tat,,thcs|thoaihoacotsong,bố em bị thcs cổ nên hay tê mỏi hai cánh tay và đau đầu sau gáy
+tmh,tai mũi họng,viet_tat,,tmh|taimuihong|taimũihọng,em bị đau họng ù tai kéo dài thì nên đi khám chuyên khoa tmh đúng k ạ
+rhm,răng hàm mặt,viet_tat,,rhm|ranghammat|rănghàmmặt,em bị sưng lợi hàm dưới mọc răng khôn lệch thì khám khoa rhm ạ
+dl,da liễu,viet_tat,du lịch|dữ liệu|độc lập,dl|dalieu|daliễu,em bị viêm da tiếp xúc nổi mụn nước ở tay thì khám chuyên khoa dl ạ
+tk,thần kinh,viet_tat,tài khoản|thống kê|tìm kiếm|thai kỳ,tk|thankinh|thầnkinh,em hay bị đau nửa đầu mất ngủ kéo dài thì khám chuyên khoa tk đúng k bs
+cxk,cơ xương khớp,viet_tat,,cxk|coxuongkhop,mẹ em đau mỏi các khớp ngón tay buổi sáng thì đi khám khoa cxk đúng k
+yhct,y học cổ truyền,viet_tat,,yhct|dongy|đôngy,em bị đau vai gáy mạn tính muốn châm cứu bấm huyệt bên khoa yhct ạ
+phcn,phục hồi chức năng,viet_tat,,phcn|phuchoichucnang,sau khi tháo bột gãy tay thì bố em cần tập phcn bao lâu ạ
+skss,sức khỏe sinh sản,viet_tat,,skss|suckhoesinhsan,vợ chồng em chuẩn bị kết hôn muốn đi khám skss tiền hôn nhân ạ
+ksk,khám sức khỏe,viet_tat,,ksk|khamsuckhoe,em cần làm giấy ksk xin việc có xét nghiệm máu và chụp phổi ạ
+hsba,hồ sơ bệnh án,viet_tat,,hsba|hosobenhan,em muốn xin trích lục hsba đợt nằm viện tháng trước để làm bảo hiểm
+ub,ung bướu,viet_tat,ủy ban|uống bia,ub|ungbuou|ungbướu,kết quả siêu âm tuyến giáp tirads 4 thì em nên sang bệnh viện ub khám lại k
+kgiap,ung thư tuyến giáp,viet_tat,,kgiap|kgiáp|ktuyengiap,chị em mới phẫu thuật kgiap thể nhú xong thì kiêng ăn gì ạ
+kv,ung thư vú,viet_tat,khu vực|kỳ vọng|khám và,kv|kvu|kvú,mẹ em đi tầm soát kv phát hiện khối u nhỏ ở ngực trái
+kp,ung thư phổi,viet_tat,khám phá|khắc phục|không phải,kp|kphoi|kphổi,bác em bị kp giai đoạn 2 đang hóa trị tại bệnh viện k
+kdd,ung thư dạ dày,viet_tat,,kdd|kdaday|kdạdày,viêm loét dạ dày lâu năm có dễ biến chứng thành kdd không bác sĩ
+kdt,ung thư đại tràng,viet_tat,,kdt|kđt|kdaitrang,đi ngoài ra máu tươi kéo dài có phải dấu hiệu của kdt không ạ
+kctc,ung thư cổ tử cung,viet_tat,,kctc|kcotucung,em 28 tuổi đã quan hệ rồi thì có tiêm phòng vắc xin ngừa kctc được k
+ut,ung thư,viet_tat,út|ụt|uống thuốc,ut|ungthu|ungthư,chỉ số cea tăng nhẹ có chắc chắn là bị ut không bác sĩ
+phidaitlt,phì đại tuyến tiền liệt,viet_tat,,phidaitlt|phìđạitlt,bác em đi siêu âm kết luận phidaitlt lành tính 45g
+zona,zona thần kinh,viet_tat,,zona|giờileo,bố em bị đau rát một bên sườn và nổi mụn nước chùm như bị zona
+gut,bệnh gút,viet_tat,gút mắc|gút thắt,gut|gout|bệnhgút,chỉ số axit uric của chồng em lên 520 có phải bị gut rồi không ạ
+tri,bệnh trĩ,viet_tat,trí tuệ|vị trí|giá trị,tri|trĩ|benhtri,sau sinh em bị táo bón nặng nên giờ đi ngoài ra máu như bị tri
+viemda,viêm da cơ địa,go_nhanh,,viemda|viêmda,da tay em cứ khô nứt nẻ bong tróc vào mùa đông do viemda
+viemmui,viêm mũi dị ứng,go_nhanh,,viemmui|viêmmũi,sáng ngủ dậy em hay hắt hơi liên tục do viemmui thời tiết
+vangda,vàng da sơ sinh,go_nhanh,,vangda|vàngda,bé nhà em sinh được 5 ngày thấy mặt và ngực hơi vangda thì có cần chiếu đèn k
+tieudemnhieu,tiểu đêm nhiều lần,go_nhanh,,tieudemnhieu|tiểuđêmnhiều,bố em bị phì đại tuyến tiền liệt nên hay bị tieudemnhieu mất ngủ
+doasay,dọa sảy thai,go_nhanh,,doasay|dọasảy,em bầu 7 tuần bị đau bụng dưới và ra ít máu bác sĩ bảo doasay phải nghỉ ngơi
+viemtuy,viêm tụy cấp,go_nhanh,,viemtuy|viêmtụy,sau bữa nhậu bố em đau bụng dữ dội vùng thượng vị lan ra sau lưng đi khám bảo viemtuy
+viemruot,viêm ruột thừa,go_nhanh,,viemruot|viêmruột,đau âm ỉ quanh rốn rồi khu trú xuống hố chậu phải ấn vào đau nhói có phải viemruot thừa k
+ulanh,u lành tính,go_nhanh,,ulanh|ulành,kết quả sinh thiết của mẹ em là ulanh thì chỉ cần theo dõi định kỳ thôi đúng k ạ
+giamnhe,chăm sóc giảm nhẹ,go_nhanh,,giamnhe|giảmnhẹ,ông em tuổi cao sức yếu gia đình xin chuyển sang điều trị giamnhe tại nhà
+tamsoat,tầm soát ung thư,go_nhanh,,tamsoat|tầmsoát,em 35 tuổi muốn đi tamsoat tổng quát thì nên làm những danh mục nào trước ạ
+khamtongquat,khám sức khỏe tổng quát,go_nhanh,,khamtongquat|khámtổngquát,em định cuối tuần này đi khamtongquat thì có cần đặt lịch trước không ạ
+tuvan,tư vấn y tế,go_nhanh,,tuvan|tưvấn,cảm ơn bác sĩ đã nhiệt tình tuvan giúp em yên tâm hơn rất nhiều ạ
+henkham,đặt lịch hẹn khám,go_nhanh,,henkham|hẹnkhám,em muốn henkham trực tiếp với bác sĩ vào sáng thứ 7 tuần này được k ạ
+phongmach,phòng mạch tư,go_nhanh,,phongmach|phòngmạch,chiều nay bác sĩ có làm việc ở phongmach ngoài giờ không để em đưa bé qua
+tructuyen,khám trực tuyến,go_nhanh,,tructuyen|trựctuyến,nhà em ở xa nên muốn đăng ký khám tructuyen qua video với bác sĩ trước ạ
+capthuoc,kê đơn cấp thuốc,go_nhanh,,capthuoc|cấpthuốc,khám online xong thì bác sĩ có gửi đơn capthuoc để em ra nhà thuốc mua k ạ
+locmau,lọc máu chạy thận,go_nhanh,,locmau|lọcmáu,người bị suy thận giai đoạn cuối thì một tuần phải đi locmau mấy lần ạ
+xuathuyet,xuất huyết dạ dày,go_nhanh,,xuathuyet|xuấthuyết,đi ngoài phân đen sệt như bã cà phê có phải dấu hiệu của xuathuyet tiêu hóa k bs
+copd,bệnh phổi tắc nghẽn mạn tính,viet_tat,,copd|c.o.p.d,ông em bị copd cứ mùa lạnh lại khó thở phải nhập viện thở máy
+covid,bệnh covid-19,viet_tat,,covid|covid19|ncov,em test lên 2 vạch covid đau rát họng thì uống thuốc gì cho nhanh âm tính ạ
+haucovid,hậu covid-19,viet_tat,,haucovid|hậucovid,từ đợt khỏi bệnh tới giờ em vẫn hay bị hụt hơi mất ngủ như triệu chứng haucovid
+uonvan,tiêm phòng uốn ván,go_nhanh,,uonvan|uốnván,em dẫm phải đinh gỉ chảy máu thì có cần đi tiêm huyết thanh ngừa uonvan ngay k
+chodai,tiêm phòng dại,go_nhanh,,chodai|chódại,em bị chó nhà hàng xóm cắn xước da chảy máu nhẹ thì có phải đi tiêm ngừa chodai k
+ngodoc,ngộ độc thực phẩm,go_nhanh,,ngodoc|ngộđộc,cả nhà em ăn hải sản xong đều đau bụng nôn ói tiêu chảy chắc bị ngodoc rồi
+thaybang,thay băng vết thương,go_nhanh,,thaybang|thaybăng,em tự thaybang sát trùng vết mổ ở nhà bằng dung dịch povidine được k bác sĩ
+suchong,súc họng nước muối,go_nhanh,,suchong|súchọng,mỗi tối trước khi đi ngủ em đều suchong nước muối ấm để phòng viêm họng
+trilieu,vật lý trị liệu,go_nhanh,,trilieu|trịliệu,em bị thoát vị đĩa đệm thì nên tập vật lý trilieu ở đâu tốt ạ
+bunuoc,bù nước điện giải,go_nhanh,,bunuoc|bùnước,bé bị sốt cao ra nhiều mồ hôi thì cần cho con uống bunuoc liên tục
+xn,xét nghiệm,viet_tat,xác nhận|xuất nhập|xin nghỉ,xn|xnghiem|xétnghiệm,sáng mai em đi xn máu tổng quát thì có được uống nước lọc k ạ
+xnm,xét nghiệm máu,viet_tat,,xnm|xetnghiemmau|xétnghiệmmáu,em mới làm xnm thấy chỉ số bạch cầu hơi cao một chút
+ctm,công thức máu,viet_tat,,ctm|congthucmau|côngthứcmáu,bác sĩ đọc giúp em tờ kết quả ctm của bé nhà em với ạ
+tptnt,tổng phân tích nước tiểu,viet_tat,,tptnt|xetnghiemnuoctieu,em đi khám thai làm tptnt thấy ghi bạch cầu niệu dương tính
+sa,siêu âm,viet_tat,sa ngã|sa sút|sa lưới|sa đọa,sa|sâ|sieuam|siêuâm,em đau bụng dưới bên phải đi sa ổ bụng nhưng chưa thấy bất thường
+sa4d,siêu âm 4d,viet_tat,,sa4d|sâ4d|sieuam4d,thai được 22 tuần em đi sa4d kiểm tra dị tật thai nhi được chưa bs
+xq,x-quang,viet_tat,,xq|xquang|x-quang,bé bị ho nhiều đi chụp xq phổi có ảnh hưởng gì tới sức khỏe k ạ
+ct,chụp cắt lớp vi tính,viet_tat,công ty|chương trình|cơ thể|cấu tạo,ct|ctscanner|catlop,bác sĩ chỉ định cho bố em chụp ct sọ não để kiểm tra đột quỵ
+mri,chụp cộng hưởng từ,viet_tat,,mri|cộnghưởngtừ,em bị đau lưng lan xuống chân chụp mri cột sống có đắt không ạ
+nsdd,nội soi dạ dày,viet_tat,,nsdd|nsdạdày|noisoidaday,trước khi đi nsdd buổi sáng thì tối hôm trước ăn cháo loãng được k ạ
+nsdt,nội soi đại tràng,viet_tat,,nsdt|nsđt|noisoidaitrang,uống thuốc xổ làm sạch ruột trước khi nsdt mất khoảng mấy tiếng ạ
+ecg,điện tâm đồ,viet_tat,,ecg|dientamdo|điệntâmđồ,em hay bị nhói tim đi đo ecg lúc không đau thì có phát hiện bệnh k
+bc,bạch cầu,viet_tat,báo cáo|bên cạnh|bằng chứng,bc|wbc|bachcau|bạchcầu,chỉ số bc trong máu của con em tăng lên 15 nghìn có phải nhiễm khuẩn k
+hc,hồng cầu,viet_tat,hành chính|hoàn cảnh|hạn chế,hc|rbc|hongcau|hồngcầu,em bị thiếu máu nhẹ chỉ số hc thấp hơn mức bình thường một chút
+tcau,tiểu cầu,viet_tat,,tcau|plt|tieucau|tiểucầu,con em bị sốt xuất huyết ngày thứ 4 xét nghiệm tcau giảm còn 95
+hba1c,chỉ số đường huyết trung bình hba1c,viet_tat,,hba1c|a1c|hb1ac,bố em xét nghiệm hba1c là 6.8% thì đã bị tiểu đường chưa bác sĩ
+ast,chỉ số men gan ast,viet_tat,,ast|sgot|got,kết quả xét nghiệm máu của em có chỉ số ast tăng gấp đôi bình thường
+alt,chỉ số men gan alt,viet_tat,,alt|sgpt|gpt,em hay uống bia nên đi kiểm tra thấy men gan alt lên tới 110
+ggt,chỉ số men gan ggt,viet_tat,,ggt|g.g.t,chỉ số ggt của chồng em cao 180 thì uống thuốc giải độc gan nào tốt ạ
+cre,chỉ số chức năng thận creatinin,viet_tat,,cre|creatinin|creatinine,em xét nghiệm máu thấy chỉ số cre hơi nhích nhẹ có phải suy thận k
+crp,chỉ số viêm crp,viet_tat,,crp|hscrp,bé sốt cao xét nghiệm máu thấy crp tăng cao bác sĩ kê kháng sinh
+tsh,hormone tuyến giáp tsh,viet_tat,,tsh|t.s.h,em đang uống thuốc suy giáp đi xét nghiệm lại thấy tsh về mức 2.1
+ft4,hormone tuyến giáp ft4,viet_tat,,ft4|f-t4,kết quả xét nghiệm tuyến giáp của em có tsh thấp nhưng ft4 vẫn bình thường
+nipt,xét nghiệm sàng lọc trước sinh nipt,viet_tat,,nipt|n.i.p.t,thai 10 tuần em làm xét nghiệm nipt thì bao lâu có kết quả ạ
+betahcg,xét nghiệm máu beta hcg,viet_tat,,betahcg|hcg,chỉ số betahcg của em là 450 mIU/mL thì thai đã vào buồng tử cung chưa bác sĩ
+kq,kết quả,viet_tat,không khí|khách quan,kq|ketqua|kếtquả,em gửi ảnh tờ kq xét nghiệm máu bác sĩ xem giúp em với ạ
+cs,chỉ số,viet_tat,cơ sở|cuộc sống|cảnh sát,cs|chiso|chỉsố,trong bảng xét nghiệm có mấy cs in đậm là bất thường đúng k bs
+dtinh,dương tính,viet_tat,,dtinh|dươngtính,em test cúm a tại nhà lên 2 vạch dtinh thì cần uống tamiflu k ạ
+atinh,âm tính,viet_tat,,atinh|âmtính,em xét nghiệm viêm gan b cho kết quả hbsag atinh là chưa mắc bệnh đúng k
+spo2,nồng độ oxy trong máu,viet_tat,,spo2|sp02,bà em bị khó thở em kẹp máy đo spo2 thấy báo 93% có cần thở oxy k
+ks,thuốc kháng sinh,viet_tat,khách sạn|kỹ sư|khảo sát|kiểm soát,ks|khangsinh|khángsinh,bé bị viêm họng do vi rút thì có cần phải uống ks không bác sĩ
+kht,thuốc kháng histamin,viet_tat,,kht|khanghistamin|chốngdịứng,em bị nổi mề đay uống thuốc kht có gây buồn ngủ nhiều không ạ
+giamdau,thuốc giảm đau,go_nhanh,,giamdau|giảmdau,đau răng khôn quá em uống viên giamdau sủi có hại dạ dày k bs
+hasot,thuốc hạ sốt,go_nhanh,,hasot|hạsốt,bé sốt 38.2 độ thì đã cần uống thuốc hasot chưa hay chỉ lau mát ạ
+mvs,men vi sinh,viet_tat,,mvs|menvisinh,em uống mvs cùng lúc với kháng sinh hay phải uống cách ra 2 tiếng ạ
+mth,men tiêu hóa,viet_tat,,mth|mentieuhoa,bé biếng ăn chậm tiêu em bổ sung mth cho con liên tục 1 tháng được k
+tpcn,thực phẩm chức năng,viet_tat,,tpcn|thucphamchucnang,mẹ em đang uống thuốc huyết áp thì dùng thêm tpcn bổ não được k ạ
+vit,vitamin,viet_tat,vịt|vít,vit|vitamin,bầu 3 tháng đầu em nên uống tổng hợp vit nào để đỡ nghén ạ
+para,thuốc giảm đau hạ sốt paracetamol,viet_tat,,para|paracetamol|panadol,người lớn sốt cao thì mỗi lần uống 1 viên para 500mg cách nhau mấy tiếng
+effe,thuốc sủi hạ sốt efferalgan,viet_tat,,effe|efferalgan,em pha 1 viên sủi effe 500mg uống lúc đói có bị xót ruột không ạ
+ibu,thuốc hạ sốt kháng viêm ibuprofen,viet_tat,,ibu|ibuprofen,bé sốt cao uống paracetamol không hạ em cho uống xen kẽ ibu được k bs
+medrol,thuốc kháng viêm medrol,viet_tat,,medrol|methylprednisolone,bác sĩ kê cho em uống medrol 16mg buổi sáng sau ăn để giảm phù nề
+amox,thuốc kháng sinh amoxicillin,viet_tat,,amox|amoxicillin,em bị viêm amidan uống kháng sinh amox 500mg ngày 2 lần được k ạ
+aug,thuốc kháng sinh augmentin,viet_tat,,aug|augmentin,bé 15kg uống gói kháng sinh aug 500mg ngày mấy gói vậy bác sĩ
+ome,thuốc dạ dày omeprazole,viet_tat,,ome|omeprazole|omeprazol,viên dạ dày ome uống vào buổi sáng trước khi ăn sáng 30 phút đúng k ạ
+phospha,thuốc dạ dày chữ p phosphalugel,viet_tat,,phospha|phosphalugel|thuocchup,lúc đang đau rát thượng vị em uống ngay 1 gói phospha cho dịu được k
+oresol,dung dịch bù nước oresol,viet_tat,,oresol|orizon,bé bị tiêu chảy nhưng không chịu uống oresol thì thay bằng nước gì được ạ
+nacl,nước muối sinh lý,viet_tat,,nacl|nuocmuoisinhly|nacl0.9%,hằng ngày em nhỏ mũi cho bé bằng lọ nacl 0.9% để vệ sinh mũi họng
+tdp,tác dụng phụ,viet_tat,,tdp|tacdungphu|tácdụngphụ,em uống thuốc kháng sinh xong bị tiêu chảy nhẹ có phải do tdp của thuốc k
+pt,phẫu thuật,viet_tat,phát triển|phương tiện|phụ thuộc,pt|phauthuat|phẫuthuat,u xơ tử cung kích thước bao nhiêu thì bác sĩ chỉ định pt mổ ạ
+vx,vắc xin,viet_tat,,vx|vacxin|văcxin|vaccine,bé nhà em đang bị ho sổ mũi nhẹ thì có đi tiêm vx 6 trong 1 được k bs
+bhyt,bảo hiểm y tế,viet_tat,,bhyt|baohiemyte|bảohiểmytế,em đi khám trái tuyến ở bệnh viện tỉnh thì có được hưởng bhyt không ạ
+kcb,khám chữa bệnh,viet_tat,,kcb|khamchuabenh,thẻ bảo hiểm y tế của em đăng ký kcb ban đầu ở trạm y tế phường
+cccd,căn cước công dân,viet_tat,,cccd|cancuoc|cmt,giờ đi khám bảo hiểm y tế chỉ cần mang theo cccd gắn chip thôi đúng k bs
+toa,đơn thuốc,viet_tat,tòa|tỏa|tọa,toa|toathuoc|đơnthuốc,em chụp ảnh toa thuốc cũ bác sĩ kê tháng trước cho em xem lại nhé
+lieu,liều lượng,go_nhanh,liệu|lều|liều lĩnh,lieu|liều|lieuluong,bs tính giúp em lieu uống kháng sinh theo cân nặng của bé 14kg với ạ
+nhon,nhờn thuốc,go_nhanh,nhọn|nhộn|nhơn,nhon|nhờn|nhờnthuốc,tự ý mua kháng sinh uống vài ngày rồi ngưng có sợ bị nhon thuốc k
+1v,1 viên,go_nhanh,,1v|mộtviên,mỗi lần uống 1v vào buổi sáng sau khi ăn no đúng không bác sĩ
+2v,2 viên,go_nhanh,,2v|haiviên,liều dùng của người lớn là ngày uống 2 lần mỗi lần 2v ạ
+1g,1 gói,go_nhanh,,1g|mộtgói,mỗi lần bé sốt trên 38.5 độ thì em pha cho con uống 1g hạ sốt ạ
+sauan,sau khi ăn,go_nhanh,,sauan|sauăn,viên giảm đau kháng viêm này bắt buộc phải uống sauan no đúng k ạ
+trcan,trước khi ăn,go_nhanh,,trcan|trướcăn,thuốc bảo vệ niêm mạc dạ dày uống trcan 30 phút để tráng ruột phải k bs
+khancap,thuốc tránh thai khẩn cấp,go_nhanh,,khancap|khẩncấp,em uống viên khancap xong bị buồn nôn và ra máu lấm tấm có sao k bs
+siro,siro ho,go_nhanh,,siro|siroho,bé 1 tuổi bị ho đờm thì uống siro thảo dược loại nào lành tính ạ

@@ -1,0 +1,351 @@
+viet_tat,day_du,khong_mo_rong,bien_the_go
+gd1,giai đoạn 1,,gd1|gđ1|gd 1|gđ 1|giaidoan1
+gd2,giai đoạn 2,,gd2|gđ2|gd 2|gđ 2|giaidoan2
+gd3,giai đoạn 3,,gd3|gđ3|gd 3|gđ 3|giaidoan3
+gd4,giai đoạn 4,,gd4|gđ4|gd 4|gđ 4|giaidoan4
+gdc,giai đoạn cuối,,gdc|gđc|gdcuoi|gđcuối
+tnm,phân loại giai đoạn ung thư tnm,,tnm|t.n.m
+ht,hóa trị,hệ thống|hỗ trợ|hoàn thành|hiện tại,ht|hoatri|hóatrị|h.t
+xt,xạ trị,xét|xem|xuất|xác thực,xt|xatri|xạtrị|x.t
+hxt,hóa xạ trị,,hxt|hoaxatri|hóaxạtrị
+dtdich,điều trị đích,,dtdich|đtđích|dtđích|đtdich
+dtmd,điều trị miễn dịch,,dtmd|đtmd|đtmđ|dtmđ
+csgn,chăm sóc giảm nhẹ,,csgn|chamsocgiamnhe
+dican,di căn,,dican|dicăn|di_can
+dcxuong,di căn xương,,dcxuong|dcxương|đcxương
+dcgan,di căn gan,,dcgan|đcgan
+dcphoi,di căn phổi,,dcphoi|dcphổi|đcphổi
+dchnao,di căn não,,dchnao|dcnão|dcnao
+dchach,di căn hạch,,dchach|dchạch|đchạch
+taiphat,tái phát,,taiphat|táiphát
+ulanh,u lành tính,,ulanh|ulành
+uac,u ác tính,,uac|uác
+uxo,u xơ,,uxo|uxơ
+unang,u nang,,unang|u_nang
+umau,u máu,,umau|umáu
+umo,u mỡ,,umo|umỡ
+kgiap,ung thư tuyến giáp,,kgiap|kgiáp|ktuyengiap|ktuyếngiáp
+kv,ung thư vú,khu vực|kỳ vọng|khám và,kv|kvu|kvú
+kp,ung thư phổi,khám phá|khắc phục|không phải,kp|kphoi|kphổi
+kgan,ung thư gan,,kgan|k_gan
+kdd,ung thư dạ dày,,kdd|kdaday|kdạdày
+kdt,ung thư đại tràng,,kdt|kđt|kdaitrang|kđạitràng
+ktt,ung thư trực tràng,,ktt|ktructrang|ktrựctràng
+kctc,ung thư cổ tử cung,,kctc|kcotucung|kcổtửcung
+kvh,ung thư vòm họng,,kvh|kvomhong|kvòmhọng
+ktlt,ung thư tuyến tiền liệt,,ktlt|ktuyentienliet
+kbm,ung thư biểu mô,,kbm|kbieumo|kbiểumô
+afp,chỉ số dấu ấn ung thư gan afp,,afp|a.f.p
+cea,chỉ số dấu ấn ung thư tiêu hóa cea,,cea|c.e.a
+ca125,chỉ số dấu ấn ung thư buồng trứng ca 125,,ca125|ca-125|ca_125
+ca153,chỉ số dấu ấn ung thư vú ca 15-3,,ca153|ca15-3|ca15.3
+ca199,chỉ số dấu ấn ung thư tụy mật ca 19-9,,ca199|ca19-9|ca19.9
+ca724,chỉ số dấu ấn ung thư dạ dày ca 72-4,,ca724|ca72-4|ca72.4
+psa,chỉ số dấu ấn ung thư tuyến tiền liệt psa,,psa|p.s.a
+fpsa,chỉ số psa tự do,,fpsa|f-psa|freepsa
+cyfra211,chỉ số dấu ấn ung thư phổi cyfra 21-1,,cyfra211|cyfra21-1|cyfra
+nse,chỉ số dấu ấn ung thư phổi nse,,nse|n.s.e
+scc,chỉ số dấu ấn ung thư biểu mô vảy scc,,scc|s.c.c
+fna,chọc hút tế bào bằng kim nhỏ,,fna|f.n.a
+gpb,giải phẫu bệnh,,gpb|giaiphaubenh
+petct,chụp cắt lớp phát xạ positron pet/ct,,petct|pet-ct|pet/ct
+hatt,huyết áp tâm thu,,hatt|hatâmthu|huyetaptamthu
+hattr,huyết áp tâm trương,,hattr|hatâmtrương|huyetaptamtruong
+hakep,huyết áp kẹp,,hakep|hakẹp
+hacao,huyết áp cao,,hacao|huyetapcao
+hathap,huyết áp thấp,,hathap|hathấp|huyetapthap
+tdha,theo dõi huyết áp,,tdha|tdhuyếtáp
+holterha,đo huyết áp liên tục 24 giờ,,holterha|holterhuyếtáp
+thatt,tăng huyết áp tâm thu,,thatt|thátâmthu
+thavk,tăng huyết áp vô căn,,thavk|thávôcăn
+thatk,tăng huyết áp thai kỳ,,thatk|tháthaikỳ
+st,suy tim,số thứ tự|sưu tầm|sáng tác|sư tử,st|suytim
+stm,suy tim mạn tính,,stm|suytimman|suytimmạn
+stc,suy tim cấp tính,,stc|suytimcap|suytimcấp
+ef,phân suất tống máu thất trái,,ef|lvef|e.f
+bmv,bệnh mạch vành,,bmv|benhmachvanh|bệnhmạchvành
+tmcb,thiếu máu cục bộ,,tmcb|thieumaucucbo
+tmcbct,thiếu máu cục bộ cơ tim,,tmcbct|thieumaucucbocotim
+dtn,đau thắt ngực,doanh thu|điện thoại,dtn|đtn|dauthatnguc|đauthắtngực
+nmnao,nhồi máu não,,nmnao|nmnão|nhoimaunao
+xhnao,xuất huyết não,,xhnao|xhnão|xuathuyetnao
+dmv,động mạch vành,,dmv|đmv|đmvd|dongmachvanh
+dmc,động mạch chủ,,dmc|đmc|dongmachchu
+dmp,động mạch phổi,,dmp|đmp|dongmachphoi
+dmcanh,động mạch cảnh,,dmcanh|đmcảnh|dongmachcanh
+tmc,tĩnh mạch chủ,thương mại,tmc|tinhmachchu
+suytm,suy giãn tĩnh mạch,,suytm|suytĩnhmạch|suygiantinhmach
+hktm,huyết khối tĩnh mạch sâu,,hktm|dvt|huyetkhoitinhmach
+hohl,hở van hai lá,,hohl|hởhl|hovanhaila
+hephl,hẹp van hai lá,,hephl|hẹphl|hepvanhaila
+hobl,hở van ba lá,,hobl|hởbl|hovanbala
+hepbl,hẹp van ba lá,,hepbl|hẹpbl|hepvanbala
+hodmc,hở van động mạch chủ,,hodmc|hởđmc|hovandongmachchu
+hepdmc,hẹp van động mạch chủ,,hepdmc|hẹpđmc|hepvandongmachchu
+hodmp,hở van động mạch phổi,,hodmp|hởđmp|hovandongmachphoi
+saivan,sa van hai lá,,saivan|savanhaila
+timbs,tim bẩm sinh,,timbs|timbẩmsinh|timbamsinh
+tlt,thông liên thất,,tlt|thonglienthat|thôngliênthất
+tln,thông liên nhĩ,,tln|thongliennhi|thôngliênnhĩ
+rn,rung nhĩ,rất nhiều|ra ngoài,rn|rungnhi|rungnhĩ
+rln,rối loạn nhịp tim,,rln|rlnt|roiloannhip
+ntt,ngoại tâm thu,nhắn tin|nội thất,ntt|ngoaitamthu|ngoạitâmthu
+nttthat,ngoại tâm thu thất,,nttthat|nttthất
+nttnhi,ngoại tâm thu nhĩ,,nttnhi|nttnhĩ
+blav,block nhĩ thất,,blav|blocknhithat|blốcnhĩthất
+ecg,điện tâm đồ,,ecg|e.c.g|dientamdo
+holterecg,đo điện tâm đồ liên tục 24 giờ,,holterecg|holterđiện_tim
+datstent,đặt giá đỡ stent mạch vành,,datstent|đặtstent|stentmv
+nongmv,nong động mạch vành,,nongmv|nongmạchvành
+pci,can thiệp động mạch vành qua da,,pci|canthiepmv|canthiệpmạchvành
+cabg,phẫu thuật bắc cầu động mạch vành,,cabg|baccaumv|bắccầumạchvành
+dtd1,đái tháo đường tuýp 1,,dtd1|đtđ1|dtđ1|đtd1|t1d
+dtd2,đái tháo đường tuýp 2,,dtd2|đtđ2|dtđ2|đtd2|t2d
+dtdtk,đái tháo đường thai kỳ,,dtdtk|đtđtk|dtđtk|đtdtk
+tdtd,tiền đái tháo đường,,tdtd|tđtđ|tiendtd|tiềnđtđ
+dh,đường huyết,đại học|đồng hồ|đơn hàng|điều hòa,dh|đh|duonghuyet|đườnghuyết
+dhdoi,đường huyết lúc đói,,dhdoi|đhđói|dhđói|đhdoi
+dhsauan,đường huyết sau ăn,,dhsauan|đhsauăn|dhsauăn
+hba1c,chỉ số đường huyết trung bình hba1c,,hba1c|a1c|hb1ac|hba1c%
+hadh,hạ đường huyết,,hadh|hạđh|haduonghuyet|hạđườnghuyết
+tangdh,tăng đường huyết,,tangdh|tăngđh|tangduonghuyet
+khanginsulin,kháng insulin,,khanginsulin|khánginsulin
+bctd,biến chứng tiểu đường,,bctd|bctđ|bienchungtieuduong
+bctkdt,biến chứng thần kinh đái tháo đường,,bctkdt|bctkđt
+ogtt,nghiệm pháp dung nạp glucose đường uống,,ogtt|nghiemphapduonghuyet
+toanxeton,nhiễm toan ceton đái tháo đường,,toanxeton|toanceton|dka
+tgiap,tuyến giáp,,tgiap|tuyengiap|tuyếngiáp
+cuonggiap,cường tuyến giáp,,cuonggiap|cườnggiáp
+suygiap,suy tuyến giáp,,suygiap|suygiáp
+basedow,bệnh cường giáp basedow,,basedow|bado|bazơđô|basedo
+viemgiap,viêm tuyến giáp,,viemgiap|viêmgiáp
+hashimoto,viêm tuyến giáp mạn tính hashimoto,,hashimoto|hasimoto
+nhangiap,nhân tuyến giáp,,nhangiap|nhângiáp
+buougiap,bướu tuyến giáp,,buougiap|bướugiáp
+buouco,bướu cổ đơn thuần,,buouco|bướucổ
+nanggiap,nang tuyến giáp,,nanggiap|nanggiáp
+suygiapdk,suy giáp dưới lâm sàng,,suygiapdk|suygiápdls
+cattgiap,phẫu thuật cắt tuyến giáp,,cattgiap|cắttuyếngiáp
+iodpx,điều trị i-ốt phóng xạ,,iodpx|i131|iotphongxa
+tirads,phân loại nguy cơ nhân tuyến giáp ti-rads,,tirads|ti-rads|tirad
+tsh,hormone kích thích tuyến giáp tsh,,tsh|t.s.h
+ft3,hormone tuyến giáp tự do ft3,,ft3|f-t3|free_t3
+ft4,hormone tuyến giáp tự do ft4,,ft4|f-t4|free_t4
+t3,hormone tuyến giáp t3,thứ 3|tầng 3|tháng 3,t3|t-3
+t4,hormone tuyến giáp t4,thứ 4|tầng 4|tháng 4,t4|t-4
+antitpo,kháng thể kháng tuyến giáp anti-tpo,,antitpo|anti-tpo|tpoab
+trab,kháng thể thụ thể tsh trab,,trab|t-rab
+tg_hormone,chỉ số thyroglobulin tuyến giáp,,tg_hormone|thyroglobulin
+cortisol,hormone tuyến thượng thận cortisol,,cortisol|cortison
+acth,hormone kích thích vỏ thượng thận acth,,acth|a.c.t.h
+gh,hormone tăng trưởng gh,giao hàng|giới hạn|gian hàng,gh|g.h
+igf1,yếu tố tăng trưởng giống insulin igf-1,,igf1|igf-1
+prl,hormone tiết sữa prolactin,,prl|prolactin
+fsh,hormone kích thích nang trứng fsh,,fsh|f.s.h
+lh,hormone tạo hoàng thể lh,liên hệ|lớp học|lịch hẹn,lh|l.h
+e2,hormone nội tiết nữ estradiol,,e2|estradiol
+prog,hormone nội tiết progesteron,,prog|progesteron|progesterone
+testo,hormone sinh dục nam testosteron,,testo|testosteron|testosterone
+amh,chỉ số dự trữ buồng trứng amh,,amh|a.m.h
+pth,hormone tuyến cận giáp pth,phụ thuộc|phát triển,pth|p.t.h
+hcch,hội chứng chuyển hóa,,hcch|hoichungchuyenhoa
+thaiky,thai kỳ,,thaiky|thaikỳ
+kcc,ngày đầu kỳ kinh cuối cùng,,kcc|kinhcuoicung|kỳkinhcuối
+nds,ngày dự sinh,,nds|ngaydusinh|ngàydựsinh
+ivf,thụ tinh trong ống nghiệm,,ivf|i.v.f
+iui,bơm tinh trùng vào buồng tử cung,,iui|i.u.i
+htss,hỗ trợ sinh sản,,htss|hotrosinhsan
+tntc,thai ngoài tử cung,,tntc|tnut|thaingoaitucung
+thailuu,thai lưu,,thailuu|thailưu
+thaitrung,thai trứng,,thaitrung|thaitrứng
+songthai,song thai,,songthai|dathai|đathai
+thieuoi,thiểu ối,,thieuoi|thiểuối
+daoi,đa ối,,daoi|đaối
+vooi,vỡ ối sớm,,vooi|vỡối
+rautiendao,nhau tiền đạo,,rautiendao|nhautiendao|nhautiềnđạo
+raubongnon,nhau bong non,,raubongnon|nhaubongnon
+suythai,suy thai,,suythai|suy_thai
+sinhnon,sinh non,,sinhnon|denon|đẻnon
+sinhthuong,sinh thường,,sinhthuong|sinhthường|đẻthường
+sinhmo,sinh mổ,,sinhmo|sinhmổ|đẻmổ
+mlt,mổ lấy thai,,mlt|molaythai|mổlấythai
+cdd,chuyển dạ đẻ,cộng đồng|cân đối,cdd|cđđ|chuyenda
+ktcd,kích thích chuyển dạ,,ktcd|kichthichchuyenda
+sausinh,giai đoạn sau sinh,,sausinh|hậusản|hausan
+saythai,sảy thai,,saythai|sảythai|sẩythai
+doasay,dọa sảy thai,,doasay|dọasảy|doasaythai
+saythailt,sảy thai liên tiếp,,saythailt|sảythailiêntiếp
+tsg,tiền sản giật,,tsg|tiensangiat|tiềnsảngiật
+sg,sản giật,sài gòn|số giờ|sẵn sàng,sg|sangiat|sảngiật
+ndtk,nhiễm độc thai nghén,,ndtk|nhiemdocthainghen
+hellp,hội chứng tiền sản giật nặng hellp,,hellp|hộichứnghellp
+sa2d,siêu âm thai 2d,,sa2d|sâ2d|sieuam2d
+sa4d,siêu âm thai 4d,,sa4d|sâ4d|sieuam4d
+sa5d,siêu âm thai 5d,,sa5d|sâ5d|sieuam5d
+sadoppler,siêu âm doppler mạch máu thai,,sadoppler|sâdoppler|sieuamdoppler
+sadau,siêu âm đầu dò âm đạo,,sadau|sâđầudò|sieuamdaudo
+dmdg,đo độ mờ da gáy,,dmdg|đmđg|domodagay|độ mờ da gáy
+sahinhthai,siêu âm hình thái học thai nhi,,sahinhthai|sâhìnhthái
+nipt,xét nghiệm sàng lọc trước sinh không xâm lấn nipt,,nipt|n.i.p.t
+doubletest,xét nghiệm sàng lọc trước sinh double test,,doubletest|double-test
+tripletest,xét nghiệm sàng lọc trước sinh triple test,,tripletest|triple-test
+chocoi,chọc ối xét nghiệm di truyền,,chocoi|chọcối
+ctg,đo nhịp tim thai và cơn co tử cung ctg,,ctg|c.t.g
+vltctc,viêm lộ tuyến cổ tử cung,,vltctc|viemlotuyen|viêmlộtuyến
+vad,viêm âm đạo,,vad|viemamdao|viêmâmđạo
+vpk,viêm phụ khoa,,vpk|viemphukhoa|viêmphụkhoa
+uxotc,u xơ tử cung,,uxotc|uxơtửcung
+unangbt,u nang buồng trứng,,unangbt|unangbuồngtrứng
+btdn,hội chứng buồng trứng đa nang,,btdn|btđn|pcos|buongtrungdanang
+lacnmtc,lạc nội mạc tử cung,,lacnmtc|lạcnộimạctửcung
+rlkn,rối loạn kinh nguyệt,,rlkn|roiloankinhnguyet
+tcm,bệnh tay chân miệng,,tcm|taychanmieng|taychânmiệng
+vtp,viêm tiểu phế quản,văn phòng|vật phẩm,vtp|vtpq|viemtieuphequan
+vpq,viêm phế quản,,vpq|viemphequan|viêmphếquản
+vphoi,viêm phổi,,vphoi|viêmphổi|viemphoi
+va,viêm vòm họng v.a,và|vào|với|vất vả,va|v.a|viemva
+vtg,viêm tai giữa,,vtg|viemtaigiua|viêmtaigiữa
+vamidan,viêm amidan,,vamidan|viêmamidan|viemamidan
+vhong,viêm họng cấp,,vhong|viêmhọng|viemhong
+vmdu,viêm mũi dị ứng,,vmdu|vmdư|viemmuidiung
+vmh,viêm mũi họng cấp,,vmh|viemmuihong|viêmmũihọng
+tccap,tiêu chảy cấp,,tccap|tiêuchảycấp|tieuchaycap
+rlth,rối loạn tiêu hóa,,rlth|roiloantieuhoa|rốiloạntiêuhóa
+tnddq,trào ngược dạ dày thực quản,,tnddq|traonguoc|tràongược
+sotphatban,sốt phát ban,,sotphatban|sốtphátban
+sotvirut,sốt vi rút,,sotvirut|sốtvirut|sốtvirus
+cogiatsot,co giật do sốt cao,,cogiatsot|cogiậtsốtcao
+thuydau,bệnh thủy đậu,,thuydau|thủyđậu|thuỷđậu
+quaibi,bệnh quai bị,,quaibi|quaibị
+soi,bệnh sởi,thận|mật|gan|bàng quang|siêu âm,soi|bệnhsởi|benhsoi
+hoga,bệnh ho gà,,hoga|hogà
+bachhau,bệnh bạch hầu,,bachhau|bạchhầu
+uonvan,bệnh uốn ván,,uonvan|uốnván
+vmn,viêm màng não,,vmn|viemmangnao|viêmmàngnão
+vnn,viêm não nhật bản,,vnn|vnnb|viemnaonhatban
+suydinhduong,suy dinh dưỡng,,suydinhduong|suydinhdưỡng|sdd_nhi
+coixuong,còi xương,,coixuong|còixương
+vangda,vàng da sơ sinh,,vangda|vàngda
+hamta,hăm tã ở trẻ,,hamta|hămtã
+romsay,rôm sảy ở trẻ,,romsay|rômsảy|rômsẩy
+chamsua,chàm sữa ở trẻ sơ sinh,,chamsua|chàmsữa
+tuky,rối loạn phổ tự kỷ,,tuky|tựkỷ
+adhd,rối loạn tăng động giảm chú ý,,adhd|tangdong|tăngđộng
+chamnoi,chậm nói ở trẻ nhỏ,,chamnoi|chậmnói
+nhiemgiun,nhiễm giun sán đường ruột,,nhiemgiun|nhiễmgiun
+tiemchung,tiêm chủng phòng bệnh,,tiemchung|tiêmchủng
+tcmr,chương trình tiêm chủng mở rộng,,tcmr|tiemchungmorong
+vx,vắc xin,vui xuân|về quê,vx|vacxin|văcxin|vaccine
+6in1,vắc xin phối hợp 6 trong 1,,6in1|6trong1|6-in-1
+5in1,vắc xin phối hợp 5 trong 1,,5in1|5trong1|5-in-1
+bcg,vắc xin phòng bệnh lao bcg,,bcg|vxlab|vxlao
+vgb,viêm gan vi rút b,,vgb|viemganb|viêmganb
+vgc,viêm gan vi rút c,,vgc|viemganc|viêmganc
+hib,vắc xin phòng viêm màng não mủ hib,,hib|vxhib
+phecau,vắc xin phòng bệnh do phế cầu khuẩn,,phecau|phếcầu|vxphecau
+rota,vắc xin uống phòng tiêu chảy cấp rota,,rota|rotavirus|vxrota
+mmr,vắc xin phòng sởi quai bị rubella,,mmr|vxsoi|sởiquaibịrubella
+vxcum,vắc xin phòng bệnh cúm mùa,,vxcum|vắcxincúm|vacxincum
+vxhpv,vắc xin phòng vi rút hpv,,vxhpv|vắcxinhpv|vacxinhpv
+muinhac,mũi tiêm nhắc lại,,muinhac|mũinhắc
+phanve,phản ứng phản vệ,,phanve|phảnvệ|socphanve
+ctm,xét nghiệm công thức máu,,ctm|congtucmau|côngthứcmáu
+tpttb,tổng phân tích tế bào máu,,tpttb|tongphantichmau
+bc,bạch cầu,cáo|báo cáo|bên cạnh|bằng chứng,bc|wbc|bachcau|bạchcầu
+hc,hồng cầu,hành chính|hoàn cảnh|hạn chế,hc|rbc|hongcau|hồngcầu
+tcau,tiểu cầu,,tcau|plt|tieucau|tiểucầu
+hgb,huyết sắc tố hemoglobin,,hgb|hb_mau|hemoglobin
+hct,tỷ lệ thể tích hồng cầu hematocrit,,hct|hematocrit
+mcv,thể tích trung bình hồng cầu mcv,,mcv|m.c.v
+mch,lượng huyết sắc tố trung bình hồng cầu mch,,mch|m.c.h
+mchc,nồng độ huyết sắc tố trung bình hồng cầu mchc,,mchc|m.c.h.c
+neu,bạch cầu đa nhân trung tính,,neu|neut|neutrophil
+lym,bạch cầu lympho,,lym|lympho|lymphocyte
+mono,bạch cầu mono,,mono|monocyte
+eos,bạch cầu ái toan,,eos|eosinophil
+vss,tốc độ máu lắng,,vss|maulang|máulắng
+crp,chỉ số phản ứng viêm crp,,crp|hscrp|hs-crp
+pct,chỉ số nhiễm khuẩn procalcitonin,,pct|procalcitonin
+ast,chỉ số men gan ast,,ast|sgot|got
+alt,chỉ số men gan alt,,alt|sgpt|gpt
+ggt,chỉ số men gan ggt,,ggt|g.g.t
+bili,chỉ số sắc tố mật bilirubin,,bili|bilirubin
+cre,chỉ số chức năng thận creatinin,,cre|creatinin|creatinine
+ure,chỉ số ure máu,,ure|urea|bun
+egfr,mức lọc cầu thận ước tính egfr,,egfr|gfr|mucloccauthan
+aciduric,chỉ số axit uric máu,,aciduric|axituric|uric
+chol,chỉ số mỡ máu cholesterol toàn phần,,chol|cholesterol
+trig,chỉ số mỡ máu triglycerid,,trig|triglycerid|triglyceride
+hdl,chỉ số mỡ máu tốt hdl-cholesterol,,hdl|hdl-c|hdlc
+ldl,chỉ số mỡ máu xấu ldl-cholesterol,,ldl|ldl-c|ldlc
+ferritin,chỉ số dự trữ sắt ferritin,,ferritin|feritin
+inr,chỉ số đông máu quốc tế inr,,inr|i.n.r
+aptt,xét nghiệm thời gian đông máu aptt,,aptt|a.p.t.t
+ddimer,chỉ số huyết khối d-dimer,,ddimer|d-dimer
+troponin,chỉ số men tim troponin,,troponin|trop|troponint|troponini
+ntprobnp,chỉ số suy tim nt-probnp,,ntprobnp|nt-probnp|bnp
+hbsag,xét nghiệm kháng nguyên bề mặt viêm gan b hbsag,,hbsag|hbs-ag
+antihbs,xét nghiệm kháng thể bảo vệ viêm gan b anti-hbs,,antihbs|anti-hbs
+antihcv,xét nghiệm kháng thể viêm gan c anti-hcv,,antihcv|anti-hcv
+hbvdna,xét nghiệm tải lượng vi rút viêm gan b,,hbvdna|hbv-dna
+pcr,xét nghiệm sinh học phân tử pcr,,pcr|rt-pcr|rtpcr
+tptnt,tổng phân tích nước tiểu,,tptnt|xetnghiemnuoctieu
+pront,chỉ số đạm niệu trong nước tiểu,,pront|protein_nieu|damnieu
+glunt,chỉ số đường niệu trong nước tiểu,,glunt|duongnieu
+ksd,xét nghiệm kháng sinh đồ,,ksd|ksđ|khangsinhdo|khángsinhđồ
+sa,siêu âm,ngã|sút|sẩy|sảy|mạc|lưới|đọa,sa|sâ|sieuam|siêuâm
+xq,chụp x-quang,,xq|xquang|x-quang
+clvt,chụp cắt lớp vi tính,,clvt|catlopvitinh|cắtlớpvitính
+cht,chụp cộng hưởng từ,cửa hàng|câu hỏi,cht|conghuongtu|cộnghưởngtừ
+nsdd,nội soi dạ dày,,nsdd|nsdạdày|noisoidaday
+nsdt,nội soi đại tràng,,nsdt|nsđt|nsđạitràng|noisoidaitrang
+ks,thuốc kháng sinh,sạn|sinh viên|sát,ks|khangsinh|khángsinh
+khangviem,thuốc kháng viêm,,khangviem|khángviêm|chongviem
+nsaid,thuốc kháng viêm không steroid nsaid,,nsaid|nsaids
+corticoid,thuốc kháng viêm corticoid,,corticoid|cort|corticosteroid
+giamdau,thuốc giảm đau,,giamdau|giảmđau
+hasot,thuốc hạ sốt,,hasot|hạsốt
+kht,thuốc kháng histamin chống dị ứng,,kht|khanghistamin
+ppi,thuốc ức chế bơm proton giảm tiết axit dạ dày,,ppi|p.p.i
+antacid,thuốc trung hòa axit dạ dày,,antacid|khangaxit
+longdom,thuốc long đờm,,longdom|longđờm
+gianpq,thuốc giãn phế quản,,gianpq|giãnphếquản
+loitieu,thuốc lợi tiểu,,loitieu|lợitiểu
+statin,thuốc hạ mỡ máu nhóm statin,,statin|thuocmomau
+chongdong,thuốc chống đông máu,,chongdong|chốngđông
+tpcn,thực phẩm chức năng,,tpcn|thucphamchucnang
+vit,vitamin bổ sung,,vit|vitamin
+mvs,men vi sinh,,mvs|menvisinh
+mth,men tiêu hóa,,mth|mentieuhoa
+oresol,dung dịch bù nước và điện giải oresol,,oresol|orizon|ozon
+nacl,nước muối sinh lý natri clorid,,nacl|nacl0.9%|nuocmuoisinhly
+para,thuốc giảm đau hạ sốt paracetamol,,para|paracetamol|panadol
+effe,thuốc sủi giảm đau hạ sốt efferalgan,,effe|efferalgan|effer
+ibu,thuốc giảm đau kháng viêm ibuprofen,,ibu|ibuprofen
+melox,thuốc kháng viêm giảm đau meloxicam,,melox|meloxicam|mobic
+cele,thuốc kháng viêm giảm đau celecoxib,,cele|celecoxib|celebrex
+medrol,thuốc kháng viêm methylprednisolone,,medrol|methylpred|methylprednisolone
+pred,thuốc kháng viêm prednisolone,,pred|predni|prednisolon|prednisolone
+amox,thuốc kháng sinh amoxicillin,,amox|amoxicilin|amoxicillin
+aug,thuốc kháng sinh augmentin,,aug|augmentin
+azithro,thuốc kháng sinh azithromycin,,azithro|azithromycin|zithromax
+cefix,thuốc kháng sinh cefixime,,cefix|cefixim|cefixime
+cefuro,thuốc kháng sinh cefuroxime,,cefuro|cefuroxim|cefuroxime|zinnat
+cipro,thuốc kháng sinh ciprofloxacin,,cipro|ciprofloxacin
+levo,thuốc kháng sinh levofloxacin,,levo|levofloxacin
+metro,thuốc kháng sinh metronidazole,,metro|metronidazol|metronidazole
+ome,thuốc giảm tiết axit dạ dày omeprazole,,ome|omeprazol|omeprazole
+esome,thuốc giảm tiết axit dạ dày esomeprazole,,esome|esomeprazol|esomeprazole|nexium
+panto,thuốc giảm tiết axit dạ dày pantoprazole,,panto|pantoprazol|pantoprazole
+phospha,thuốc trung hòa axit dạ dày phosphalugel,,phospha|phosphalugel|thuocchup
+smec,thuốc điều trị tiêu chảy smecta,,smec|smecta
+entero,men vi sinh enterogermina,,entero|enterogermina
+amlo,thuốc hạ huyết áp amlodipine,,amlo|amlodipin|amlodipine
+losar,thuốc hạ huyết áp losartan,,losar|losartan
+metfor,thuốc điều trị tiểu đường metformin,,metfor|metformin|glucophage
+atorva,thuốc hạ mỡ máu atorvastatin,,atorva|atorvastatin|lipitor
+rosuva,thuốc hạ mỡ máu rosuvastatin,,rosuva|rosuvastatin|crestor
+aspi,thuốc chống kết tập tiểu cầu aspirin,,aspi|aspirin
+clopi,thuốc chống kết tập tiểu cầu clopidogrel,,clopi|clopidogrel|plavix
+vento,thuốc xịt giãn phế quản ventolin,,vento|ventolin|salbutamol
+tdp,tác dụng phụ của thuốc,,tdp|tacdungphu|tácdụngphụ

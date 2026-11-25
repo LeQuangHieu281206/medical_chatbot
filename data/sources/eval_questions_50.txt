@@ -1,0 +1,50 @@
+q01	Tôi 35 tuổi, dạo này cứ ăn tối xong nằm xuống là bị ợ chua và nóng rát sau xương ức. Đây là dấu hiệu bệnh gì và nên xử trí ra sao?
+q02	Chồng tôi 42 tuổi tự nhiên đau quặn vùng thắt lưng bên phải lan xuống bụng dưới, kèm tiểu buốt và tiểu lắt nhắt. Xin hỏi anh ấy có khả năng bị gì?
+q03	Tối qua đi nhậu hải sản về, sáng nay ngón chân cái của tôi sưng to, đỏ ửng và đau nhức không đi nổi. Tôi 48 tuổi, bị vậy là sao?
+q04	Em 26 tuổi, mấy tháng nay hay hoa mắt chóng mặt mỗi khi đứng lên ngồi xuống, người mệt mỏi và da dẻ xanh xao. Em nên làm gì ạ?
+q05	Tôi hay bị đau âm ỉ vùng trên rốn lúc đói bụng hoặc khi ăn đồ cay nóng, ăn nhẹ vào thì thấy đỡ đau hơn. Tình trạng này cảnh báo bệnh gì?
+q06	Từ hôm qua tôi bị sốt 38.5 độ, đau nhức khắp người, nhức đầu, chảy nước mũi và ho khan. Tôi bị cảm lạnh hay cúm và chăm sóc tại nhà thế nào?
+q07	Sáng ngủ dậy tôi thấy đau rát cổ họng, nuốt nước bọt cũng đau và hơi sốt nhẹ sau đêm nằm điều hòa lạnh. Tôi nên xử trí ban đầu thế nào?
+q08	Bố tôi 55 tuổi dạo này khát nước liên tục, uống nhiều nên đi tiểu cả đêm, ăn khỏe mà vẫn sụt mất 4 ký trong một tháng. Bố tôi có nguy cơ mắc bệnh gì?
+q09	Tôi 50 tuổi, gần đây hay đau âm ỉ vùng sau gáy vào buổi sáng, lấy máy đo ở nhà thấy huyết áp toàn khoảng 150/95 mmHg. Tôi nên làm gì?
+q10	Em 29 tuổi, hơn một tháng nay lúc nào cũng thấy buồn bã, trống rỗng, không còn hứng thú với công việc hay gặp gỡ bạn bè và mất ngủ triền miên. Em bị sao vậy?
+q11	Mẹ tôi 63 tuổi hay than đau lưng âm ỉ, dáng đi hơi còng hơn trước và đo chiều cao thấy giảm gần 3 cm so với hồi trẻ. Đây là biểu hiện của bệnh gì?
+q12	Mỗi lần đang nằm ngủ mà xoay người hoặc ngồi bật dậy là tôi thấy nhà cửa quay cuồng, buồn nôn mất khoảng vài chục giây. Tôi bị bệnh gì vậy?
+q13	Tôi 58 tuổi, hai đầu gối hay đau nhức mỗi khi leo cầu thang hoặc ngồi xổm, sáng dậy khớp hơi cứng khoảng 15 phút rồi vận động lại đỡ. Tôi bị gì?
+q14	Sau đợt cảm cúm tuần trước, giờ tôi bị nghẹt mũi nặng, xì ra dịch đặc màu vàng xanh và đau nhức vùng hai bên gò má lẫn trán. Tôi bị sao vậy?
+q15	Trưa qua ăn hàng quán xong, từ tối đến giờ tôi đi ngoài phân lỏng 5 lần, bụng đau quặn từng cơn nhưng không sốt. Tôi nên xử trí thế nào?
+q16	Tôi vừa ăn cua biển xong khoảng một tiếng thì khắp người nổi từng mảng sẩn đỏ, ngứa râm ran rất khó chịu. Đây là hiện tượng gì và xử lý sao?
+q17	Dạo này tôi hay bị táo bón, mỗi lần đi vệ sinh rặn mạnh là thấy có máu tươi dính trên giấy hoặc nhỏ giọt kèm đau rát hậu môn. Tôi bị bệnh gì?
+q18	Em 32 tuổi, làm văn phòng hay căng thẳng, tối nào lên giường cũng trằn trọc hơn tiếng mới ngủ được, sáng dậy đầu óc uể oải. Em phải làm sao?
+q19	Bác sĩ cho tôi hỏi bệnh tăng huyết áp là gì, tại sao nhiều người không có triệu chứng gì mà vẫn phải điều trị?
+q20	Bệnh đái tháo đường type 2 có chữa khỏi hoàn toàn được không và nếu kiểm soát kém thì gây ra những biến chứng gì?
+q21	Trào ngược dạ dày thực quản nếu cứ để kéo dài nhiều năm không điều trị thì có thể dẫn đến biến chứng nào nặng không?
+q22	Bệnh gút diễn tiến qua các giai đoạn như thế nào và khi nào thì được xem là gút mạn tính?
+q23	Sốt xuất huyết Dengue thường trải qua mấy giai đoạn và giai đoạn nào là nguy hiểm nhất cần theo dõi sát?
+q24	Loãng xương thực chất là bệnh gì và tại sao người lớn tuổi bị loãng xương lại dễ gãy xương chỉ sau một cú ngã nhẹ?
+q25	Trầm cảm khác gì với cảm giác buồn chán thông thường và những dấu hiệu nào cho thấy bệnh đang ở mức độ nặng?
+q26	Sỏi thận hình thành trong cơ thể như thế nào và trong trường hợp nào người bị sỏi thận cần phải can thiệp y tế gấp?
+q27	Viêm phế quản cấp thường do nguyên nhân gì gây ra, triệu chứng ra sao và khoảng bao lâu thì bệnh hồi phục?
+q28	Thiếu máu thiếu sắt ở phụ nữ mang thai và trẻ nhỏ ảnh hưởng như thế nào đến sức khỏe nếu không được phát hiện sớm?
+q29	Tôi bị cảm cúm sổ mũi và đau họng hai hôm nay, tôi ra hiệu thuốc mua kháng sinh về uống cho nhanh khỏi có đúng không?
+q30	Mẹ tôi uống thuốc hạ huyết áp được nửa năm, giờ đo thấy huyết áp ổn định mức bình thường rồi thì có thể ngưng thuốc cho đỡ hại gan thận không?
+q31	Tôi có tiền sử viêm loét dạ dày, giờ bị đau nhức khớp gối thì khi dùng thuốc giảm đau chống viêm cần lưu ý nguyên tắc gì?
+q32	Bác sĩ kê cho tôi uống bổ sung sắt để trị thiếu máu, tôi nên uống vào lúc nào và tránh dùng chung với thứ gì để hấp thu tốt nhất?
+q33	Khi bị tiêu chảy cấp tại nhà, việc pha và uống dung dịch bù nước điện giải Oresol cần tuân thủ nguyên tắc quan trọng nào?
+q34	Tôi bị viêm mũi xoang nên hay dùng chai xịt mũi chống nghẹt mỗi ngày suốt gần một tháng nay. Dùng kéo dài như vậy có sao không?
+q35	Bố tôi mới được kê đơn thuốc uống điều trị đái tháo đường type 2, gia đình cần lưu ý nguyên tắc gì để phòng tránh cơn hạ đường huyết?
+q36	Đang lên cơn đau gút cấp sưng tấy ngón chân, tôi có nên tự mua thuốc hạ axit uric máu về uống ngay cho hết đau không?
+q37	Tôi từng bị hai đợt đau gút cấp rồi, giờ chế độ ăn uống và sinh hoạt hàng ngày nên điều chỉnh thế nào để phòng bệnh tái phát?
+q38	Ông bà tôi năm nay đều trên 70 tuổi và có bệnh tim mạch, việc tiêm vắc xin cúm mùa mỗi năm có thực sự cần thiết không?
+q39	Tôi 45 tuổi, muốn phòng ngừa bệnh loãng xương từ bây giờ thì nên chú trọng ăn uống và tập luyện như thế nào?
+q40	Tôi hay bị trào ngược dạ dày vào ban đêm, tôi cần thay đổi thói quen ăn uống và tư thế ngủ ra sao để cải thiện?
+q41	Kết quả khám sức khỏe định kỳ báo tôi đang ở mức tiền đái tháo đường, tôi nên ăn uống và tập thể dục thế nào để không tiến triển thành bệnh?
+q42	Tôi mới tán sỏi thận xong, bác sĩ dặn dễ bị tái phát lắm. Tôi cần lưu ý gì trong sinh hoạt ăn uống hàng ngày để phòng sỏi quay lại?
+q43	Tôi bị ốm.
+q44	Người khó chịu.
+q45	Tôi mệt lắm.
+q46	Đau quá.
+q47	Bố tôi 62 tuổi tự nhiên đau thắt ngực trái dữ dội, vã mồ hôi lạnh và đau lan lên vai trái khoảng 10 phút nay. Gia đình tôi phải làm gì bây giờ?
+q48	Con tôi 3 tuổi đang sốt cao thì đột ngột co giật toàn thân, hai mắt trợn ngược và sùi bọt mép. Tôi hoảng quá, cần làm gì ngay lúc này?
+q49	Anh trai tôi 40 tuổi có tiền sử loét dạ dày, vừa nôn ra máu tươi lẫn máu cục và hoa mắt chóng mặt muốn ngất. Giờ xử trí thế nào ạ?
+q50	Mẹ tôi 68 tuổi đang ngồi xem tivi tự nhiên bị méo miệng, nói ngọng líu lưỡi và không nhấc nổi cánh tay phải. Tôi có nên cho mẹ nằm nghỉ theo dõi thêm không?

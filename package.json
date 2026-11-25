@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bot-avatars": "^0.2.2",
+    "thinking-orbs": "^0.3.2"
+  }
+}

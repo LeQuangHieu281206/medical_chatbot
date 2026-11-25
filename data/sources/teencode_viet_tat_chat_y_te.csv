@@ -1,0 +1,300 @@
+teencode,nghia,loai,khong_mo_rong,bien_the_go,vi_du
+ko,không,teencode,,k|kh|hk|hok|k0,"Bác sĩ ơi, em uống thuốc rồi mà ko thấy đỡ ạ."
+k,không,teencode,kali|kết quả kali,,Em k sốt nhưng vẫn thấy mệt và chóng mặt.
+kh,không,go_nhanh,,,Em kh bị dị ứng thuốc trước đây ạ.
+hk,không,teencode,học kỳ|hồng cầu,,Em hk biết chỉ số này có nguy hiểm không.
+hok,không,teencode,học|hốc,,Em hok bị sốt nhưng cổ họng hơi rát.
+k0,không,teencode,,,Em k0 uống rượu bia trong thời gian dùng thuốc.
+hem,không,teencode,hẻm,,Em hem bị dị ứng thức ăn nào hết ạ.
+hong,không,teencode,hông|hồng|hòng|hỏng,,"Em hong sốt, chỉ đau đầu nhẹ thôi ạ."
+khum,không,teencode,,,Em khum có tiền sử bệnh nền ạ.
+dc,được,go_nhanh,,đc,"Em dc kê thuốc này ở phòng khám gần nhà, giờ dùng sao ạ."
+đc,được,go_nhanh,,dc,Em đc kê thuốc này ở phòng khám gần nhà ạ.
+dk,được,go_nhanh,đăng ký|điều kiện,đk,Em uống thuốc này sau bữa ăn dk không bác sĩ?
+j,gì,teencode,,ji,"Bác sĩ ơi, chỉ số này là j vậy ạ?"
+ji,gì,teencode,,j,Em cần kiêng ji khi đang uống thuốc này ạ?
+z,vậy,teencode,,dz|v|vz,Em bị đau như z có cần đi khám ngay không ạ?
+dz,vậy,teencode,,z,"Em uống thuốc xong bị buồn ngủ, dz có bình thường không ạ?"
+v,vậy,teencode,viên|với|vitamin,z|vz,Em đau bụng v có phải do thuốc không ạ?
+vz,vậy,teencode,,z|v,"Em mới bị nổi mẩn, vz có cần ngừng thuốc không ạ?"
+r,rồi,go_nhanh,,,Em uống thuốc được ba ngày r mà vẫn còn ho.
+rui,rồi,teencode,,roai|r,Em đi khám rui nhưng vẫn chưa rõ nguyên nhân.
+roai,rồi,teencode,,rui|r,Em uống hết liều roai mà triệu chứng chưa giảm.
+vs,với,go_nhanh,vi sinh|vệ sinh,,Em bị đau đầu vs buồn nôn từ sáng đến giờ.
+ntn,như thế nào,go_nhanh,,,Trường hợp của em nên xử lý ntn ạ?
+chx,chưa,go_nhanh,,,Em chx uống thuốc gì vì sợ bị dị ứng.
+cx,cũng,go_nhanh,,cg,Em cx bị đau họng mỗi khi thời tiết thay đổi.
+cg,cũng,go_nhanh,,cx,Mẹ em cg có triệu chứng giống như vậy.
+bt,bình thường,go_nhanh,biết|bài tập|bất thường,,"Sau khi uống thuốc em hơi buồn ngủ, như vậy có bt không ạ?"
+mk,mình,teencode,mật khẩu|mã khóa,mik|mjk,Mk bị đau bụng âm ỉ khoảng hai ngày nay.
+mik,mình,teencode,,mk|mjk,Mik mới đổi thuốc nên muốn hỏi bác sĩ một chút.
+mjk,mình,teencode,,mk|mik,Mjk thường bị dị ứng khi ăn hải sản.
+m,mình,teencode,mét|mày|mẹ|mạch,,"M bị đau đầu từ tối qua, chưa uống thuốc gì."
+t,tôi,teencode,thuốc|tối|tháng|tĩnh mạch,,T bị sốt từ tối qua và hơi đau nhức toàn thân.
+b,bạn,teencode,bạch cầu|bác sĩ|bệnh,,B xem giúp mình kết quả xét nghiệm này với ạ.
+bn,bạn,teencode,bệnh nhân|bao nhiêu|bên,,Bn cho mình hỏi triệu chứng này kéo dài bao lâu thì nên khám?
+e,em,go_nhanh,vitamin E|eGFR,,E bị nổi mẩn sau khi uống thuốc mới ạ.
+a,anh,go_nhanh,nhóm máu A|vitamin A,,"A ơi, em uống thuốc này sau ăn được không ạ?"
+c,chị,go_nhanh,vitamin C|chữ C,,"C ơi, em đau bụng từ sáng đến giờ ạ."
+mn,mọi người,go_nhanh,,mng,Mn cho em hỏi chỉ số này có nằm trong giới hạn bình thường không?
+mng,mọi người,go_nhanh,,mn,Mng có ai từng gặp tác dụng phụ như em không ạ?
+ng,người,go_nhanh,nanogram|ngày,,Có ng trong nhà em từng bị bệnh này không ạ?
+ngta,người ta,go_nhanh,,nta,"Ngta bảo thuốc này gây buồn ngủ, điều đó có đúng không ạ?"
+nta,người ta,go_nhanh,,ngta,Nta nói bệnh này tự khỏi nhưng em vẫn hơi lo.
+ny,người yêu,go_nhanh,,,"Ny em bị sốt hai hôm nay, nên theo dõi dấu hiệu nào ạ?"
+nyc,người yêu cũ,go_nhanh,,,"Nyc em từng mắc bệnh này, em có cần xét nghiệm không ạ?"
+ck,chồng,go_nhanh,chuyển khoản|chuyên khoa|creatine kinase,,"Ck em bị ho kéo dài, bác sĩ tư vấn giúp với ạ."
+vk,vợ,go_nhanh,vắc xin,,"Vk em đang mang thai, dùng thuốc này có an toàn không ạ?"
+ox,ông xã,teencode,oxy|oxygen,,Ox em bị đau lưng sau khi làm việc nặng.
+bx,bà xã,teencode,,,Bx em đang cho con bú thì có dùng thuốc cảm được không?
+ae,anh em,go_nhanh,,ace,Ae trong nhà em đều bị dị ứng thời tiết.
+ace,anh chị em,go_nhanh,,ae,"Ace em có người từng bị hen, em cần lưu ý gì không?"
+ib,nhắn tin riêng,viet_tat,,inb,Bác sĩ có thể ib giúp em lịch tái khám được không ạ?
+inb,nhắn tin riêng,viet_tat,,ib,Em đã inb phòng khám để hỏi về giờ làm việc.
+rep,trả lời,viet_tat,,rpl,Bác sĩ rep giúp em khi có thời gian với ạ.
+rpl,trả lời,viet_tat,,rep,Em đang chờ bác sĩ rpl về kết quả xét nghiệm.
+tl,trả lời,go_nhanh,,,Bác sĩ tl giúp em câu hỏi về liều dùng với ạ.
+cmt,bình luận,viet_tat,,comt,Em thấy có người cmt thuốc này dễ gây buồn ngủ.
+comt,bình luận,viet_tat,,cmt,Em đọc comt của mọi người nhưng chưa biết thông tin nào đúng.
+stt,trạng thái,viet_tat,,,Em đăng stt hỏi về triệu chứng này nhưng chưa có ai giải đáp.
+ad,quản trị viên,viet_tat,,admin,Ad có thể hướng dẫn em cách gửi kết quả xét nghiệm không ạ?
+mod,người điều hành,viet_tat,,,Mod nhắc em không đăng công khai thông tin cá nhân.
+fl,theo dõi,go_nhanh,,follow,Em fl trang của bệnh viện để xem lịch khám nhé.
+tag,gắn thẻ,go_nhanh,,,Em tag bác sĩ vào câu hỏi để nhờ tư vấn thêm.
+hnay,hôm nay,go_nhanh,,,Hnay em bắt đầu uống thuốc theo đơn mới.
+hqua,hôm qua,go_nhanh,,,Hqua em bị sốt nhẹ nhưng sáng nay đã đỡ.
+ms,mới,go_nhanh,,,Em ms nhận kết quả xét nghiệm nên chưa hiểu các chỉ số.
+lm,làm,go_nhanh,,,Em cần lm gì khi quên uống một liều thuốc ạ?
+dag,đang,go_nhanh,,dg,Em dag dùng kháng sinh theo đơn của bác sĩ.
+dg,đang,go_nhanh,,dag,Em dg mang thai tháng thứ ba và bị cảm nhẹ.
+trc,trước,go_nhanh,,,Trc khi uống thuốc em có cần ăn no không ạ?
+hc,học,go_nhanh,,,Em đang hc cách đọc các chỉ số trong phiếu xét nghiệm.
+ik,đi,teencode,,dj,Mai em ik khám lại theo lịch hẹn ạ.
+dj,đi,teencode,,ik,Em có cần dj bệnh viện ngay khi bị đau ngực không?
+thik,thích,teencode,,thjk,Em thik uống trà nhưng đang bị mất ngủ.
+thjk,thích,teencode,,thik,Em thjk hỏi bác sĩ trước khi dùng thực phẩm bổ sung.
+iu,yêu,teencode,,,Em iu mẹ nên muốn hỏi kỹ về thuốc mẹ đang dùng.
+wa,quá,teencode,,wá,Vết sưng của em đỏ wa nên em hơi lo.
+nhju,nhiều,teencode,,,Em uống nước nhju hơn mà vẫn thấy khô miệng.
+nma,nhưng mà,go_nhanh,,nhma,Em đã nghỉ ngơi nma cơn đau đầu vẫn chưa hết.
+nhma,nhưng mà,go_nhanh,,nma,Em không sốt nhma người vẫn thấy mệt.
+tks,cảm ơn,viet_tat,,thx,Tks bác sĩ đã giải thích rất dễ hiểu ạ.
+thx,cảm ơn,viet_tat,,tks,"Thx bác sĩ, em sẽ theo dõi thêm các triệu chứng."
+sr,xin lỗi,viet_tat,,,"Sr bác sĩ, em gửi thiếu trang kết quả xét nghiệm."
+pls,làm ơn,viet_tat,,plz,Pls bác sĩ xem giúp em chỉ số này có cao không ạ.
+plz,làm ơn,viet_tat,,pls,Plz giải thích giúp em cách uống thuốc trong đơn.
+omg,ôi trời ơi,teencode,,,Omg em vừa phát hiện mình uống nhầm liều thuốc.
+g9,chúc ngủ ngon,teencode,,,"Em chúc bác sĩ g9, mai em sẽ gửi thêm kết quả."
+ak,à,teencode,,ah,"Ak, vậy là em cần uống thuốc sau bữa ăn đúng không ạ?"
+ah,à,teencode,,ak,"Ah, em hiểu rồi, cảm ơn bác sĩ nhiều ạ."
+uk,ừ,teencode,,uh,"Uk, em sẽ đặt lịch khám vào sáng mai."
+uh,ừ,teencode,,uk,"Uh, em đã ngừng thuốc và đang liên hệ phòng khám."
+ukm,ừm,teencode,,uhm|um,"Ukm, em sẽ đo huyết áp lại vào buổi tối."
+uhm,ừm,teencode,,ukm|um,"Uhm, em đã hiểu cách theo dõi nhiệt độ rồi ạ."
+um,ừm,teencode,,ukm|uhm,"Um, em muốn hỏi thêm về thời gian uống thuốc."
+ok,đồng ý,teencode,,oke|oki|okie,"Ok bác sĩ, em sẽ làm xét nghiệm vào ngày mai."
+oke,đồng ý,teencode,,ok|oki|okie,"Oke, em sẽ uống thuốc đúng giờ ạ."
+oki,đồng ý,teencode,,ok|oke|okie,"Oki bác sĩ, em đã ghi lại hướng dẫn rồi."
+okie,đồng ý,teencode,,ok|oke|oki,"Okie, em sẽ quay lại tái khám đúng hẹn."
+thui,thôi,teencode,,thoy,"Em không tự mua thuốc nữa, hỏi bác sĩ trước thui."
+thoy,thôi,teencode,,thui,"Em nghỉ ngơi thêm đã, chưa vận động mạnh thoy."
+lun,luôn,teencode,,,Em bị đau bụng gần như lun sau mỗi bữa ăn.
+bik,biết,teencode,,bit,Em không bik thuốc này có gây buồn ngủ không.
+bit,biết,teencode,,bik,Em không bit phải nhịn ăn bao lâu trước xét nghiệm.
+fai,phải,teencode,,,Em fai ngừng thuốc trước khi làm xét nghiệm không ạ?
+bs,bác sĩ,viet_tat,,bsi,"Bs ơi, triệu chứng này có cần đi khám trực tiếp không ạ?"
+bsi,bác sĩ,go_nhanh,,bs,Bsi xem giúp em kết quả xét nghiệm này với ạ.
+bsnt,bác sĩ nội trú,viet_tat,,,Em được bác sĩ nội trú bsnt tư vấn trong buổi khám hôm qua.
+bsck1,bác sĩ chuyên khoa I,viet_tat,,,Em muốn đặt lịch với bsck1 chuyên khoa tim mạch.
+bsck2,bác sĩ chuyên khoa II,viet_tat,,,Bệnh viện có bác sĩ bsck2 phụ trách khoa này không ạ?
+bv,bệnh viện,viet_tat,,,Em định đến bv kiểm tra lại chỉ số huyết áp.
+bvdk,bệnh viện đa khoa,viet_tat,,,Bvdk gần nhà có làm xét nghiệm máu vào cuối tuần không?
+bvqt,bệnh viện quốc tế,viet_tat,,,Em muốn hỏi lịch khám tại bvqt vào sáng thứ bảy.
+bvck,bệnh viện chuyên khoa,viet_tat,,,Em cần chuyển hồ sơ đến bvck để khám chuyên sâu.
+pk,phòng khám,viet_tat,,,Pk có nhận bệnh nhân đến khám ngoài giờ không ạ?
+pkdk,phòng khám đa khoa,viet_tat,,,Em muốn đặt lịch khám tổng quát tại pkdk.
+ttyt,trung tâm y tế,viet_tat,,,Ttyt phường có tiêm chủng vào ngày chủ nhật không?
+yt,y tế,viet_tat,,,Em muốn hỏi thông tin yt dự phòng tại địa phương.
+ytcc,y tế công cộng,viet_tat,,,Em đang tìm tài liệu về ytcc và phòng bệnh truyền nhiễm.
+syt,sở y tế,viet_tat,,,Em tra cứu danh sách cơ sở được syt cấp phép ở đâu ạ?
+bhyt,bảo hiểm y tế,viet_tat,,,Em dùng bhyt trái tuyến thì mức thanh toán thế nào ạ?
+bhxh,bảo hiểm xã hội,viet_tat,,,Em cần giấy nghỉ ốm để làm thủ tục bhxh.
+kcb,khám chữa bệnh,viet_tat,,,Em muốn hỏi quy trình kcb ban đầu bằng bảo hiểm y tế.
+nb,người bệnh,viet_tat,,ngbenh,Nb cần mang theo giấy tờ gì khi nhập viện ạ?
+dd,điều dưỡng,viet_tat,dung dịch|đường dùng|dưới da,,Nhân viên dd hướng dẫn em cách thay băng tại nhà với ạ.
+ddv,điều dưỡng viên,viet_tat,,,DdV đã hướng dẫn em cách theo dõi vết mổ.
+ds,dược sĩ,viet_tat,danh sách|đường sắt,,Ds kiểm tra giúp em thuốc này có tương tác với thuốc cũ không.
+ktv,kỹ thuật viên,viet_tat,,,Ktv hướng dẫn em tư thế đúng khi chụp X-quang.
+hs,hồ sơ,viet_tat,học sinh|hệ số,,Em đã gửi hs bệnh án qua hệ thống của bệnh viện.
+hsba,hồ sơ bệnh án,viet_tat,,,Em xin bản sao hsba để mang đến cơ sở khám khác.
+ck1,chuyên khoa I,viet_tat,chồng|chuyển khoản|creatine kinase,,Bác sĩ ck1 có lịch khám vào buổi chiều không ạ?
+ck2,chuyên khoa II,viet_tat,chồng|chuyển khoản|creatine kinase,,Em muốn đăng ký khám với bác sĩ ck2.
+tv,tư vấn,viet_tat,ti vi|thành viên,,Em cần tv thêm về chế độ ăn sau phẫu thuật.
+lh,liên hệ,go_nhanh,lịch hẹn|liên hoàn,,Em sẽ lh phòng khám để xác nhận giờ tái khám.
+tk,tái khám,go_nhanh,tài khoản|thống kê,,Bác sĩ hẹn em tk sau hai tuần để kiểm tra lại.
+hscc,hồi sức cấp cứu,viet_tat,,,Người nhà em được chuyển đến khoa hscc trong đêm.
+icu,khoa hồi sức tích cực,viet_tat,,,Bệnh viện cho biết bệnh nhân đang được theo dõi tại icu.
+er,khoa cấp cứu,viet_tat,,,Em nên đến er ngay nếu cơn đau ngực xuất hiện trở lại.
+gmhs,gây mê hồi sức,viet_tat,,,Em cần khám gmhs trước khi thực hiện ca phẫu thuật.
+phcn,phục hồi chức năng,viet_tat,,,Bác sĩ giới thiệu em tập phcn sau khi tháo bột.
+vltl,vật lý trị liệu,viet_tat,,,Em được chỉ định vltl để cải thiện vận động khớp gối.
+vtyt,vật tư y tế,viet_tat,,,Em muốn hỏi nơi cấp vtyt dùng tại nhà.
+csyt,cơ sở y tế,viet_tat,,,Em muốn tìm csyt có chuyên khoa da liễu gần nhà.
+ksk,khám sức khỏe,viet_tat,,,Công ty yêu cầu em hoàn thành ksk trước cuối tháng.
+xn,xét nghiệm,viet_tat,,,"Em mới làm xn máu, bác sĩ xem giúp em kết quả với ạ."
+ctm,công thức máu,viet_tat,,,"Em có kết quả ctm, chỉ số bạch cầu hơi cao."
+xq,X-quang,viet_tat,,,"Em vừa chụp xq phổi, bao lâu thì có kết quả ạ?"
+sa,siêu âm,viet_tat,sa sút|sa tử cung|sa dạ con,,Em có lịch sa bụng vào sáng mai.
+ct,chụp cắt lớp vi tính,viet_tat,công thức|chỉ thị|cắt tóc,,"Bác sĩ chỉ định chụp ct, em có cần nhịn ăn không?"
+clvt,chụp cắt lớp vi tính,viet_tat,,,Kết quả clvt cho thấy cần kiểm tra thêm vùng ngực.
+mri,chụp cộng hưởng từ,viet_tat,,,Em được chỉ định mri cột sống thắt lưng.
+ecg,điện tâm đồ,viet_tat,,,"Em vừa đo ecg, bác sĩ xem giúp kết quả này được không?"
+ns,nội soi,viet_tat,năm sinh|nữ sinh|nghệ sĩ,,"Em sắp làm ns dạ dày, cần chuẩn bị thế nào ạ?"
+nsdd,nội soi dạ dày,viet_tat,,,Em có lịch nsdd vào sáng thứ hai tuần tới.
+nsdt,nội soi đại tràng,viet_tat,,,Trước khi nsdt em cần ăn uống theo hướng dẫn nào?
+st,sinh thiết,viet_tat,số thứ tự|sáng tối,,Bác sĩ đề nghị làm st để xác định bản chất khối u.
+pcr,xét nghiệm sinh học phân tử PCR,viet_tat,,,"Em làm pcr hôm qua, hôm nay đã có kết quả chưa ạ?"
+rtpcr,xét nghiệm PCR thời gian thực,viet_tat,,,Kết quả rtpcr của em âm tính nhưng vẫn còn ho.
+hba1c,huyết sắc tố glycat hóa A1c,viet_tat,,,"Chỉ số hba1c của em là 6,2 phần trăm, có đáng lo không?"
+spo2,độ bão hòa oxy ngoại vi,viet_tat,,,Máy đo spo2 tại nhà thường hiển thị 96 đến 97 phần trăm.
+bmi,chỉ số khối cơ thể,viet_tat,,,"Em tính bmi được 27, bác sĩ tư vấn giúp chế độ ăn."
+ha,huyết áp,viet_tat,hà|hạ|nhà|hả,,Ha của em thường khoảng 145 trên 95 khi đo buổi tối.
+hatt,huyết áp tâm thu,viet_tat,,,Chỉ số hatt của em cao hơn mức thường thấy.
+hattr,huyết áp tâm trương,viet_tat,,,Bác sĩ giải thích giúp em chỉ số hattr trên phiếu đo.
+hb,huyết sắc tố,viet_tat,,,Chỉ số hb thấp có liên quan đến thiếu máu không ạ?
+hgb,hemoglobin,viet_tat,,,Kết quả hgb của em thấp hơn khoảng tham chiếu.
+hct,tỷ lệ thể tích khối hồng cầu,viet_tat,,,"Em thấy hct thấp, bác sĩ cho em hỏi có cần kiểm tra thêm không?"
+rbc,số lượng hồng cầu,viet_tat,,,Chỉ số rbc của em cao hơn giới hạn tham chiếu một chút.
+wbc,số lượng bạch cầu,viet_tat,,,Wbc tăng có thể xuất hiện khi cơ thể đang viêm không ạ?
+plt,số lượng tiểu cầu,viet_tat,,,"Chỉ số plt của em thấp, em có cần đi khám sớm không?"
+mcv,thể tích trung bình hồng cầu,viet_tat,,,Mcv thấp có thường gặp trong tình trạng thiếu sắt không ạ?
+mch,lượng huyết sắc tố trung bình hồng cầu,viet_tat,,,Bác sĩ xem giúp em chỉ số mch trong công thức máu.
+mchc,nồng độ huyết sắc tố trung bình hồng cầu,viet_tat,,,"Mchc của em thấp hơn chuẩn, có cần bổ sung sắt không?"
+rdw,độ phân bố kích thước hồng cầu,viet_tat,,,Em muốn biết rdw tăng có ý nghĩa gì trong xét nghiệm máu.
+esr,tốc độ máu lắng,viet_tat,,,Chỉ số esr tăng có phải dấu hiệu viêm không ạ?
+crp,protein phản ứng C,viet_tat,,,"Crp của em tăng nhẹ, bác sĩ giải thích giúp em với."
+pct,procalcitonin,viet_tat,,,Bác sĩ chỉ định pct để đánh giá tình trạng nhiễm khuẩn.
+ast,men gan AST,viet_tat,,,Ast của em cao hơn bình thường sau đợt dùng thuốc.
+alt,men gan ALT,viet_tat,,,Em cần làm gì khi chỉ số alt tăng nhẹ ạ?
+ggt,men gan GGT,viet_tat,,,Ggt tăng có liên quan đến việc uống rượu bia không ạ?
+alp,men phosphatase kiềm,viet_tat,,,Bác sĩ xem giúp em chỉ số alp trong kết quả sinh hóa.
+ldh,men lactate dehydrogenase,viet_tat,,,Ldh tăng có cần làm thêm xét nghiệm nào không?
+ckmb,men creatine kinase MB,viet_tat,,,Bác sĩ chỉ định ckmb để kiểm tra nguyên nhân đau ngực.
+tnt,troponin T,viet_tat,,,Kết quả tnt của em cần được đánh giá cùng điện tâm đồ không?
+ntprobnp,peptid lợi niệu natri type B đầu N,viet_tat,,,Em thấy ntprobnp tăng trong phiếu xét nghiệm và muốn hỏi ý nghĩa.
+tsh,hormone kích thích tuyến giáp,viet_tat,,,"Tsh của em cao hơn mức tham chiếu, có phải suy giáp không?"
+ft3,hormone tuyến giáp T3 tự do,viet_tat,,,Bác sĩ xem giúp em chỉ số ft3 trong kết quả tuyến giáp.
+ft4,hormone tuyến giáp T4 tự do,viet_tat,,,Ft4 thấp có ảnh hưởng đến nhịp tim không ạ?
+t3,hormone tuyến giáp T3,viet_tat,,,Em cần làm thêm xét nghiệm t3 theo chỉ định của bác sĩ.
+t4,hormone tuyến giáp T4,viet_tat,,,Chỉ số t4 của em đang nằm sát ngưỡng thấp.
+egfr,mức lọc cầu thận ước tính,viet_tat,eGFR|em,,"Egfr của em giảm nhẹ, cần theo dõi chức năng thận thế nào?"
+cre,creatinin máu,viet_tat,,crea,Cre của em cao hơn lần xét nghiệm trước.
+crea,creatinin máu,viet_tat,,cre,Bác sĩ giải thích giúp em chỉ số crea trong phiếu sinh hóa.
+bun,nitơ urê máu,viet_tat,,,Bun tăng có liên quan đến chức năng thận không ạ?
+ure,urê máu,viet_tat,,,"Em thấy ure cao hơn chuẩn, có cần điều chỉnh chế độ ăn không?"
+glu,glucose máu,viet_tat,,,"Glu lúc đói của em là 6,1, bác sĩ tư vấn giúp em."
+na,natri máu,viet_tat,na ná|na trong câu cảm thán,,Chỉ số na trong máu của em thấp hơn giới hạn tham chiếu.
+cl,clorid máu,viet_tat,chất lượng|chênh lệch,,Cl thấp có thể liên quan đến tình trạng mất nước không ạ?
+ca,canxi máu,viet_tat,ca bệnh|ca trực|ca mổ,,"Ca máu của em hơi thấp, có cần bổ sung canxi không?"
+hbsag,kháng nguyên bề mặt viêm gan B,viet_tat,,,Hbsag dương tính thì em cần làm xét nghiệm gì tiếp theo?
+hbeag,kháng nguyên e viêm gan B,viet_tat,,,Kết quả hbeag âm tính có ý nghĩa như thế nào ạ?
+hbv,vi rút viêm gan B,viet_tat,,,Em muốn kiểm tra xem mình có nhiễm hbv hay không.
+hcv,vi rút viêm gan C,viet_tat,,,Bác sĩ tư vấn giúp em xét nghiệm hcv được không ạ?
+hiv,vi rút gây suy giảm miễn dịch ở người,viet_tat,,,Sau nguy cơ phơi nhiễm bao lâu thì xét nghiệm hiv có giá trị?
+hpv,vi rút gây u nhú ở người,viet_tat,,,Em muốn hỏi lịch tiêm vắc xin hpv phù hợp với độ tuổi.
+igg,kháng thể immunoglobulin G,viet_tat,,,Igg dương tính có đồng nghĩa em đang mắc bệnh không ạ?
+igm,kháng thể immunoglobulin M,viet_tat,,,Bác sĩ giải thích giúp em kết quả igm dương tính.
+antihcv,kháng thể kháng vi rút viêm gan C,viet_tat,,,"Xét nghiệm antihcv của em âm tính, có cần kiểm tra lại không?"
+antihbs,kháng thể kháng vi rút viêm gan B,viet_tat,,,Chỉ số antihbs bao nhiêu thì được xem là có miễn dịch?
+cea,kháng nguyên ung thư phôi,viet_tat,,,Em thấy cea tăng nhẹ và muốn hỏi bác sĩ về ý nghĩa chỉ số.
+afp,protein alpha fetoprotein,viet_tat,,,Bác sĩ chỉ định afp để theo dõi vấn đề gì ạ?
+psa,kháng nguyên đặc hiệu tuyến tiền liệt,viet_tat,,,Nam giới ở tuổi trung niên có nên kiểm tra psa định kỳ không?
+ca125,kháng nguyên ung thư CA 125,viet_tat,,,Ca125 tăng có nhất thiết là dấu hiệu ung thư buồng trứng không?
+ca199,kháng nguyên ung thư CA 19-9,viet_tat,,,Bác sĩ cho em hỏi chỉ số ca199 được dùng để đánh giá gì.
+vitd,vitamin D,viet_tat,,,Em có cần xét nghiệm vitd trước khi bổ sung vitamin D không?
+b12,vitamin B12,viet_tat,,,B12 thấp có thể gây tê bì bàn tay và bàn chân không ạ?
+folate,axit folic,viet_tat,,,Bác sĩ xem giúp em có cần bổ sung folate khi chuẩn bị mang thai.
+ddimer,D-dimer,viet_tat,,,D-dimer tăng có cần kiểm tra nguy cơ huyết khối không ạ?
+ferritin,protein dự trữ sắt,viet_tat,,,Ferritin thấp có phản ánh tình trạng thiếu sắt không bác sĩ?
+amylase,enzym phân giải tinh bột amylase,viet_tat,,,Amylase tăng có liên quan đến đau vùng bụng trên không?
+lipase,enzym phân giải chất béo lipase,viet_tat,,,Bác sĩ chỉ định lipase để tìm nguyên nhân đau bụng.
+pap,xét nghiệm phết tế bào cổ tử cung,viet_tat,,,Em muốn hỏi độ tuổi nào nên làm pap định kỳ.
+meq,miliequivalent (đơn vị đương lượng),viet_tat,,,"Trên kết quả điện giải có đơn vị meq, bác sĩ giải thích giúp em."
+mmhg,milimét thủy ngân,viet_tat,,,Máy đo huyết áp nhà em hiển thị đơn vị mmhg.
+bpm,nhịp tim mỗi phút,viet_tat,,,Nhịp tim lúc nghỉ của em khoảng 95 bpm có cao không ạ?
+kg,kilôgam,viet_tat,,,Em giảm hai kg trong một tháng mà không chủ ý ăn kiêng.
+mg,miligam,viet_tat,magiê|kết quả magie,,"Đơn thuốc ghi 500 mg mỗi lần, em muốn xác nhận lại liều."
+mcg,microgam,viet_tat,,,Trên hộp thuốc ghi hàm lượng 25 mcg mỗi viên.
+ml,mililít,viet_tat,,,"Bác sĩ dặn uống 5 ml siro mỗi lần, em hiểu đúng chưa ạ?"
+mmol,milimol,viet_tat,,,Kết quả đường huyết hiển thị đơn vị mmol trên lít.
+inr,tỷ số chuẩn hóa quốc tế,viet_tat,,,"Em đang dùng thuốc chống đông, chỉ số inr cần theo dõi bao lâu?"
+aptt,thời gian thromboplastin từng phần hoạt hóa,viet_tat,,,Bác sĩ chỉ định aptt trước khi em thực hiện thủ thuật.
+pt,thời gian prothrombin,viet_tat,phẫu thuật|phương trình|phát triển,,Kết quả pt của em được kiểm tra cùng chỉ số inr.
+tha,tăng huyết áp,viet_tat,thả|thá|thoa|thấp,,"Bác sĩ ghi tha trong hồ sơ, em cần theo dõi huyết áp thế nào?"
+nmct,nhồi máu cơ tim,viet_tat,,,"Người nhà em từng bị nmct, em có cần tầm soát tim mạch không?"
+hcvc,hội chứng vành cấp,viet_tat,,,Em muốn hiểu hcvc là gì trong giấy ra viện của bố.
+tmcb,thiếu máu cục bộ,viet_tat,,,"Kết quả có ghi tmcb, bác sĩ giải thích giúp em với."
+tmct,thiếu máu cơ tim,viet_tat,,,Bác sĩ nói cần loại trừ tmct khi em bị đau ngực.
+ut,ung thư,viet_tat,,,"Gia đình em có người mắc ut, em nên khám sàng lọc thế nào?"
+copd,bệnh phổi tắc nghẽn mạn tính,viet_tat,,,Người nhà bị copd thì cần tránh những yếu tố nào?
+t1d,đái tháo đường típ 1,viet_tat,,,Trẻ mắc t1d cần theo dõi đường huyết tại nhà ra sao?
+t2d,đái tháo đường típ 2,viet_tat,,,Người mới phát hiện t2d nên thay đổi chế độ ăn thế nào?
+sdd,suy dinh dưỡng,viet_tat,,,"Bác sĩ ghi sdd ở phiếu khám của bé, em nên bổ sung gì?"
+tc,tiền căn,viet_tat,tiểu cầu|tiêu chuẩn|tổ chức,,Em không có tc bệnh tim mạch trong gia đình.
+ts,tiền sử,viet_tat,tiến sĩ|thời sự|tháng,,Bác sĩ hỏi ts dị ứng thuốc của em trước khi kê đơn.
+ls,lâm sàng,viet_tat,lịch sử|lớp,,Bác sĩ cần kết hợp triệu chứng với ls để đưa ra chẩn đoán.
+cls,cận lâm sàng,viet_tat,,,Em đã làm đủ các xét nghiệm cls theo chỉ định.
+cd,chẩn đoán,viet_tat,chuyển dạ|cao điểm|chủ đề,,Em chưa hiểu phần cd trong giấy khám bệnh.
+dx,chẩn đoán,viet_tat,,,Bác sĩ ghi dx sơ bộ trước khi có kết quả xét nghiệm.
+cs,chỉ số,viet_tat,chăm sóc|cơ sở|cộng sự,,Em muốn hỏi cs nào trên phiếu xét nghiệm cần chú ý nhất.
+kq,kết quả,go_nhanh,,,Em vừa nhận kq xét nghiệm máu và muốn bác sĩ xem giúp.
+kqxn,kết quả xét nghiệm,viet_tat,,,Em gửi kqxn để bác sĩ tư vấn thêm ạ.
+kl,kết luận,go_nhanh,,,Phần kl của phim chụp có nghĩa là gì vậy bác sĩ?
+td,tác dụng,viet_tat,thể dục|tự do|tâm động,,Em muốn hỏi td của thuốc này xuất hiện sau bao lâu.
+tdp,tác dụng phụ,viet_tat,,,"Em bị buồn nôn sau khi uống thuốc, có phải tdp không ạ?"
+ks,kháng sinh,viet_tat,kỹ sư|khảo sát|kiểm soát,,"Em đang uống ks, có cần dùng men vi sinh kèm theo không?"
+ksd,kháng sinh đồ,viet_tat,,,Bác sĩ yêu cầu làm ksd để chọn loại kháng sinh phù hợp.
+pp,phương pháp,viet_tat,,,Bác sĩ có thể giải thích pp điều trị được đề xuất không ạ?
+dt,điều trị,viet_tat,điện thoại|diện tích|đái tháo đường,,Em muốn hỏi dt này thường kéo dài trong bao lâu.
+ptth,phẫu thuật,viet_tat,,,Sau ptth em cần kiêng vận động mạnh trong bao lâu?
+cc,cấp cứu,viet_tat,chứng chỉ|công cộng,,Em nên gọi 115 hay đến khu cc gần nhất khi bị khó thở đột ngột?
+sos,khi cần,viet_tat,,,"Đơn thuốc ghi dùng sos, em muốn biết khi nào thì uống."
+th,thai kỳ,viet_tat,thuốc|tháng|thực hành,,Trong th em bị cảm nhẹ thì có thể dùng thuốc gì?
+rx,đơn thuốc,viet_tat,,,"Em gửi ảnh rx, bác sĩ xem giúp cách dùng từng thuốc."
+otc,thuốc không kê đơn,viet_tat,,,Thuốc otc này có dùng cùng thuốc huyết áp của em được không?
+u,uống,go_nhanh,khối u|u bướu|chữ u,,"Thuốc này ghi chữ u sau ăn, có nghĩa là uống đúng không ạ?"
+im,tiêm bắp,viet_tat,im lặng|giữ im lặng|lặng im,,"Thuốc được chỉ định tiêm im, em cần đến cơ sở y tế không?"
+iv,tiêm tĩnh mạch,viet_tat,,,Bác sĩ giải thích giúp em đường dùng iv trên phiếu điều trị.
+sc,tiêm dưới da,viet_tat,,,"Em được hướng dẫn tiêm sc tại nhà, cần lưu ý điều gì?"
+po,đường uống,viet_tat,,,"Đơn thuốc ghi po, em hiểu là dùng qua đường uống phải không?"
+bid,hai lần mỗi ngày,viet_tat,,,"Trên toa ghi bid, em nên chia hai lần uống vào lúc nào?"
+tid,ba lần mỗi ngày,viet_tat,,,"Bác sĩ ghi tid, em có cần uống sau cả ba bữa ăn không?"
+qid,bốn lần mỗi ngày,viet_tat,,,Em muốn xác nhận cách chia liều khi đơn thuốc ghi qid.
+qd,mỗi ngày một lần,viet_tat,,,Thuốc ghi qd thì em uống vào một giờ cố định mỗi ngày đúng không?
+prn,khi cần,viet_tat,,,"Đơn ghi prn, vậy em chỉ dùng thuốc khi triệu chứng xuất hiện phải không?"
+qhs,mỗi tối trước khi ngủ,viet_tat,,,"Em thấy ký hiệu qhs trên đơn, có phải uống trước khi đi ngủ không?"
+ac,trước bữa ăn,viet_tat,ác|ác tính,,Thuốc ghi ac thì em uống trước bữa ăn bao lâu?
+pc,sau bữa ăn,viet_tat,,,"Đơn thuốc ghi pc, em uống ngay sau ăn hay đợi một lúc?"
+stat,dùng ngay,viet_tat,,,"Bác sĩ ghi stat trên phiếu, em cần dùng liều đầu ngay phải không?"
+tab,viên nén,viet_tat,táp|thẻ tab,,Thuốc dạng tab có thể nghiền nhỏ trước khi uống không ạ?
+cap,viên nang,viet_tat,cáp|cấp|cặp,,Thuốc cap này có cần uống nguyên viên không bác sĩ?
+syr,siro,viet_tat,,,Bé nhà em dùng syr thì nên đong liều bằng dụng cụ nào?
+supp,thuốc đặt,viet_tat,,,"Bác sĩ ghi supp trong đơn, em muốn hỏi cách sử dụng."
+oint,thuốc mỡ,viet_tat,,,Thuốc oint cần bôi lớp mỏng hay dày lên vùng da tổn thương?
+inj,thuốc tiêm,viet_tat,,,"Trên giấy hẹn có ghi inj, em cần đến phòng tiêm đúng không?"
+neb,khí dung,viet_tat,,,"Bé được chỉ định neb, mỗi lần khí dung kéo dài bao lâu?"
+inh,thuốc hít,viet_tat,,,"Em dùng inh nhưng vẫn khó thở, có thể do thao tác chưa đúng không?"
+gtt,giọt,viet_tat,,,"Đơn ghi nhỏ gtt vào mắt, em cần cách nhau bao nhiêu phút?"
+tb,tiêm bắp,viet_tat,tế bào|thông báo|trung bình,,"Phiếu điều trị ghi tb, bác sĩ xác nhận giúp em đường tiêm."
+tm,tiêm tĩnh mạch,viet_tat,thương mại|thời gian|tĩnh mạch,,Thuốc này được truyền tm tại bệnh viện phải không ạ?
+ttm,truyền tĩnh mạch,viet_tat,,,Em được hẹn truyền ttm vào sáng mai.
+tr,truyền,go_nhanh,triệu|trước|trưởng,,Bác sĩ cho em hỏi thuốc này cần tr hay có thể uống tại nhà?
+1v,một viên,go_nhanh,,,"Đơn ghi 1v buổi tối, em uống sau ăn được không ạ?"
+2v,hai viên,go_nhanh,,,Nếu đơn ghi 2v mỗi ngày thì em chia thành hai lần uống chứ ạ?
+500mg,năm trăm miligam,viet_tat,,,"Vỉ thuốc ghi 500mg, em có cần uống đủ liều theo đơn không?"
+250mg,hai trăm năm mươi miligam,viet_tat,,,"Em được kê 250mg mỗi lần, bác sĩ xác nhận giúp em nhé."
+5ml,năm mililít,viet_tat,,,"Siro ghi liều 5ml, em nên dùng xilanh chia vạch phải không?"
+10ml,mười mililít,viet_tat,,,Mỗi lần uống 10ml thì có cần lắc chai trước không ạ?
+sót,sốt,sai_chinh_ta,bỏ sót|thiếu sót|sót lại,,Em bị sót 38 độ từ tối qua và đau nhức người.
+xưng,sưng,sai_chinh_ta,xưng tên|xưng hô|tự xưng,,Vết tiêm của em bị xưng đỏ và hơi đau.
+trứng,chứng,sai_chinh_ta,trứng gà|trứng vịt|trứng cá,,Em thấy triệu trứng đau đầu xuất hiện từ sáng nay.

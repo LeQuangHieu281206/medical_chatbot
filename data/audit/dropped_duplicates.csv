@@ -1,0 +1,5 @@
+file,group,keep_id,drop_id,link_keep,answer_len_keep,answer_len_drop,question
+kb.jsonl,1,2323,2280,1,467,157,"theo em biết, khuyến cáo của Bộ Y tế Việt Nam, người trên 65 tuổi là đối tượng trì hoãn tiêm chủng. Nhưng các nước Châu Âu, Mỹ lại ưu tiên tiêm phòng Covid-19 cho người cao tuổi vì đây là nhóm người c"
+kb.jsonl,2,4611,7383,1,435,237,Xét nghiệm gan Anti HBs - Positive 769.55 và Anti HCV- Negative 0.31 có bị viêm gan B không
+kb.jsonl,3,7702,5151,1,511,282,"Tôi có một số bệnh nền là hẹp động mạch vành (50%), cao huyết áp , tiểu đường tuýp 2, hiện hàng ngày đang uống thuốc. Vậy tôi có tiêm được vaccine Covid-19 không?"
+eval.jsonl,1,402,1574,1,503,503,Sốt về chiều có nguy hiểm không?

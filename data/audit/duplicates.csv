@@ -1,0 +1,27 @@
+group,role,id,question,answer_len,has_link,source
+1,keep,1010,"Bệnh nấm miệng tái phát nhiều lần, phải làm sao?",314,1,ViHealthQA
+1,dup,15951,"Bệnh nấm miệng tái phát nhiều lần, phải làm sao ạ?",314,0,vietnamese-medical-qa
+2,dup,1298,Phụ nữ đang nuôi con bằng sữa mẹ có được tiêm vaccine Covid-19 như AstraZeneca không? Một số thông tin cho rằng chỉ cần ngừng cho con bú 7 ngày thì vẫn được tiêm. Phụ nữ đang nuôi con bằng sữa mẹ khi ,189,1,ViHealthQA
+2,keep,6206,Phụ nữ đang nuôi con bằng sữa mẹ có được tiêm vaccine Covid-19 không? Một số thông tin cho rằng chỉ cần ngừng cho con bú 7 ngày thì vẫn được tiêm. Phụ nữ đang nuôi con bằng sữa mẹ khi tiêm vaccine có ,201,1,ViHealthQA
+3,keep,1513,"Những sai lầm thường gặp của cha mẹ khi cố gắng ""thúc"" chiều cao cho con quá mức là gì?",798,1,ViHealthQA
+3,dup,16564,"Những sai lầm thường gặp của cha mẹ khi cố gắng ""thúc"" chiều cao cho con quá mức là gì? Mong bác sĩ tư vấn giúp tôi.",992,0,vietnamese-medical-qa
+4,keep,2440,Sau mổ mở cắt thận phải do ảnh hưởng của sỏi niệu quản cần theo dõi gì?,155,1,ViHealthQA
+4,dup,10302,"Bác sĩ cho hỏi, sau mổ mở cắt thận phải do ảnh hưởng của sỏi niệu quản cần theo dõi gì ạ?",226,0,vietnamese-medical-qa
+5,keep,2925,VNVC đã có vaccine Pfizer hay Moderna chưa ạ? Em muốn đăng ký chích cho gia đình em thì đăng ký như thế nào vì gia đình em không thuộc diện ưu tiên để được chích vaccine. Nếu có chích thì giá như thế ,726,1,ViHealthQA
+5,dup,6570,"Bác sĩ cho em hỏi, VNVC đã có vaccine Pfizer hay Moderna chưa ạ? Em muốn đăng ký chích cho gia đình em thì đăng ký như thế nào vì gia đình em không thuộc diện ưu tiên để được chích vaccine. Nếu có chí",503,1,ViHealthQA
+6,keep,2965,"Nổi li ti gân đỏ trong mắt nhưng không ngứa, cảm giác nóng, khó chịu khi nháy mắt, nhìn vào thiết bị điện tử là bị sao?",197,1,ViHealthQA
+6,dup,14105,"Khi ngủ dậy, nổi li ti gân đỏ trong mắt nhưng không ngứa, cảm giác nóng, khó chịu khi nháy mắt, nhìn vào thiết bị điện tử là bị sao vậy ạ?",33,0,vietnamese-medical-qa
+7,keep,3332,"Tôi muốn tư vấn khi chích ngừa vaccine, tôi bị hội chứng áo choàng trắng,khi gặp y tá,bác sĩ thì huyết áp tăng rất cao có khi lên 170/100,dù có dùng thuốc nhưng vẫn không xuống,nhịp tim tăng nhanh gần",498,1,ViHealthQA
+7,dup,4090,"Tôi muốn tư vấn khi chích ngừa vaccine Covid-19. Khi gặp y tá, bác sĩ thì huyết áp tăng rất cao có khi lên 170/100mmHg, dù có dùng thuốc nhưng vẫn không xuống, nhịp tim tăng nhanh gần cả 100, hồi hộp ",353,1,ViHealthQA
+8,keep,3782,Bé bị bệnh viêm màng lông mi dưới có cần phẫu thuật không?,305,1,ViHealthQA
+8,dup,14437,bé bị bệnh viêm màng lông mi dưới có cần phẫu thuật không ạ?,340,0,vietnamese-medical-qa
+9,keep,4021,Người bị bệnh suyễn có thể uống sụn cá mập không?,537,1,ViHealthQA
+9,dup,9124,Người bị bệnh suyễn có thể uống sụn cá mập không thưa dược sĩ?,170,0,vietnamese-medical-qa
+10,keep,4098,"Sau tán sỏi bị gan mờ, đau cột sống nên dưỡng gan và cột sống thế nào?",393,1,ViHealthQA
+10,dup,15934,"Bác sĩ ơi, mẹ con sau tán sỏi bị gan mờ, đau cột sống nên dưỡng gan và cột sống thế nào?",464,0,vietnamese-medical-qa
+11,keep,5701,Bị bỏng bô xe máy có đắp được nha đam lên vết thương không?,212,1,ViHealthQA
+11,dup,16151,Bị bỏng bô xe máy có đắp được nha đam lên vết thương không thưa bác sĩ?,34,0,vietnamese-medical-qa
+12,keep,8396,"2 tuần gần đây tôi bị đau nửa đầu bên phải, thường khi đau khoảng 30 phút đến 1 tiếng và sụp mí mắt phải dây thần kinh bên thái dương cũng nổi hết nên, có thể nôn và buồn nôn. Cơn đau có thể đến bất c",504,0,vietnamese-medical-qa
+12,dup,12875,"2 tuần gần đây tôi bị đau nửa đầu bên phải, thường khi đau khoảng 30 phút đến 1 tiếng và sụp mí mắt phải dây thần kinh bên thái dương cũng nổi hết nên, có thể nôn và buồn nôn. Cơn đau có thể đến bất c",504,0,vietnamese-medical-qa
+13,dup,8554,"Em bị đi tiểu đêm 6 - 9 lần 1 đêm. Lượng nước tiểu ít nhưng đi tiểu xong thì vừa đi ra lại buồn tiểu, cảm giác như nhịn lâu lắm rồi, nhưng vừa đi xong, bàng quang căng đau. Vậy bác sĩ cho em hỏi tiểu ",446,0,vietnamese-medical-qa
+13,keep,12857,"Em bị đi tiểu đêm 6 - 9 lần 1 đêm, lượng nước tiểu ít. Nhưng đi tiểu xong thì vừa đi ra lại buồn tiểu, cảm giác như nhịn lâu lắm rồi, nhưng vừa đi xong, bàng quang căng đau. Vậy bác sĩ cho em hỏi tiểu",628,0,vietnamese-medical-qa
