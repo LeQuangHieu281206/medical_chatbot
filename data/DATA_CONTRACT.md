@@ -337,9 +337,28 @@ nào") vẫn nhận khối cảnh báo, nhưng câu mở đầu là điều ki�
 khẩn cấp đang xảy ra..." nên không gây hiểu sai. Cố ý chọn thà cảnh báo thừa còn
 hơn bỏ sót cơn cấp.
 
-Lời khuyên sơ cứu là nội dung tự soạn theo hướng dẫn sơ cứu thông thường, **chưa
-qua bác sĩ duyệt**. Trước khi dùng cho người bệnh thật phải có người có chuyên môn
-đọc lại, đặc biệt các nhóm `tu-hai`, `soc-phan-ve`, `ngo-doc`.
+Lời khuyên sơ cứu là nội dung tự soạn, đã qua sáu vòng soát độc lập (AHA/ERC/WHO,
+hướng dẫn Bộ Y tế, và hai bác sĩ soát nội dung). Đây **không phải văn bản pháp quy**:
+không được trích dẫn như hướng dẫn chính thức của Bộ Y tế.
+
+Tình trạng trích dẫn nguồn (đã đối chiếu số hiệu và ngày ban hành):
+
+| Nguồn | Ngày ban hành | Dùng cho | Trạng thái |
+|---|---|---|---|
+| TT 51/2017/TT-BYT | 29/12/2017, hiệu lực 15/02/2018 | `soc-phan-ve` | còn hiệu lực |
+| QĐ 3312/QĐ-BYT | **05/11/2024** | `dot-quy` | còn hiệu lực, thay QĐ 5331/QĐ-BYT 2020 |
+| QĐ 292/QĐ-BYT | 06/02/2024 | `tay-chan-mieng-nang` | còn hiệu lực, thay QĐ 1003/QĐ-BYT 2012 |
+| Hướng dẫn sốt xuất huyết Dengue (BYT) | — | `sot-xuat-huyet` | chưa đối chiếu số hiệu |
+
+Lưu ý: **số 3312/QĐ-BYT dùng cho hai văn bản khác nhau** — ngày 07/08/2015 là hướng
+dẫn bệnh thường gặp ở trẻ em, ngày 05/11/2024 là hướng dẫn đột quỵ não. Khi trích dẫn
+luôn phải kèm ngày ban hành.
+
+Vì Bộ Y tế chưa có văn bản sơ cứu cộng đồng riêng cho phần lớn tình huống tai nạn,
+mỗi nhóm ghi rõ loại nguồn trong trường `nguon_loai`: **4 nhóm** dựa trên văn bản BYT,
+**1 nhóm** dựa trên phác đồ bệnh viện (trẻ dưới 3 tháng sốt), **28 nhóm** dựa trên
+hướng dẫn quốc tế (AHA, ERC, Red Cross, WHO, GINA, ADA…). Không gán văn bản BYT về
+điều trị chuyên khoa cho các kỹ thuật sơ cứu để tránh trích dẫn sai nhóm bệnh lý.
 
 ## 5. Ghi chú
 

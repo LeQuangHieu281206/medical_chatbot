@@ -242,7 +242,8 @@ DOSE_IN_ADVICE = re.compile(r"\d+\s*(mg|mcg|µg|μg|ml|gói|ống|viên)\b", re.
 RED_FLAG_FIELDS = ("id", "nhom", "uu_tien", "mau", "loi_khuyen")
 RED_FLAG_OPTIONAL = ("khong_khop", "khong_khop_tru", "kem_theo", "khong_duoc_lam", "nguon")
 # trường truy vết nguồn: bắt buộc có để biết mỗi nhóm dựa vào văn bản/hướng dẫn nào
-RED_FLAG_TRACE = ("nguon", "phien_ban", "ngay_kiem_duyet")
+RED_FLAG_TRACE = ("nguon", "nguon_loai", "phien_ban", "ngay_kiem_duyet")
+NGUON_LOAI = {"văn bản BYT", "hướng dẫn bệnh viện", "quốc tế"}
 RED_FLAG_MIN_GROUPS = 12
 RED_FLAG_MIN_SAMPLES = 3
 
@@ -267,6 +268,9 @@ def check_red_flags(rows) -> list:
                if not isinstance(r.get("nguon"), str) or not r.get("nguon", "").strip()]
     out.append(Result("mỗi nhóm ghi nguồn chuyên môn", "hard", not bad_src,
                       ", ".join(map(str, bad_src)) if bad_src else "đủ"))
+    bad_kind = [r.get("id") for r in rows if r.get("nguon_loai") not in NGUON_LOAI]
+    out.append(Result("nguon_loai thuộc BYT / bệnh viện / quốc tế", "hard", not bad_kind,
+                      ", ".join(map(str, bad_kind)) if bad_kind else "đủ"))
     few = [r.get("id") for r in rows if len(r.get("mau") or []) < RED_FLAG_MIN_SAMPLES]
     out.append(Result(f"mỗi nhóm ≥ {RED_FLAG_MIN_SAMPLES} mẫu câu", "hard", not few,
                       ", ".join(map(str, few)) if few else "đủ"))
