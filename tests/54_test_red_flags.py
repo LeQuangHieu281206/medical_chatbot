@@ -94,6 +94,13 @@ RED = [
     ("ngã gãy chân, xương lộ ra ngoài", "gay-xuong-vet-thuong"),
     ("tôi đang muốn giết người hàng xóm", "hai-nguoi-khac"),
     ("bị ngạt nước, vớt lên không thở", "duoi-nuoc"),
+    # vòng soát thứ tư (tai nạn thương tích)
+    ("sét đánh khi đang làm ruộng", "dien-giat"),
+    ("bị bỏng điện ở tay", "dien-giat"),
+    ("uống nhầm thuốc diệt cỏ", "ngo-doc"),
+    ("ngộ độc rượu, lơ mơ không gọi được", "ngo-doc"),
+    ("sùi bọt mép sau khi uống thuốc", "ngo-doc"),
+    ("sưng nề sau rắn cắn, sụp mí mắt", "ran-can"),
     # vòng soát thứ ba
     ("sốt xuất huyết ngày 5, tay chân lạnh và lừ đừ", "sot-xuat-huyet"),
     ("vỡ ối, thấy dây rốn sa ra ngoài âm đạo", "thai-san"),

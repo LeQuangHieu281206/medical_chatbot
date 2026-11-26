@@ -230,7 +230,7 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 33 nhóm, 290 mẫu, recall 58/58 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+Hiện tại: 33 nhóm, 310 mẫu, recall 64/64 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
 có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
 150/2.311 câu `eval.jsonl` và 1.203/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
 
@@ -268,6 +268,17 @@ Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
   đủ chặt để vẫn bắt được mạch, kèm nẹp bất động; tuyệt đối không garô. `ran-luc`: **không**
   băng ép, vì nọc gây sưng nề, hoại tử tại chỗ và rối loạn đông máu — chỉ bất động, để chi
   ngang hoặc thấp hơn tim và chuyển đi cấp cứu nhanh.
+- **Tai nạn thương tích** (vòng soát thứ tư): bỏng nhận thêm "bỏng điện", "bỏng mặt", "bỏng
+  đường thở", "da phồng rộp lớn" và loại trừ "bỏng nắng nhẹ", "bỏng bô xe máy nhỏ", "rát da
+  nhẹ"; lời khuyên nêu rõ phủi vôi bột trước khi xả nước và cấm kem đánh răng, nước mắm, mỡ
+  trăn. Điện giật nhận thêm "sét đánh", "dây điện hở", "chạm điện", "ngất do điện giật".
+  Ngộ độc nhận thêm "uống nhầm hoá chất", "thuốc diệt cỏ", "ngộ độc rượu", "ngộ độc nấm",
+  "ngạt khí", "sùi bọt mép" và loại trừ "tiêu chảy nhẹ", "đau bụng thông thường". Rắn cắn
+  nhận thêm "vết rắn cắn", "sưng nề sau rắn cắn", "sụp mí sau rắn cắn".
+- **"Bỏng điện" nằm ở cả hai nhóm**: `dien-giat` đứng trước `bong-nhiet` nên câu "bỏng điện"
+  luôn nhận hướng dẫn ngắt nguồn điện trước — an toàn cho người cứu.
+- **Sốt xuất huyết**: `kem_theo` nhận thêm "lơ mơ", "mạch nhanh", "tiểu ít", "vật vã", nên
+  "sốt xuất huyết lơ mơ" vẫn cảnh báo trong khi "sốt xuất huyết là gì" thì không.
 - **Khó thở**: loại trừ "ngạt mũi", "khó thở khi nằm ngửa", "khó thở khi tập thể dục/chạy/leo
   cầu thang"; mẫu "khò khè" đứng một mình đổi thành "thở khò khè nặng" và "khò khè kèm khó
   thở" để không bắt nhầm trẻ chỉ có đờm mũi họng.
