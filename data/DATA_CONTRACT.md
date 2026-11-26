@@ -33,7 +33,7 @@ Mọi file trong `data/processed/` phải qua cổng `scripts/validate_data.py` 
 
 `eval_noisy.jsonl`: `id`, `mode`, `original`, `noisy`.
 
-`data/sources/red_flags.jsonl` — bộ dấu hiệu cấp cứu (22 nhóm):
+`data/sources/red_flags.jsonl` — bộ dấu hiệu cấp cứu (33 nhóm):
 
 | trường | kiểu | ghi chú |
 |---|---|---|
@@ -230,10 +230,48 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 22 nhóm, 194 mẫu, recall 47/47 câu mẫu, báo nhầm 0/49 câu bệnh thường
-(trong đó có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh
-báo xuất hiện ở 157/2.311 câu `eval.jsonl` và 1.224/16.961 câu `kb.jsonl` (bộ regex
-cũ: 89 và 712).
+Hiện tại: 33 nhóm, 286 mẫu, recall 56/56 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
+158/2.311 câu `eval.jsonl` và 1.256/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
+
+Vòng soát thứ hai (đối chiếu AHA, ERC, WHO, hướng dẫn Bộ Y tế) đã sửa 10 điểm nội dung:
+làm mát bằng nước lạnh/chườm đá bọc khăn thay vì cấm đá; aspirin chỉ dùng khi tổng đài 115
+hướng dẫn; thêm dấu hiệu không điển hình của nhồi máu; nêu ý chính ép tim trẻ em và thổi
+ngạt khi đuối nước; bất động chi + băng ép vừa phải khi rắn cắn; tách bỏng / điện giật /
+đuối nước thành ba nhóm; thêm quá liều paracetamol không triệu chứng và rửa hoá chất dính
+da, mắt; hóc có bất tỉnh, người mang thai; mũ bảo hiểm có ngoại lệ khi cần mở đường thở.
+Thêm 10 nhóm: ngất, ý định làm hại người khác, thuyên tắc phổi, viêm màng não, trẻ dưới 3
+tháng sốt, mất nước nặng, chấn thương mắt, gãy xương/vết thương hở, bỏng nhiệt, điện giật,
+đuối nước.
+
+Hai thay đổi về cách khớp:
+
+- `kem_theo` nay kiểm trên phần câu **còn lại** sau khi bỏ đoạn đã khớp. Trước đây
+  "sốt xuất huyết là bệnh gì" cũng bị coi là cấp cứu vì cụm "sốt xuất huyết" tự chứa chữ "sốt".
+- Câu khớp nhiều nhóm thì hiện đủ nhóm ưu tiên cao nhất và chèn thêm dòng hành động của
+  nhóm nguy hiểm tức thì khác (ngừng tuần hoàn, hóc, phản vệ) cùng một nhóm còn lại. Ví dụ
+  "uống cả vỉ thuốc ngủ, bất tỉnh, không thở" hiện ép tim và cả lời khuyên giữ lại vỏ thuốc.
+
+Số hotline 1900 1267 đã bỏ khỏi nhóm tự hại vì chưa xác minh lại được; hiện chỉ còn 115,
+096 306 1414 (đường dây Ngày mai) và 111 (trẻ em) — hai số sau đã được người soát xác nhận
+còn đúng.
+
+Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
+
+- **Aspirin trong nhồi máu cơ tim**: không tự cho uống. Gọi 115 trước, nói rõ dị ứng và tiền
+  sử chảy máu; chỉ cho nhai aspirin khi tổng đài 115 hoặc nhân viên y tế hướng dẫn, hoặc khi
+  người bệnh đã có đơn sẵn cho tình huống này. Lý do: liều nạp chỉ có lợi khi chắc là nhồi
+  máu, còn có thể sai trong bóc tách động mạch chủ, xuất huyết tiêu hoá, hoặc đang dùng thuốc
+  chống đông.
+- **Băng ép khi rắn cắn**: tách hẳn hai nhóm vì cách sơ cứu ngược nhau.
+  `ran-can` (không rõ loài, nghi nọc thần kinh): băng thun quấn từ ngọn chi lên gốc chi, vừa
+  đủ chặt để vẫn bắt được mạch, kèm nẹp bất động; tuyệt đối không garô. `ran-luc`: **không**
+  băng ép, vì nọc gây sưng nề, hoại tử tại chỗ và rối loạn đông máu — chỉ bất động, để chi
+  ngang hoặc thấp hơn tim và chuyển đi cấp cứu nhanh.
+- **Ngất**: nằm ngửa nơi thoáng, nâng nhẹ chân, nới đồ; kiểm tra phản ứng và nhịp thở,
+  nghiêng đầu nếu nôn; không thở thì gọi 115 và ép tim; chưa tỉnh hẳn thì không cho ăn uống,
+  không châm kim cạo gió; ngất kéo dài, chấn thương khi ngã, đau ngực, khó thở, co giật hoặc
+  ngất khi gắng sức thì gọi 115.
 
 Đánh đổi đã biết: câu hỏi *thông tin* về bệnh mạn tính ("điều trị động kinh thế
 nào") vẫn nhận khối cảnh báo, nhưng câu mở đầu là điều kiện "Nếu đây là tình huống

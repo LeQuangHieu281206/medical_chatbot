@@ -68,8 +68,8 @@ RED = [
     ("đang mang thai 32 tuần bị ra máu âm đạo", "thai-san"),
     ("thai 36 tuần, thai máy giảm rõ rệt", "thai-san"),
     # bỏng / điện / nước
-    ("bị điện giật khi sửa ổ cắm", "bong-dien"),
-    ("bé bị bỏng nước sôi diện rộng", "bong-dien"),
+    ("bị điện giật khi sửa ổ cắm", "dien-giat"),
+    ("bé bị bỏng nước sôi diện rộng", "bong-nhiet"),
     # hạ đường huyết
     ("mẹ tôi tiểu đường bị hạ đường huyết, run tay vã mồ hôi", "ha-duong-huyet"),
     # toan ceton
@@ -80,10 +80,20 @@ RED = [
     # 6 nhóm bổ sung sau khi soát
     ("bé bị hóc xương cá, giờ khó thở", "hoc-di-vat"),
     ("đi nắng về ngất, người nóng ran lơ mơ", "soc-nhiet"),
-    ("bị rắn lục cắn ở chân, sưng nhanh", "ran-can"),
+    ("bị rắn lục cắn ở chân, sưng nhanh", "ran-luc"),
     ("mèo cào chảy máu ở tay", "cho-meo-can"),
     ("sốt cao rét run rồi lơ mơ, tay chân lạnh", "nhiem-khuan-huyet"),
     ("trẻ tay chân miệng giật mình chới với", "tay-chan-mieng-nang"),
+    # 8 nhóm thêm sau vòng soát y khoa thứ hai
+    ("bị ngất khi đang đứng, tỉnh lại sau vài giây", "ngat"),
+    ("sốt 39 độ, cứng cổ, sợ ánh sáng", "viem-mang-nao"),
+    ("bé 2 tháng tuổi bị sốt 38 độ", "tre-duoi-3-thang-sot"),
+    ("trẻ tiêu chảy 3 ngày, mắt trũng, không đi tiểu", "mat-nuoc-nang"),
+    ("đau ngực khi hít vào, chân phải sưng và đau", "thuyen-tac-phoi"),
+    ("vôi bắn vào mắt, rất rát", "mat-thi-luc-dot-ngot"),
+    ("ngã gãy chân, xương lộ ra ngoài", "gay-xuong-vet-thuong"),
+    ("tôi đang muốn giết người hàng xóm", "hai-nguoi-khac"),
+    ("bị ngạt nước, vớt lên không thở", "duoi-nuoc"),
     # câu gõ không dấu / teencode
     ("be bi co giat, phai lam sao", "co-giat"),
     ("me em bi soc phan ve sau tiem", "soc-phan-ve"),

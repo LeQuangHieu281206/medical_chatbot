@@ -75,8 +75,21 @@ def load_flags() -> tuple[Flag, ...]:
     return tuple(flags)
 
 
+# Nhóm mà hành động sơ cứu phải hiện ngay, kể cả khi một nhóm khác đứng trước:
+# "uống cả vỉ thuốc, bất tỉnh, không thở" vừa là tự hại vừa là ngừng tuần hoàn,
+# nếu chỉ hiện nhóm tự hại thì người đọc không được hướng dẫn ép tim.
+IMMEDIATE = ("ngung-tuan-hoan", "hoc-di-vat", "soc-phan-ve")
+
+
 def _fires(flag: Flag, text: str) -> bool:
-    if flag.must is not None and not flag.must.search(text):
+    m = flag.pattern.search(text)
+    if m is None:
+        return False
+    # `kem_theo` phải khớp ở phần CÒN LẠI của câu: "sốt xuất huyết" tự chứa chữ
+    # "sốt" nên nếu xét cả câu thì điều kiện "phải kèm sốt" luôn đúng một cách
+    # vô nghĩa.
+    rest = text[:m.start()] + " " + text[m.end():]
+    if flag.must is not None and not flag.must.search(rest):
         return False
     if flag.veto is not None and flag.veto.search(text):
         return False
@@ -113,6 +126,17 @@ def prefix(text: str, generic: bool = True) -> str:
         lines += [EMERGENCY, ""]
     lines.append(f"⚠️ {flag.nhom.upper()} — hướng dẫn sơ cứu ban đầu:")
     lines += list(flag.loi_khuyen)
+    # Nhóm nguy hiểm tức thì khác cũng khớp: chèn dòng đầu của nhóm đó để hành
+    # động sống còn không bị bỏ sót vì thứ tự ưu tiên.
+    others = matches(text)[1:]
+    extras = [f for f in others if f.id in IMMEDIATE]
+    # thêm một nhóm không khẩn cấp tức thì nhưng có hành động quan trọng
+    # (ngộ độc: giữ lại vỏ thuốc; tự hại: nhờ người ở bên).
+    extras += [f for f in others if f.id not in IMMEDIATE][:1]
+    for extra in extras[:2]:
+        if extra.loi_khuyen:
+            lines.append(f"Kèm theo — {extra.nhom.lower()}: "
+                         f"{extra.loi_khuyen[0].lstrip('- ').strip()}")
     return "\n".join(lines)
 
 
