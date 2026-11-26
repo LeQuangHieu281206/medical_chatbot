@@ -21,10 +21,14 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
+from app.services.topic_filter import EMBED_MODEL, EMBED_STAMP
+
 DEFAULT_KB = Path("data/processed/kb.jsonl")
 DB_PATH = "app/db/chroma_db"
 DEFAULT_COLLECTION = "medical_kb"
-MODEL_NAME = "intfloat/multilingual-e5-small"
+# Dùng CHUNG một nguồn với topic_filter để model nạp KB và model lúc truy vấn
+# không bao giờ lệch nhau.
+MODEL_NAME = EMBED_MODEL
 BATCH = 64
 
 
@@ -44,12 +48,15 @@ def main():
     rows = [json.loads(line) for line in kb_path.open(encoding="utf-8") if line.strip()]
     print(f"{kb_path}: {len(rows)} bản ghi → collection '{args.collection}'", flush=True)
 
+    EMBED_STAMP.parent.mkdir(parents=True, exist_ok=True)
+    EMBED_STAMP.write_text(MODEL_NAME, encoding="utf-8")
     model = SentenceTransformer(MODEL_NAME)
     model.max_seq_length = 512
 
     client = chromadb.PersistentClient(path=args.db)
     if args.append:
-        col = client.get_or_create_collection(args.collection, metadata={"hnsw:space": "cosine"})
+        col = client.get_or_create_collection(
+            args.collection, metadata={"hnsw:space": "cosine", "embed_model": EMBED_MODEL})
         print(f"Thêm vào collection '{args.collection}' (đang có {col.count()} document)", flush=True)
     else:
         try:
@@ -57,7 +64,8 @@ def main():
             print(f"Đã xoá collection cũ '{args.collection}'", flush=True)
         except Exception:  # noqa: BLE001 - collection chưa có là bình thường
             pass
-        col = client.create_collection(args.collection, metadata={"hnsw:space": "cosine"})
+        col = client.create_collection(
+            args.collection, metadata={"hnsw:space": "cosine", "embed_model": EMBED_MODEL})
 
     id_prefix = kb_path.stem      # append: id theo tên file, không đạp lên id cũ
     t0 = time.time()

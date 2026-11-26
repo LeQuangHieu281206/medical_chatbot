@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from dataclasses import dataclass
 
 import chromadb
@@ -9,14 +10,23 @@ from sentence_transformers import SentenceTransformer
 from app.services import llm
 
 DB_PATH = "app/db/chroma_db"
+# Dấu model đã dùng để nhúng KB. Ghi lúc nạp KB; đọc lúc truy vấn để phát hiện
+# trường hợp KB cũ bị dùng với model mới (vector lệch, truy xuất rác, không lỗi).
+EMBED_STAMP = Path(DB_PATH).parent / "embed_model.txt"
 # Mặc định dùng bản đã bổ sung vaccine/dinh dưỡng (medical_kb_v3). Muốn quay lại
 # bản cũ thì chạy: KB_COLLECTION=medical_kb .venv/bin/python app/api/server.py
 COLLECTION = os.getenv("KB_COLLECTION", "medical_kb_v3")
-EMBED_MODEL = "intfloat/multilingual-e5-small"
+# Kho bách khoa (bài viết y khoa) là collection RIÊNG, không phụ thuộc phiên bản KB.
+# Trước đây pipeline tự ghép f"{COLLECTION}_vimedaqa" nên khi đổi KB sang v3 thì
+# thành "medical_kb_v3_vimedaqa" — không tồn tại, mất toàn bộ bài bách khoa.
+ENCY_COLLECTION = os.getenv("KB_ENCY_COLLECTION", "medical_kb_vimedaqa")
+# Model nhúng: ĐỔI ĐƯỢC bằng env, nhưng đổi model thì PHẢI nạp lại toàn bộ KB và
+# hiệu chuẩn lại PASS_MAX/REJECT_MIN (mỗi model có thang khoảng cách khác nhau).
+EMBED_MODEL = os.getenv("EMBED_MODEL", "intfloat/multilingual-e5-small")
 LLM_MODEL = llm.OLLAMA_MODEL      # giữ tên cũ cho code/test đang import
 
-PASS_MAX = 0.12      # nhỏ hơn hoặc bằng: chắc chắn là y tế
-REJECT_MIN = 0.14    # lớn hơn: chắc chắn ngoài chủ đề
+PASS_MAX = float(os.getenv("TOPIC_PASS_MAX", "0.12"))   # <= : chắc chắn là y tế
+REJECT_MIN = float(os.getenv("TOPIC_REJECT_MIN", "0.14"))  # > : chắc chắn ngoài chủ đề
 
 ANIMAL_PATTERN = re.compile(
     r"\b(chó|mèo|thú cưng|thú y|vật nuôi|gà|vịt|heo|lợn|trâu|bò|ngựa|cá cảnh|chim cảnh|cây trồng)\b",
@@ -50,6 +60,30 @@ class TopicFilter:
         self.collection = collection or chromadb.PersistentClient(
             path=DB_PATH
         ).get_collection(COLLECTION)
+        self.model_mismatch = self._check_embed_model()
+
+    def _check_embed_model(self) -> str | None:
+        """Cảnh báo nếu KB được nhúng bằng model KHÁC model đang cấu hình.
+
+        Lỗi này không gây exception — vector vẫn "chạy" nhưng truy xuất ra rác,
+        nên phải kiểm tra tường minh. Dấu được ghi lúc nạp KB (ingest_kb.py).
+        """
+        try:
+            built = (self.collection.metadata or {}).get("embed_model")
+        except Exception:
+            built = None
+        if not built:
+            try:
+                built = EMBED_STAMP.read_text(encoding="utf-8").strip() or None
+            except Exception:
+                built = None
+        if not built or built == EMBED_MODEL:
+            return None
+        msg = (f"KB [{COLLECTION}] được nhúng bằng '{built}' nhưng đang cấu hình "
+               f"'{EMBED_MODEL}'. Truy xuất sẽ sai. Nạp lại KB hoặc đặt "
+               f"EMBED_MODEL={built}.")
+        print(f"[topic_filter] CẢNH BÁO: {msg}")
+        return msg
 
     def _top1_distance(self, query: str) -> float:
         emb = self.embedder.encode([f"query: {query}"], normalize_embeddings=True).tolist()

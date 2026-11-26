@@ -1,3 +1,4 @@
+import os
 import re
 import time
 from dataclasses import dataclass, field
@@ -9,7 +10,7 @@ from app.services import red_flags
 from app.services.ner import extract_entities
 from app.services.normalizer import QueryNormalizer, WORD_RE
 from app.services.topic_filter import (
-    COLLECTION, DB_PATH, LLM_MODEL, TopicFilter, TopicResult,
+    COLLECTION, DB_PATH, ENCY_COLLECTION, LLM_MODEL, TopicFilter, TopicResult,
 )
 
 
@@ -18,8 +19,22 @@ from app.services.topic_filter import (
 # ============================================================
 
 TOP_K = 3                    # dùng khi chưa có collection bách khoa
-QUOTA_ENCYC = 2              # số tài liệu lấy từ medical_kb_vimedaqa (bài viết y khoa)
+QUOTA_ENCYC = 2              # số tài liệu lấy từ kho bách khoa (bài viết y khoa)
+# Kho bách khoa giữ tên cố định: đổi COLLECTION sang bản KB mới (medical_kb_v3)
+# không được làm mất kho bài viết, nếu không mỗi câu chỉ còn 1 tài liệu hỏi đáp.
+ENCY_COLLECTION = os.environ.get("KB_ENCY_COLLECTION", "medical_kb_vimedaqa")
 QUOTA_QA = 1                 # số tài liệu lấy từ medical_kb (hỏi đáp)
+
+# Truy xuất lai: lấy bể rộng bằng dense rồi gộp thêm BM25-RRF (app/services/hybrid.py).
+# Đo bằng tests/56: bật cờ này kéo số câu có bài đúng chủ đề vào ngữ cảnh từ
+# 5/19 lên mức cao hơn hẳn, vì bài đúng thường nằm ở hạng 4-27 chứ không phải 1.
+HYBRID_RETRIEVAL = os.environ.get("HYBRID_RETRIEVAL", "1") == "1"  # đặt 0 để tắt
+HYBRID_QUOTA_ENCYC = 2
+HYBRID_QUOTA_QA = 3
+
+# Mở rộng truy vấn: sinh 2-3 tên bệnh khả dĩ từ triệu chứng rồi nối vào truy vấn
+# (app/services/query_expand.py). Đo bằng tests/58 trước khi bật mặc định.
+QUERY_EXPAND = os.environ.get("QUERY_EXPAND", "0") == "1"
 
 MAX_DOC_CHARS = 800          # giới hạn ký tự cho một đoạn bách khoa
 MAX_QA_CHARS = 350           # giới hạn ký tự cho một đoạn hỏi đáp (nhiễu hơn)
@@ -93,8 +108,12 @@ SYSTEM_PROMPT = (
     "Nếu triệu chứng trong câu hỏi là dấu hiệu cấp cứu (đột quỵ, đau ngực, khó thở, co giật, "
     "chảy máu nhiều, mất ý thức): bắt buộc khuyên gọi 115 hoặc đến cơ sở y tế ngay, "
     "và tuyệt đối không được khuyên nằm nghỉ, chờ đợi hay theo dõi thêm tại nhà. "
-    "Với dị ứng, mày đay, sưng sau khi ăn hoặc dùng thuốc: luôn nêu các dấu hiệu phản vệ "
-    "cần cấp cứu ngay (khó thở, sưng môi, lưỡi, mắt, chóng mặt, ngất). "
+    "Chỉ nêu phản vệ khi có dấu hiệu toàn thân sau khi ăn hoặc dùng thuốc (mày đay lan rộng, "
+    "sưng môi, lưỡi, mắt, khó thở, chóng mặt, ngất); sưng đau khu trú một vùng thì không quy "
+    "thành phản vệ. "
+    "Nêu nguyên nhân hay gặp nhất trước; không liệt kê bệnh cấp cứu không liên quan chỉ để "
+    "cảnh báo. Chỉ khuyên gọi 115 khi câu hỏi có dấu hiệu cấp cứu thật sự; sốt, đau mỏi, "
+    "huyết áp cao đơn thuần hay tiêu chảy nhẹ thì hướng dẫn theo dõi và nêu mốc cần đi khám. "
     "Không bịa số liệu, tên bệnh hay tỉ lệ không có căn cứ. "
     "Tài liệu gồm bài viết y khoa và câu hỏi đáp của những người khác: chỉ rút ra thông tin chung, "
     "không nhắc đến tuổi hay hoàn cảnh riêng của người hỏi trong tài liệu. "
@@ -226,11 +245,17 @@ class MedicalChatbot:
         self.embedder = self.topic.embedder
         self.collection = self.topic.collection  # hỏi đáp (cũng dùng cho bộ lọc chủ đề)
         self.encyc = None                        # bài viết y khoa, có thể chưa nạp
+        self.encyc_error: str | None = None
         try:
             client = chromadb.PersistentClient(path=DB_PATH)
-            self.encyc = client.get_collection(f"{COLLECTION}_vimedaqa")
-        except Exception:
+            self.encyc = client.get_collection(ENCY_COLLECTION)
+        except Exception as exc:
+            # Trước đây lỗi bị nuốt im lặng: pipeline tự tụt xuống chỉ dùng kho hỏi
+            # đáp, câu trả lời kém đi mà không ai biết. Giờ ghi lại để lộ ra.
             self.encyc = None
+            self.encyc_error = f"{type(exc).__name__}: {exc}"
+            print(f"[pipeline] CẢNH BÁO: không mở được kho bách khoa "
+                  f"({self.encyc_error}). Chỉ dùng kho hỏi đáp.")
 
     def warmup(self):
         """Nạp sẵn NER và model để các câu hỏi sau không phải chờ.
@@ -328,7 +353,13 @@ class MedicalChatbot:
             entity_texts = list(dict.fromkeys(e["text"] for e in entities if e.get("text")))
             if entity_texts:
                 query += " " + " ".join(entity_texts)
+        if QUERY_EXPAND:
+            from app.services import query_expand
+            query = query_expand.augment(query, query_expand.expand(question))
         emb = self.embedder.encode([f"query: {query}"], normalize_embeddings=True).tolist()
+
+        if HYBRID_RETRIEVAL:
+            return self._fit_budget(self._retrieve_hybrid(query, emb))
 
         docs = []
         if self.encyc is not None:
@@ -342,6 +373,25 @@ class MedicalChatbot:
             docs.extend(self._query(self.collection, emb, TOP_K,
                                     max_chars=MAX_QA_CHARS, is_qa=True))
         return self._fit_budget(docs)
+
+    def _retrieve_hybrid(self, query: str, emb) -> list:
+        """Bể rộng bằng dense, gộp BM25-RRF, rồi mới cắt theo quota."""
+        from app.services import hybrid
+
+        def pick(pool: list, n: int) -> list:
+            if not pool:
+                return []
+            order = hybrid.fuse(query, [d["text"] for d in pool],
+                                [d["distance"] for d in pool])
+            return [pool[i] for i in order[:n]]
+
+        out = []
+        if self.encyc is not None:
+            out.extend(pick(self._query(self.encyc, emb, hybrid.POOL,
+                                        max_chars=MAX_DOC_CHARS), HYBRID_QUOTA_ENCYC))
+        out.extend(pick(self._query(self.collection, emb, hybrid.POOL,
+                                    max_chars=MAX_QA_CHARS, is_qa=True), HYBRID_QUOTA_QA))
+        return out
 
     @staticmethod
     def _dedupe_sources(docs: list) -> list:

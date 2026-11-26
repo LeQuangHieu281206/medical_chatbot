@@ -48,3 +48,5 @@ frontend/out/
 # Log va ket qua tam khi do luong
 *.log
 tests/*_output*.txt
+app/db/embed_model.txt
+share_kb/
