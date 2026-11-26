@@ -240,7 +240,9 @@ def check_noisy(rows) -> list:
 # Liều thuốc trong lời khuyên sơ cứu là nguy hiểm: người dùng có thể làm theo
 DOSE_IN_ADVICE = re.compile(r"\d+\s*(mg|mcg|µg|μg|ml|gói|ống|viên)\b", re.IGNORECASE)
 RED_FLAG_FIELDS = ("id", "nhom", "uu_tien", "mau", "loi_khuyen")
-RED_FLAG_OPTIONAL = ("khong_khop", "kem_theo")
+RED_FLAG_OPTIONAL = ("khong_khop", "khong_khop_tru", "kem_theo", "khong_duoc_lam", "nguon")
+# trường truy vết nguồn: bắt buộc có để biết mỗi nhóm dựa vào văn bản/hướng dẫn nào
+RED_FLAG_TRACE = ("nguon", "phien_ban", "ngay_kiem_duyet")
 RED_FLAG_MIN_GROUPS = 12
 RED_FLAG_MIN_SAMPLES = 3
 
@@ -256,11 +258,15 @@ def check_red_flags(rows) -> list:
     dup_pri = {p for p in pri if pri.count(p) > 1}
     out.append(Result("uu_tien là số duy nhất", "hard", not dup_pri,
                       ", ".join(map(str, sorted(dup_pri))) if dup_pri else "đủ"))
-    bad_opt = [r.get("id") for r in rows for k in RED_FLAG_OPTIONAL
+    bad_opt = [r.get("id") for r in rows for k in ("khong_khop", "khong_khop_tru", "kem_theo", "khong_duoc_lam")
                if k in r and (not isinstance(r[k], list) or not all(isinstance(x, str) and x.strip()
                                                                    for x in r[k]))]
-    out.append(Result("khong_khop/kem_theo (nếu có) là danh sách chuỗi", "hard", not bad_opt,
-                      ", ".join(map(str, bad_opt)) if bad_opt else "sạch"))
+    out.append(Result("khong_khop/kem_theo/khong_duoc_lam là danh sách chuỗi", "hard",
+                      not bad_opt, ", ".join(map(str, bad_opt)) if bad_opt else "sạch"))
+    bad_src = [r.get("id") for r in rows
+               if not isinstance(r.get("nguon"), str) or not r.get("nguon", "").strip()]
+    out.append(Result("mỗi nhóm ghi nguồn chuyên môn", "hard", not bad_src,
+                      ", ".join(map(str, bad_src)) if bad_src else "đủ"))
     few = [r.get("id") for r in rows if len(r.get("mau") or []) < RED_FLAG_MIN_SAMPLES]
     out.append(Result(f"mỗi nhóm ≥ {RED_FLAG_MIN_SAMPLES} mẫu câu", "hard", not few,
                       ", ".join(map(str, few)) if few else "đủ"))
@@ -274,7 +280,7 @@ def check_red_flags(rows) -> list:
     out.append(Result("lời khuyên không chứa liều thuốc", "hard", not dose,
                       ", ".join(map(str, dose)) if dose else "sạch"))
     # Mẫu câu phải so khớp được câu đã chuẩn hoá: không dùng ký tự regex đặc biệt
-    meta = [m for r in rows for m in (r.get("mau") or []) + (r.get("khong_khop") or []) + (r.get("kem_theo") or [])
+    meta = [m for r in rows for m in (r.get("mau") or []) + (r.get("khong_khop") or []) + (r.get("khong_khop_tru") or []) + (r.get("kem_theo") or [])
             if re.search(r"[()\[\]{}*+?^$\\|]", m.replace("...", ""))]
     out.append(Result("mẫu câu là chuỗi thường (chỉ cho phép ...)", "hard", not meta,
                       ", ".join(meta[:3]) if meta else "sạch"))

@@ -8,6 +8,8 @@ Mỗi dòng dữ liệu:
     id, nhom, uu_tien, mau (danh sách mẫu, so khớp trên câu đã chuẩn hoá),
     loi_khuyen (danh sách dòng, KHÔNG chứa liều thuốc cụ thể)
     khong_khop (tuỳ chọn): nếu câu khớp một mẫu này thì huỷ kết quả
+    khong_khop_tru (tuỳ chọn): dấu hiệu loại trừ CHỈ có hiệu lực khi câu
+        không chứa dấu hiệu nguy hiểm nào trong danh sách này
     kem_theo   (tuỳ chọn): câu phải khớp thêm một mẫu này mới tính
 
 `khong_khop` để chặn báo nhầm ("ngừng thở khi ngủ" không phải ngừng tim,
@@ -41,6 +43,7 @@ class Flag:
     loi_khuyen: tuple[str, ...]
     veto: re.Pattern | None = None      # khớp thì huỷ
     must: re.Pattern | None = None      # phải khớp thêm
+    veto_unless: re.Pattern | None = None   # huỷ, trừ khi khớp các mẫu này
 
 
 @lru_cache(maxsize=1)
@@ -63,6 +66,7 @@ def load_flags() -> tuple[Flag, ...]:
         if not pats:
             continue
         veto = [gap(p.strip()) for p in r.get("khong_khop", []) if p.strip()]
+        veto_unless = [gap(p.strip()) for p in r.get("khong_khop_tru", []) if p.strip()]
         must = [gap(p.strip()) for p in r.get("kem_theo", []) if p.strip()]
         flags.append(Flag(
             id=r["id"],
@@ -71,6 +75,7 @@ def load_flags() -> tuple[Flag, ...]:
             pattern=re.compile("|".join(pats), re.IGNORECASE),
             loi_khuyen=tuple(r.get("loi_khuyen", [])),
             veto=re.compile("|".join(veto), re.IGNORECASE) if veto else None,
+            veto_unless=re.compile("|".join(veto_unless), re.IGNORECASE) if veto_unless else None,
             must=re.compile("|".join(must), re.IGNORECASE) if must else None,
         ))
     flags.sort(key=lambda f: f.uu_tien)
@@ -81,6 +86,14 @@ def load_flags() -> tuple[Flag, ...]:
 # "uống cả vỉ thuốc, bất tỉnh, không thở" vừa là tự hại vừa là ngừng tuần hoàn,
 # nếu chỉ hiện nhóm tự hại thì người đọc không được hướng dẫn ép tim.
 IMMEDIATE = ("ngung-tuan-hoan", "hoc-di-vat", "soc-phan-ve")
+
+# "không khó thở", "không vã mồ hôi" là phủ định, không phải dấu hiệu nguy hiểm.
+# Bỏ các cụm phủ định trước khi xét dấu hiệu đi kèm, nếu không câu
+# "đau ngực nhẹ khi hít vào sâu, không khó thở" sẽ bị coi là có khó thở.
+_NEGATED = re.compile(
+    r"\b(không|khong|chẳng|khong co)\s+(khó thở|kho tho|vã mồ hôi|va mo hoi|"
+    r"buồn nôn|buon non|choáng|choang|ngất|ngat|đau|đau ngực|sốt|sot)\b",
+    re.IGNORECASE)
 
 
 def _fires(flag: Flag, text: str) -> bool:
@@ -94,7 +107,12 @@ def _fires(flag: Flag, text: str) -> bool:
     if flag.must is not None and not flag.must.search(rest):
         return False
     if flag.veto is not None and flag.veto.search(text):
-        return False
+        # có dấu hiệu nguy hiểm đi kèm thì dấu hiệu loại trừ mất hiệu lực:
+        # "đau ngực khi ấn vào" vẫn có thể là nhồi máu nếu kèm vã mồ hôi, khó thở.
+        stripped = _NEGATED.sub(" ", text)
+        danger = flag.veto_unless is not None and bool(flag.veto_unless.search(stripped))
+        if not danger:
+            return False
     return bool(flag.pattern.search(text))
 
 

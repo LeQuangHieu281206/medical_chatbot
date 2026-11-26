@@ -44,6 +44,10 @@ Mọi file trong `data/processed/` phải qua cổng `scripts/validate_data.py` 
 | `loi_khuyen` | str[] | các dòng sơ cứu; **không chứa liều thuốc** |
 | `khong_khop` | str[]? | khớp mẫu này thì **huỷ** kết quả (chặn báo nhầm: "ngừng thở khi ngủ", "ngộ độc thực phẩm") |
 | `kem_theo` | str[]? | phải khớp thêm mẫu này mới tính (buộc đủ ngữ cảnh: "chảy máu cam" cần có "sốt") |
+| `khong_khop_tru` | str[]? | dấu hiệu loại trừ chỉ có hiệu lực khi câu **không** chứa dấu hiệu nguy hiểm nào ở đây |
+| `khong_duoc_lam` | str[]? | những việc tuyệt đối không làm, hiển thị riêng cho người đọc |
+| `nguon` | str | văn bản/hướng dẫn chuyên môn làm căn cứ (ghi rõ "nguồn quốc tế" khi không phải của BYT) |
+| `phien_ban`, `ngay_kiem_duyet` | str | phiên bản và ngày kiểm duyệt gần nhất |
 
 Trong `mau`/`khong_khop`/`kem_theo`, `...` nghĩa là "cách nhau vài từ"
 (`mang thai ... ra máu`). Ngoài `...` không dùng ký tự regex nào khác.
@@ -230,7 +234,7 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 33 nhóm, 333 mẫu, recall 71/71 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+Hiện tại: 33 nhóm, 333 mẫu, recall 75/75 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
 có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
 150/2.311 câu `eval.jsonl` và 1.203/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
 
@@ -268,6 +272,22 @@ Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
   đủ chặt để vẫn bắt được mạch, kèm nẹp bất động; tuyệt đối không garô. `ran-luc`: **không**
   băng ép, vì nọc gây sưng nề, hoại tử tại chỗ và rối loạn đông máu — chỉ bất động, để chi
   ngang hoặc thấp hơn tim và chuyển đi cấp cứu nhanh.
+- **Vòng soát thứ sáu** (kiểm duyệt toàn bộ, có truy vết nguồn): mỗi nhóm nay có `nguon`,
+  `phien_ban`, `ngay_kiem_duyet`; các nhóm nguy hiểm có thêm `khong_duoc_lam`. Nội dung sửa
+  theo phác đồ: phản vệ nằm đầu thấp, nghiêng trái, không đứng dậy, chỉ dùng bút adrenalin
+  tự động đã được kê; hóc luân phiên 5 vỗ lưng + 5 ép bụng (trẻ dưới 1 tuổi: 5 vỗ lưng + 5
+  ép ngực); ngừng tim không yêu cầu bắt mạch, không chờ AED, có độ sâu ép theo tuổi; đuối
+  nước nói rõ chỉ áp dụng cho người được huấn luyện, người không biết thổi ngạt thì ép tim
+  theo tổng đài 115; thai sản tách tư thế sa dây rốn và thêm thai ngoài tử cung vỡ; rắn cắn
+  bỏ băng ép mặc định; garo chỉ dùng khi ép trực tiếp không cầm được.
+
+- **Điều kiện loại trừ** sửa theo nguyên tắc "một dấu hiệu không đủ phủ định cấp cứu":
+  bỏ loại trừ "khó thở khi nằm ngửa" (có thể là suy tim) và "thở nhanh sâu" (Kussmaul, nhóm
+  toan ceton xét trước); "ấn vào đau" chỉ còn hiệu lực khi câu không kèm vã mồ hôi, khó thở,
+  buồn nôn, đau lan, choáng, ngất (trường `khong_khop_tru`, có xử lý phủ định "không khó thở");
+  bỏ loại trừ "cụng đầu nhẹ"; sốt xuất huyết nhận thêm "hết sốt", "ngày thứ" làm điều kiện kèm
+  để không bỏ sót ca đã hết sốt mà vẫn nặng.
+
 - **Vòng soát thứ năm** (chấn thương đầu, gãy xương, chảy máu, và 5 nhóm chưa ai soát):
   chảy máu da đầu không nhét bông vào tai, mũi; không rửa vết thương đang phun máu hoặc lộ
   xương; garo có ghi giờ khi máu phun thành tia ở chi mà ép không cầm; trẻ dưới 3 tháng bú mẹ

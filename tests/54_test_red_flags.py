@@ -94,6 +94,11 @@ RED = [
     ("ngã gãy chân, xương lộ ra ngoài", "gay-xuong-vet-thuong"),
     ("tôi đang muốn giết người hàng xóm", "hai-nguoi-khac"),
     ("bị ngạt nước, vớt lên không thở", "duoi-nuoc"),
+    # vòng soát thứ sáu: sửa điều kiện loại trừ theo nguyên tắc an toàn
+    ("khó thở khi nằm ngửa, phải ngồi dậy mới thở được", "kho-tho"),
+    ("đau ngực khi ấn vào, kèm vã mồ hôi và buồn nôn", "dau-nguc"),
+    ("sốt xuất huyết đã hết sốt, lừ đừ và đau bụng", "sot-xuat-huyet"),
+    ("người tiểu đường type 1, thở nhanh sâu, mùi trái cây", "nhiem-toan-ceton"),
     # vòng soát thứ năm (chấn thương, chảy máu, nhóm chưa soát)
     ("ngã đập đầu xuống nền, tê yếu tay chân", "chan-thuong-dau"),
     ("tai nạn xe máy, đập đầu xuống đường", "chan-thuong-dau"),
