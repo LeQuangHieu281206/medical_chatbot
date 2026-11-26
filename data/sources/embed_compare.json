@@ -1,0 +1,31 @@
+{
+ "dangvantuan/vietnamese-embedding": {
+  "top3": {
+   "hits": 9,
+   "miss": [
+    "q02",
+    "q03",
+    "q04",
+    "q05",
+    "q07",
+    "q09",
+    "q11",
+    "q12",
+    "q14",
+    "q15"
+   ]
+  },
+  "top10": {
+   "hits": 14,
+   "miss": [
+    "q02",
+    "q03",
+    "q07",
+    "q09",
+    "q11"
+   ]
+  },
+  "dim": 768,
+  "seconds": 469.5
+ }
+}
