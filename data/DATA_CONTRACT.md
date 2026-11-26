@@ -230,7 +230,7 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 33 nhóm, 328 mẫu, recall 71/71 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+Hiện tại: 33 nhóm, 333 mẫu, recall 71/71 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
 có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
 150/2.311 câu `eval.jsonl` và 1.203/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
 
