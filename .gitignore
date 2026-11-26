@@ -50,3 +50,5 @@ frontend/out/
 tests/*_output*.txt
 app/db/embed_model.txt
 share_kb/
+AGENTS.md
+frontend/AGENTS.md
