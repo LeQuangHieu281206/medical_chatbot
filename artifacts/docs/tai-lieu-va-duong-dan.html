@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Đường dẫn tài liệu dự án — medical chatbot</title><style>
+ :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--txt:#e6edf3;--dim:#8b949e;--acc:#58a6ff;--ok:#3fb950}
+ *{box-sizing:border-box} body{margin:0;padding:32px 20px 60px;background:var(--bg);color:var(--txt);
+ font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+ .wrap{max-width:900px;margin:0 auto}
+ h1{font-size:24px;margin:0 0 6px} .sub{color:var(--dim);font-size:13.5px;margin-bottom:18px}
+ input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);
+ background:#0b0f14;color:var(--txt);font-size:14px;margin-bottom:22px}
+ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);
+ margin:28px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+ ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ li{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:11px 14px}
+ li a{color:var(--acc);text-decoration:none;font-weight:600;word-break:break-all}
+ li a:hover{text-decoration:underline}
+ .tag{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:1px 7px;
+ margin-left:8px;color:var(--dim)} .tag.ext{color:var(--ok);border-color:#1f6f3f}
+ .meta{float:right;color:var(--dim);font-size:12px}
+ li p{margin:4px 0 0;color:var(--dim);font-size:13px}
+ ul.plain li{padding:12px 14px} ul.plain b{font-size:13.5px} ul.plain p{margin:4px 0 0}
+ @media print{body{background:#fff;color:#000} li{border-color:#ccc} input{display:none} a{color:#0645ad}}
+</style></head><body><div class="wrap">
+ <h1>Đường dẫn tài liệu dự án — medical chatbot RAG</h1>
+ <p class="sub">104 mục: tài liệu trong repo, mã nguồn, dữ liệu, báo cáo kiểm duyệt,
+ văn bản chuyên môn, hướng dẫn quốc tế và nguồn dữ liệu. Đường dẫn "repo" mở được khi
+ trang này nằm trong <code>artifacts/docs/</code> và mở bằng trình duyệt trên máy.</p>
+ <input id="q" placeholder="Tìm theo tên, mô tả hoặc nguồn…">
+ <section><h2>Tài liệu dự án</h2><ul><li><a href="../../README.md" target="_blank" rel="noopener">README.md</a> <span class="tag">repo</span><span class="meta">11 KB</span><p>Hướng dẫn cài đặt, chạy app, danh sách script</p></li>
+<li><a href="../../data/DATA_CONTRACT.md" target="_blank" rel="noopener">data/DATA_CONTRACT.md</a> <span class="tag">repo</span><span class="meta">24 KB</span><p>Hợp đồng dữ liệu: 15 luật, ngưỡng, trạng thái vector DB, quy trình thêm dữ liệu</p></li>
+<li><a href="../../AGENTS.md" target="_blank" rel="noopener">AGENTS.md</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Quy ước commit message của repo</p></li>
+<li><a href="../../docs/DESIGN-claude.md" target="_blank" rel="noopener">docs/DESIGN-claude.md</a> <span class="tag">repo</span><span class="meta">33 KB</span><p>Thiết kế giao diện</p></li>
+<li><a href="../../docs/trien_khai_may_moi.md" target="_blank" rel="noopener">docs/trien_khai_may_moi.md</a> <span class="tag">repo</span><span class="meta">4 KB</span><p>Triển khai trên máy mới</p></li>
+<li><a href="../../docs/THONG_KE.txt" target="_blank" rel="noopener">docs/THONG_KE.txt</a> <span class="tag">repo</span><span class="meta">0 KB</span><p>Số liệu thống kê dữ liệu</p></li>
+<li><a href="../../docs/Huong-dan-chan-doan-va-dieu-tri-mot-so-benh-ung-buou-theo-bo-y-te-vnras.pdf" target="_blank" rel="noopener">docs/Huong-dan-chan-doan-va-dieu-tri-mot-so-benh-ung-buou-theo-bo-y-te-vnras.pdf</a> <span class="tag">repo</span><span class="meta">12582 KB</span><p>Tài liệu tham khảo Bộ Y tế (PDF)</p></li></ul></section><section><h2>Dữ liệu và nguồn</h2><ul><li><a href="../../data/sources/red_flags.jsonl" target="_blank" rel="noopener">data/sources/red_flags.jsonl</a> <span class="tag">repo</span><span class="meta">38 KB</span><p>33 nhóm dấu hiệu cấp cứu — dữ liệu chính đang dùng</p></li>
+<li><a href="../../data/sources/README.md" target="_blank" rel="noopener">data/sources/README.md</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>Mô tả các nguồn dữ liệu</p></li>
+<li><a href="../../data/sources/duocthu/index.jsonl" target="_blank" rel="noopener">data/sources/duocthu/index.jsonl</a> <span class="tag">repo</span><span class="meta">119 KB</span><p>Danh mục 542 chuyên luận Dược thư Quốc gia</p></li>
+<li><a href="../../data/processed/kb_merged_v3.jsonl" target="_blank" rel="noopener">data/processed/kb_merged_v3.jsonl</a> <span class="tag">repo</span><span class="meta">32858 KB</span><p>KB gộp 25.197 câu (kb + thuốc + Vinmec)</p></li>
+<li><a href="../../data/processed/kb_merged_v3_chunked.jsonl" target="_blank" rel="noopener">data/processed/kb_merged_v3_chunked.jsonl</a> <span class="tag">repo</span><span class="meta">36972 KB</span><p>Bản chia đoạn 37.445 chunk</p></li>
+<li><a href="../../data/processed/eval.jsonl" target="_blank" rel="noopener">data/processed/eval.jsonl</a> <span class="tag">repo</span><span class="meta">2279 KB</span><p>Tập đánh giá held-out 2.311 câu</p></li>
+<li><a href="../../data/processed/kb_drugs_full.jsonl" target="_blank" rel="noopener">data/processed/kb_drugs_full.jsonl</a> <span class="tag">repo</span><span class="meta">1220 KB</span><p>2.205 câu hỏi thuốc (441 hoạt chất × 5 khía cạnh)</p></li>
+<li><a href="../../data/processed/kb_vinmec.jsonl" target="_blank" rel="noopener">data/processed/kb_vinmec.jsonl</a> <span class="tag">repo</span><span class="meta">4663 KB</span><p>Bài tư vấn Vinmec cho vaccine, dinh dưỡng</p></li>
+<li><a href="../../data/processed/drug_names.json" target="_blank" rel="noopener">data/processed/drug_names.json</a> <span class="tag">repo</span><span class="meta">33 KB</span><p>553 tên thuốc dùng để sửa lỗi gõ</p></li></ul></section><section><h2>Báo cáo và nhật ký kiểm duyệt</h2><ul><li><a href="../../data/audit/contract_report.md" target="_blank" rel="noopener">data/audit/contract_report.md</a> <span class="tag">repo</span><span class="meta">4 KB</span><p>Báo cáo validator mới nhất</p></li>
+<li><a href="../../data/audit/duplicates.csv" target="_blank" rel="noopener">data/audit/duplicates.csv</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Các nhóm câu hỏi gần trùng</p></li>
+<li><a href="../../data/audit/kb_topics.jsonl" target="_blank" rel="noopener">data/audit/kb_topics.jsonl</a> <span class="tag">repo</span><span class="meta">5076 KB</span><p>Phân bố chủ đề của KB</p></li>
+<li><a href="../../data/audit/missing_link.csv" target="_blank" rel="noopener">data/audit/missing_link.csv</a> <span class="tag">repo</span><span class="meta">2176 KB</span><p>Dòng thiếu link nguồn</p></li>
+<li><a href="../../data/audit/red_flags_review_prompt.md" target="_blank" rel="noopener">data/audit/red_flags_review_prompt.md</a> <span class="tag">repo</span><span class="meta">7 KB</span><p>Prompt soát red flag (bản đầu)</p></li>
+<li><a href="../../data/audit/red_flags_review_round2.md" target="_blank" rel="noopener">data/audit/red_flags_review_round2.md</a> <span class="tag">repo</span><span class="meta">17 KB</span><p>Prompt soát vòng 2</p></li>
+<li><a href="../../data/audit/red_flags_review_round3.md" target="_blank" rel="noopener">data/audit/red_flags_review_round3.md</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Prompt soát vòng 3 — bỏng, ngộ độc, đuối nước</p></li>
+<li><a href="../../data/audit/red_flags_review_round4.md" target="_blank" rel="noopener">data/audit/red_flags_review_round4.md</a> <span class="tag">repo</span><span class="meta">9 KB</span><p>Prompt soát vòng 4 — chấn thương, chảy máu, 5 nhóm chưa soát</p></li>
+<li><a href="../../data/sources/judge_summary.json" target="_blank" rel="noopener">data/sources/judge_summary.json</a> <span class="tag">repo</span><span class="meta">69 KB</span><p>Kết quả chấm 50 câu trả lời (bộ cũ)</p></li>
+<li><a href="../../tests/49_results_v3.json" target="_blank" rel="noopener">tests/49_results_v3.json</a> <span class="tag">repo</span><span class="meta">101 KB</span><p>Kết quả chấm 50 câu trên pipeline v3</p></li></ul></section><section><h2>Trang tra cứu (artifacts)</h2><ul><li><a href="../../artifacts/index.html" target="_blank" rel="noopener">artifacts/index.html</a> <span class="tag">repo</span><span class="meta">1 KB</span><p>Mục lục mọi trang artifacts</p></li>
+<li><a href="../../artifacts/red-flags/triage-groups.html" target="_blank" rel="noopener">artifacts/red-flags/triage-groups.html</a> <span class="tag">repo</span><span class="meta">50 KB</span><p>Bộ 33 nhóm cấp cứu: mẫu câu, sơ cứu, việc tuyệt đối không làm, nguồn</p></li></ul></section><section><h2>Mã nguồn chính</h2><ul><li><a href="../../app/services/pipeline.py" target="_blank" rel="noopener">app/services/pipeline.py</a> <span class="tag">repo</span><span class="meta">30 KB</span><p>Pipeline trả lời: lọc chủ đề, truy hồi, red flag, gọi LLM</p></li>
+<li><a href="../../app/services/red_flags.py" target="_blank" rel="noopener">app/services/red_flags.py</a> <span class="tag">repo</span><span class="meta">8 KB</span><p>Đọc và so khớp 33 nhóm cấp cứu</p></li>
+<li><a href="../../app/services/normalizer.py" target="_blank" rel="noopener">app/services/normalizer.py</a> <span class="tag">repo</span><span class="meta">31 KB</span><p>Chuẩn hoá câu hỏi, teencode, sửa lỗi gõ tên thuốc</p></li>
+<li><a href="../../app/services/topic_filter.py" target="_blank" rel="noopener">app/services/topic_filter.py</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Lọc câu hỏi ngoài chủ đề y tế</p></li>
+<li><a href="../../app/services/hybrid.py" target="_blank" rel="noopener">app/services/hybrid.py</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>Truy hồi lai dense + BM25-RRF</p></li>
+<li><a href="../../app/services/ingest_kb.py" target="_blank" rel="noopener">app/services/ingest_kb.py</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Nạp KB vào ChromaDB</p></li>
+<li><a href="../../app/services/data_quality.py" target="_blank" rel="noopener">app/services/data_quality.py</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>Chuẩn hoá và so trùng câu hỏi</p></li>
+<li><a href="../../app/services/topic_taxonomy.py" target="_blank" rel="noopener">app/services/topic_taxonomy.py</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>19 nhãn chuyên khoa dùng chung</p></li>
+<li><a href="../../app/services/grounding.py" target="_blank" rel="noopener">app/services/grounding.py</a> <span class="tag">repo</span><span class="meta">4 KB</span><p>Đo mức bám ngữ cảnh của câu trả lời</p></li>
+<li><a href="../../app/services/rerank.py" target="_blank" rel="noopener">app/services/rerank.py</a> <span class="tag">repo</span><span class="meta">4 KB</span><p>Xếp lại kết quả truy hồi bằng từ vựng (kết quả âm)</p></li>
+<li><a href="../../app/api/server.py" target="_blank" rel="noopener">app/api/server.py</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>API server</p></li></ul></section><section><h2>Script dựng dữ liệu và đo lường</h2><ul><li><a href="../../scripts/validate_data.py" target="_blank" rel="noopener">scripts/validate_data.py</a> <span class="tag">repo</span><span class="meta">18 KB</span><p>Cổng kiểm tra chất lượng — sai luật hard thì exit 1</p></li>
+<li><a href="../../scripts/build_kb_merged.py" target="_blank" rel="noopener">scripts/build_kb_merged.py</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>Gộp KB, có --exclude chặn câu hỏi held-out</p></li>
+<li><a href="../../scripts/rechunk_qa.py" target="_blank" rel="noopener">scripts/rechunk_qa.py</a> <span class="tag">repo</span><span class="meta">6 KB</span><p>Chia đoạn KB</p></li>
+<li><a href="../../scripts/dedupe_kb.py" target="_blank" rel="noopener">scripts/dedupe_kb.py</a> <span class="tag">repo</span><span class="meta">6 KB</span><p>Gộp câu hỏi trùng</p></li>
+<li><a href="../../scripts/build_drug_index.py" target="_blank" rel="noopener">scripts/build_drug_index.py</a> <span class="tag">repo</span><span class="meta">6 KB</span><p>Cào danh mục Dược thư</p></li>
+<li><a href="../../scripts/build_drug_qa.py" target="_blank" rel="noopener">scripts/build_drug_qa.py</a> <span class="tag">repo</span><span class="meta">12 KB</span><p>Sinh KB thuốc</p></li>
+<li><a href="../../scripts/build_drug_names.py" target="_blank" rel="noopener">scripts/build_drug_names.py</a> <span class="tag">repo</span><span class="meta">3 KB</span><p>Danh mục tên thuốc</p></li>
+<li><a href="../../scripts/build_vinmec_qa.py" target="_blank" rel="noopener">scripts/build_vinmec_qa.py</a> <span class="tag">repo</span><span class="meta">15 KB</span><p>Cào bài Vinmec cho vaccine, dinh dưỡng</p></li>
+<li><a href="../../scripts/eval_kb_recall.py" target="_blank" rel="noopener">scripts/eval_kb_recall.py</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Đo Recall@k theo khớp đáp án</p></li>
+<li><a href="../../scripts/eval_retrieval_semantic.py" target="_blank" rel="noopener">scripts/eval_retrieval_semantic.py</a> <span class="tag">repo</span><span class="meta">5 KB</span><p>Đo truy hồi theo ngữ nghĩa (thước đo chính)</p></li>
+<li><a href="../../scripts/merge_red_flags.py" target="_blank" rel="noopener">scripts/merge_red_flags.py</a> <span class="tag">repo</span><span class="meta">6 KB</span><p>Gộp bản soát red flag, có backup</p></li></ul></section><section><h2>Test</h2><ul><li><a href="../../tests/54_test_red_flags.py" target="_blank" rel="noopener">tests/54_test_red_flags.py</a> <span class="tag">repo</span><span class="meta">12 KB</span><p>Recall, báo nhầm, liều thuốc, 115 cho 33 nhóm</p></li>
+<li><a href="../../tests/53_test_drug_typos.py" target="_blank" rel="noopener">tests/53_test_drug_typos.py</a> <span class="tag">repo</span><span class="meta">6 KB</span><p>Sửa lỗi gõ tên thuốc + truy hồi</p></li>
+<li><a href="../../tests/49_eval_answer_quality.py" target="_blank" rel="noopener">tests/49_eval_answer_quality.py</a> <span class="tag">repo</span><span class="meta">12 KB</span><p>Chấm 50 câu trả lời bằng LLM khác</p></li>
+<li><a href="../../tests/40_data_audit.py" target="_blank" rel="noopener">tests/40_data_audit.py</a> <span class="tag">repo</span><span class="meta">4 KB</span><p>Audit dữ liệu, ghi CSV</p></li></ul></section><section><h2>Văn bản và hướng dẫn chuyên môn</h2><ul><li><a href="https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Thong-tu-51-2017-TT-BYT-huong-dan-phong-chan-doan-va-xu-tri-phan-ve-365137.aspx" target="_blank" rel="noopener">https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Thong-tu-51-2017-TT-BYT-huong-dan-phong-chan-doan-va-xu-tri-phan-ve-365137.aspx</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Thông tư 51/2017/TT-BYT — phòng, chẩn đoán và xử trí phản vệ</p></li>
+<li><a href="https://ydct.moh.gov.vn" target="_blank" rel="noopener">https://ydct.moh.gov.vn</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Cổng dược điều trị — Bộ Y tế (QĐ 3312/QĐ-BYT đột quỵ, QĐ 292/QĐ-BYT tay chân miệng, sốt xuất huyết)</p></li>
+<li><a href="https://chanthuongvacotsong.bachmai.gov.vn" target="_blank" rel="noopener">https://chanthuongvacotsong.bachmai.gov.vn</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Dược thư Quốc gia Việt Nam (mirror Bệnh viện Bạch Mai)</p></li>
+<li><a href="https://viendinhduong.vn" target="_blank" rel="noopener">https://viendinhduong.vn</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Viện Dinh dưỡng Quốc gia</p></li>
+<li><a href="https://suckhoedoisong.vn" target="_blank" rel="noopener">https://suckhoedoisong.vn</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Báo Sức khoẻ & Đời sống — Bộ Y tế</p></li>
+<li><a href="https://www.vinmec.com/vie/bai-viet/" target="_blank" rel="noopener">https://www.vinmec.com/vie/bai-viet/</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Vinmec — nguồn câu hỏi đáp vaccine, dinh dưỡng</p></li></ul></section><section><h2>Hướng dẫn quốc tế dùng làm nguồn bổ trợ</h2><ul><li><a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines" target="_blank" rel="noopener">https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>AHA CPR & ECC Guidelines — CPR, hóc dị vật</p></li>
+<li><a href="https://www.erc.edu/guidelines" target="_blank" rel="noopener">https://www.erc.edu/guidelines</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>ERC Guidelines — hồi sinh, đuối nước</p></li>
+<li><a href="https://www.redcross.org/take-a-class/first-aid" target="_blank" rel="noopener">https://www.redcross.org/take-a-class/first-aid</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>American Red Cross — sơ cứu, rắn cắn</p></li>
+<li><a href="https://www.who.int/health-topics/drowning" target="_blank" rel="noopener">https://www.who.int/health-topics/drowning</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>WHO — phòng chống đuối nước</p></li>
+<li><a href="https://ginasthma.org/reports/" target="_blank" rel="noopener">https://ginasthma.org/reports/</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>GINA — hen phế quản</p></li></ul></section><section><h2>Dữ liệu và mô hình dùng để xây KB</h2><ul><li><a href="https://huggingface.co/datasets/tarudesu/ViHealthQA" target="_blank" rel="noopener">https://huggingface.co/datasets/tarudesu/ViHealthQA</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>ViHealthQA — 7.973 câu trong KB, 300 câu eval</p></li>
+<li><a href="https://huggingface.co/datasets/hungnm/vietnamese-medical-qa" target="_blank" rel="noopener">https://huggingface.co/datasets/hungnm/vietnamese-medical-qa</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>vietnamese-medical-qa — 8.988 câu trong KB</p></li>
+<li><a href="https://huggingface.co/intfloat/multilingual-e5-small" target="_blank" rel="noopener">https://huggingface.co/intfloat/multilingual-e5-small</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Model embedding multilingual-e5-small</p></li>
+<li><a href="https://github.com/LeQuangHieu281206/medical_chatbot" target="_blank" rel="noopener">https://github.com/LeQuangHieu281206/medical_chatbot</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Repo GitHub của dự án</p></li>
+<li><a href="https://github.com/LeQuangHieu281206/medical_chatbot/tree/LQH/test" target="_blank" rel="noopener">https://github.com/LeQuangHieu281206/medical_chatbot/tree/LQH/test</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Nhánh đang làm việc LQH/test</p></li>
+<li><a href="https://docs.ollama.com" target="_blank" rel="noopener">https://docs.ollama.com</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Ollama — chạy LLM local</p></li>
+<li><a href="https://ai.google.dev/gemini-api/docs" target="_blank" rel="noopener">https://ai.google.dev/gemini-api/docs</a> <span class="tag ext">ngoài</span><span class="meta">liên kết ngoài</span><p>Gemini API — dùng làm giám khảo chấm câu trả lời</p></li></ul></section><section><h2>Nguồn riêng của từng nhóm cấp cứu</h2><ul class="plain"><li><b>AHA 2025 CPR & ECC Guidelines (hóc dị vật) — nguồn quốc tế</b><p>Dùng cho: Hóc, dị vật đường thở</p></li>
+<li><b>AHA 2025 CPR & ECC Guidelines — nguồn quốc tế; ERC 2021</b><p>Dùng cho: Ngừng tim, ngừng thở</p></li>
+<li><b>American Red Cross First Aid: rắn cắn; hướng dẫn chống độc — nguồn quốc tế</b><p>Dùng cho: Rắn lục cắn, Rắn cắn (không rõ loài, nghi nọc thần kinh)</p></li>
+<li><b>Chiến lược sống còn trong nhiễm khuẩn huyết (WHO/SSC) — nguồn quốc tế</b><p>Dùng cho: Nghi nhiễm khuẩn huyết</p></li>
+<li><b>GINA hướng dẫn hen; BYT hướng dẫn xử trí suy hô hấp cấp — nguồn bổ trợ</b><p>Dùng cho: Khó thở nặng</p></li>
+<li><b>Hướng dẫn an toàn điện và sơ cứu điện giật (BYT/EVN) — nguồn bổ trợ</b><p>Dùng cho: Điện giật</p></li>
+<li><b>Hướng dẫn chẩn đoán thuyên tắc phổi (BYT) và ERC — nguồn bổ trợ</b><p>Dùng cho: Nghi thuyên tắc phổi, tràn khí màng phổi</p></li>
+<li><b>Hướng dẫn chẩn đoán và xử trí chấn thương sọ não (BYT)</b><p>Dùng cho: Chấn thương đầu, cột sống</p></li>
+<li><b>Hướng dẫn chẩn đoán và điều trị sốt xuất huyết Dengue (BYT)</b><p>Dùng cho: Sốt xuất huyết có dấu hiệu cảnh báo</p></li>
+<li><b>Hướng dẫn chẩn đoán và điều trị viêm màng não (BYT) — nguồn bổ trợ</b><p>Dùng cho: Nghi viêm màng não</p></li>
+<li><b>Hướng dẫn chẩn đoán và điều trị đái tháo đường (BYT)</b><p>Dùng cho: Nghi nhiễm toan ceton</p></li>
+<li><b>Hướng dẫn cấp cứu sản khoa (BYT) và ACOG — nguồn bổ trợ</b><p>Dùng cho: Cấp cứu thai sản</p></li>
+<li><b>Hướng dẫn phòng, chống bệnh dại ở người (BYT)</b><p>Dùng cho: Chó mèo cắn, nghi dại</p></li>
+<li><b>Hướng dẫn sơ cứu bỏng (Bệnh viện Bỏng Quốc gia/BYT)</b><p>Dùng cho: Bỏng nhiệt và bỏng hoá chất</p></li>
+<li><b>Hướng dẫn sơ cứu chảy máu ngoài (Cục Quản lý Khám, chữa bệnh — BYT)</b><p>Dùng cho: Chảy máu, xuất huyết tiêu hoá</p></li>
+<li><b>Hướng dẫn sơ cứu chấn thương ngoại viện (BYT)</b><p>Dùng cho: Gãy xương, vết thương hở</p></li>
+<li><b>Hướng dẫn sơ cứu ngất (ERC/AHA) — nguồn quốc tế</b><p>Dùng cho: Ngất, thoáng mất ý thức</p></li>
+<li><b>Hướng dẫn xử trí hạ đường huyết (ADA/BYT) — nguồn bổ trợ</b><p>Dùng cho: Nghi hạ đường huyết</p></li>
+<li><b>Hướng dẫn xử trí hội chứng mạch vành cấp (BYT) và AHA — dùng theo cách thận trọng</b><p>Dùng cho: Nghi nhồi máu cơ tim</p></li>
+<li><b>Hướng dẫn xử trí ngộ độc cấp (BYT); Chống độc quốc gia — nguồn bổ trợ</b><p>Dùng cho: Ngộ độc, quá liều</p></li>
+<li><b>Hướng dẫn xử trí tiêu chảy cấp ở trẻ em (BYT)</b><p>Dùng cho: Mất nước nặng ở trẻ</p></li>
+<li><b>Hướng dẫn xử trí đau bụng cấp (BYT) — nguồn bổ trợ</b><p>Dùng cho: Đau bụng cấp, bụng ngoại khoa</p></li>
+<li><b>Hướng dẫn xử trí động kinh/co giật (BYT) và AHA — nguồn bổ trợ</b><p>Dùng cho: Co giật</p></li>
+<li><b>Khuyến cáo an toàn cộng đồng và xử trí kích động (WHO mhGAP)</b><p>Dùng cho: Ý định làm hại người khác</p></li>
+<li><b>Phác đồ cấp cứu bỏng mắt do hoá chất (Bệnh viện Mắt Trung ương)</b><p>Dùng cho: Chấn thương mắt, mất thị lực đột ngột</p></li>
+<li><b>Phác đồ nhi khoa, Bệnh viện Nhi Trung ương / BYT</b><p>Dùng cho: Trẻ dưới 3 tháng tuổi bị sốt</p></li>
+<li><b>Quyết định 292/QĐ-BYT (2024) hướng dẫn chẩn đoán, điều trị tay chân miệng</b><p>Dùng cho: Tay chân miệng có dấu hiệu nặng</p></li>
+<li><b>Quyết định 3312/QĐ-BYT (2024) hướng dẫn chẩn đoán và điều trị đột quỵ não</b><p>Dùng cho: Nghi đột quỵ</p></li>
+<li><b>Thông tư 51/2017/TT-BYT về phòng, chẩn đoán và xử trí phản vệ</b><p>Dùng cho: Nghi sốc phản vệ</p></li>
+<li><b>WHO hướng dẫn phòng chống đuối nước; ERC 2021 — nguồn quốc tế</b><p>Dùng cho: Đuối nước</p></li>
+<li><b>WHO mhGAP và khuyến cáo phòng chống tự tử — nguồn quốc tế</b><p>Dùng cho: Nguy cơ tự hại</p></li>
+<li><b>WHO/ILO hướng dẫn sốc nhiệt; NHS heat exhaustion — nguồn quốc tế</b><p>Dùng cho: Sốc nhiệt, say nắng</p></li></ul></section>
+</div>
+<script>
+const q=document.getElementById('q'), items=[...document.querySelectorAll('li')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();
+ items.forEach(li=>li.style.display=!v||li.textContent.toLowerCase().includes(v)?'':'none');});
+</script></body></html>
