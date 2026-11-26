@@ -1,19 +1,15 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bộ dấu hiệu cấp cứu — 33 nhóm</title><style>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Bộ dấu hiệu cấp cứu — 33 nhóm</title><style>
  :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--txt:#e6edf3;--dim:#8b949e;--warn:#f0883e;--acc:#58a6ff;--red:#ff7b72}
  *{box-sizing:border-box} body{margin:0;padding:28px 20px 60px;background:var(--bg);color:var(--txt);
  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
  .wrap{max-width:960px;margin:0 auto} h1{font-size:23px;margin:0 0 6px}
  .sub{color:var(--dim);font-size:13.5px;margin-bottom:16px}
- .warn{border-left:3px solid var(--warn);background:#1f1a13;padding:10px 14px;border-radius:6px;
- font-size:13.5px;color:#f0d6b8;margin:0 0 18px}
- input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);
- background:#0b0f14;color:var(--txt);font-size:14px;margin-bottom:18px}
+ .warn{border-left:3px solid var(--warn);background:#1f1a13;padding:10px 14px;border-radius:6px;font-size:13.5px;color:#f0d6b8;margin:0 0 18px}
+ input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#0b0f14;color:var(--txt);font-size:14px;margin-bottom:18px}
  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:14px}
  header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
- .pri{background:var(--acc);color:#04121f;font-weight:700;font-size:12px;border-radius:999px;
- min-width:24px;height:24px;display:grid;place-items:center}
+ .pri{background:var(--acc);color:#04121f;font-weight:700;font-size:12px;border-radius:999px;min-width:24px;height:24px;display:grid;place-items:center}
  h2{font-size:16px;margin:0;flex:1} code{color:var(--dim);font-size:12px} .n{color:var(--dim);font-size:12px}
  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
  .chip{background:#0b0f14;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:12.5px;color:#a9b6c4}
@@ -22,19 +18,16 @@
  .kdl{margin-top:10px;border-left:3px solid var(--red);background:#1f1315;padding:8px 12px;border-radius:6px}
  .kdl b{color:var(--red);font-size:13px} .kdl ul{margin:6px 0 0;padding-left:20px;font-size:13.5px}
  .src{margin:10px 0 0;color:var(--dim);font-size:12px}
- @media print{body{background:#fff;color:#000} .card{border-color:#ccc} input{display:none}
- .kdl{background:#fff5f5}}
+ @media print{body{background:#fff;color:#000} .card{border-color:#ccc} input{display:none} .kdl{background:#fff5f5}}
 </style></head><body><div class="wrap">
- <h1>Bộ dấu hiệu cấp cứu — 33 nhóm, 333 mẫu câu</h1>
- <p class="sub">Xét từ 1 xuống; nhóm khớp trước thắng, nhưng hành động của nhóm nguy hiểm tức thì
- khác vẫn được chèn kèm. Nguồn: <code>data/sources/red_flags.jsonl</code>.</p>
- <p class="warn"><b>Đang trong giai đoạn kiểm duyệt y khoa.</b> Đã qua sáu vòng soát và mỗi nhóm
- đã có nguồn tham chiếu, nhưng chưa phải bộ hướng dẫn đã được xác nhận tuân thủ đầy đủ quy chuẩn
- của Bộ Y tế. Không dùng cho người bệnh thật khi chưa có bác sĩ duyệt.</p>
- <input id="q" placeholder="Tìm theo tên nhóm hoặc mẫu câu…"><article class="card" id="hoc-di-vat" data-search="hóc, dị vật đường thở hóc xương hóc dị vật bị hóc nghẹn không thở tắc đường thở ôm cổ không thở dị vật đường thở ôm cổ không nói được">
+ <h1>Bộ dấu hiệu cấp cứu — 33 nhóm, 338 mẫu câu</h1>
+ <p class="sub">Xét từ 1 xuống; nhóm khớp trước thắng, nhưng hành động của nhóm nguy hiểm tức thì khác vẫn được chèn kèm.</p>
+ <p class="warn"><b>Đang trong giai đoạn kiểm duyệt y khoa.</b> Đã qua sáu vòng soát, mỗi nhóm có nguồn tham chiếu,
+ nhưng chưa phải bộ hướng dẫn đã được xác nhận tuân thủ đầy đủ quy chuẩn của Bộ Y tế. Không dùng cho người bệnh thật khi chưa có bác sĩ duyệt.</p>
+ <input id="q" placeholder="Tìm theo tên nhóm hoặc mẫu câu…"><article class="card" id="hoc-di-vat" data-search="hóc, dị vật đường thở hóc xương hóc dị vật bị hóc nghẹn không thở tắc đường thở ôm cổ không thở dị vật đường thở ôm cổ không nói được hóc hạt hóc kẹo hóc thức ăn hóc đồ chơi hóc ... không nói">
       <header><span class="pri">1</span><h2>Hóc, dị vật đường thở</h2>
-      <code>hoc-di-vat</code><span class="n">8 mẫu</span></header>
-      <div class="chips"><span class="chip">hóc xương</span><span class="chip">hóc dị vật</span><span class="chip">bị hóc</span><span class="chip">nghẹn không thở</span><span class="chip">tắc đường thở</span><span class="chip">ôm cổ không thở</span><span class="chip">dị vật đường thở</span><span class="chip">ôm cổ không nói được</span></div><ol class="advice"><li>Gọi 115 ngay nếu không thở được, không nói được hoặc tím tái.</li><li>Người lớn và trẻ trên 1 tuổi: 5 lần vỗ lưng, sau đó 5 lần ép bụng; lặp lại đến khi thoát.</li><li>Trẻ dưới 1 tuổi: 5 lần vỗ lưng, rồi 5 lần ép ngực; lặp lại; không ép bụng.</li><li>Người mang thai giai đoạn muộn hoặc không vòng được tay quanh bụng: ép ngực thay cho ép bụng.</li><li>Bất tỉnh: đặt nằm trên mặt phẳng cứng, gọi 115 và bắt đầu ép tim; chỉ lấy dị vật khi nhìn thấy rõ trong miệng.</li></ol><div class="kdl"><b>Tuyệt đối không:</b><ul><li>Không móc họng mù</li><li>Không cho uống nước để đẩy dị vật</li></ul></div>
+      <code>hoc-di-vat</code><span class="n">13 mẫu</span></header>
+      <div class="chips"><span class="chip">hóc xương</span><span class="chip">hóc dị vật</span><span class="chip">bị hóc</span><span class="chip">nghẹn không thở</span><span class="chip">tắc đường thở</span><span class="chip">ôm cổ không thở</span><span class="chip">dị vật đường thở</span><span class="chip">ôm cổ không nói được</span><span class="chip">hóc hạt</span><span class="chip">hóc kẹo</span><span class="chip">hóc thức ăn</span><span class="chip">hóc đồ chơi</span><span class="chip">hóc ... không nói</span></div><ol class="advice"><li>Gọi 115 ngay nếu không thở được, không nói được hoặc tím tái.</li><li>Người lớn và trẻ trên 1 tuổi: 5 lần vỗ lưng, sau đó 5 lần ép bụng; lặp lại đến khi thoát.</li><li>Trẻ dưới 1 tuổi: 5 lần vỗ lưng, rồi 5 lần ép ngực; lặp lại; không ép bụng.</li><li>Người mang thai giai đoạn muộn hoặc không vòng được tay quanh bụng: ép ngực thay cho ép bụng.</li><li>Bất tỉnh: đặt nằm trên mặt phẳng cứng, gọi 115 và bắt đầu ép tim; chỉ lấy dị vật khi nhìn thấy rõ trong miệng.</li></ol><div class="kdl"><b>Tuyệt đối không:</b><ul><li>Không móc họng mù</li><li>Không cho uống nước để đẩy dị vật</li></ul></div>
       <p class="src">Nguồn: AHA 2025 CPR &amp; ECC Guidelines (hóc dị vật) — nguồn quốc tế · kiểm duyệt 2026-11-26</p></article><article class="card" id="ngung-tuan-hoan" data-search="ngừng tim, ngừng thở ngừng thở ngưng thở ngừng tim ngưng tim đứng tim tắt thở không bắt được mạch bất tỉnh hôn mê không tỉnh mất ý thức tím tái">
       <header><span class="pri">2</span><h2>Ngừng tim, ngừng thở</h2>
       <code>ngung-tuan-hoan</code><span class="n">12 mẫu</span></header>
@@ -141,6 +134,5 @@
       <div class="chips"><span class="chip">đau bụng dữ dội</span><span class="chip">bụng cứng</span><span class="chip">bụng cứng như gỗ</span><span class="chip">đau bụng kèm sốt cao</span><span class="chip">không trung tiện</span><span class="chip">bụng chướng căng</span><span class="chip">đau hố chậu phải</span></div><ol class="advice"><li>Gọi 115 hoặc đến cấp cứu ngay khi đau bụng dữ dội đột ngột, bụng cứng, kèm ngất hoặc choáng.</li><li>Không ăn uống để phòng khi phải mổ; không tự dùng thuốc giảm đau hay thuốc xổ.</li><li>Không đắp nóng, không nắn bóp bụng; nằm nghiêng co gối cho dễ chịu.</li><li>Đau bụng kèm nôn ra máu, hoặc ở người cao tuổi và phụ nữ có thai hoặc trễ kinh, phải khám ngay.</li></ol>
       <p class="src">Nguồn: Hướng dẫn xử trí đau bụng cấp (BYT) — nguồn bổ trợ · kiểm duyệt 2026-11-26</p></article><article class="card" id="co-giat" data-search="co giật co giật động kinh lên cơn giật giật tay chân sốt cao co giật co cứng toàn thân">
       <header><span class="pri">28</span><h2>Co giật</h2>
-      <code>co-giat</code><span class="n">6 mẫu</span></header>
 
-[Showing lines 1-144 of 170 (50.0KB limit). Use offset=145 to continue.]
+[Showing lines 1-136 of 162 (50.0KB limit). Use offset=137 to continue.]
