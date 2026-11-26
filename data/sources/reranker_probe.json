@@ -1,0 +1,42 @@
+[
+ {
+  "id": "q01",
+  "type": "trieu_chung",
+  "cov_dense": 0.262,
+  "cov_rerank": 0.262,
+  "score_rerank": 0.0915,
+  "title_dense": "cháu năm nay 25 tuổi là nữ , mấy hom nay tự dưng cháu bị khó tiêu và b",
+  "title_rerank": "cháu năm nay 25 tuổi là nữ , mấy hom nay tự dưng cháu bị khó tiêu và b",
+  "changed": false
+ },
+ {
+  "id": "q02",
+  "type": "trieu_chung",
+  "cov_dense": 0.409,
+  "cov_rerank": 0.318,
+  "score_rerank": 0.9273,
+  "title_dense": "chồng em bị tắc ống dẫn nước tiểu, nhiều đêm phải ngồi đi tiểu, có khi",
+  "title_rerank": "Trẻ 12 tuổi đi tiểu đau, buốt kèm đau vùng thắt lưng lan xuống bụng dư",
+  "changed": true
+ },
+ {
+  "id": "q03",
+  "type": "trieu_chung",
+  "cov_dense": 0.211,
+  "cov_rerank": 0.088,
+  "score_rerank": 0.0021,
+  "title_dense": "bác sĩ cho e hỏi: e bị bệnh gút khoảng 8 năm, do cviec nên có uống rượ",
+  "title_rerank": "em 16t là nữ ạ \nEm vừa bị té xe ngày hơm qua\nVà khi về đến nhà em có r",
+  "changed": true
+ },
+ {
+  "id": "q04",
+  "type": "trieu_chung",
+  "cov_dense": 0.244,
+  "cov_rerank": 0.156,
+  "score_rerank": 0.3231,
+  "title_dense": "Năm nay cháu 26 tuổi.\nCông việc làm khu công nghiệp 2 tuần ngày xong đ",
+  "title_rerank": "Mình là nam, năm nay 21 tuổi\nTừ cách đây 2-3 hôm, buổi sáng nào ngủ dậ",
+  "changed": true
+ }
+]
