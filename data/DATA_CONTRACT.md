@@ -230,9 +230,9 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 33 nhóm, 286 mẫu, recall 56/56 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+Hiện tại: 33 nhóm, 290 mẫu, recall 58/58 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
 có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
-158/2.311 câu `eval.jsonl` và 1.256/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
+150/2.311 câu `eval.jsonl` và 1.203/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
 
 Vòng soát thứ hai (đối chiếu AHA, ERC, WHO, hướng dẫn Bộ Y tế) đã sửa 10 điểm nội dung:
 làm mát bằng nước lạnh/chườm đá bọc khăn thay vì cấm đá; aspirin chỉ dùng khi tổng đài 115
@@ -268,6 +268,14 @@ Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
   đủ chặt để vẫn bắt được mạch, kèm nẹp bất động; tuyệt đối không garô. `ran-luc`: **không**
   băng ép, vì nọc gây sưng nề, hoại tử tại chỗ và rối loạn đông máu — chỉ bất động, để chi
   ngang hoặc thấp hơn tim và chuyển đi cấp cứu nhanh.
+- **Khó thở**: loại trừ "ngạt mũi", "khó thở khi nằm ngửa", "khó thở khi tập thể dục/chạy/leo
+  cầu thang"; mẫu "khò khè" đứng một mình đổi thành "thở khò khè nặng" và "khò khè kèm khó
+  thở" để không bắt nhầm trẻ chỉ có đờm mũi họng.
+- **Sốt xuất huyết**: vẫn loại trừ khỏi nhóm nhiễm khuẩn huyết (để nhận đúng lời khuyên
+  dengue), nhưng nhóm `sot-xuat-huyet` nay nêu rõ sốc sốt xuất huyết và yêu cầu gọi 115, nên
+  "sốt xuất huyết, tay chân lạnh, lừ đừ" không bị bỏ sót.
+- **Thai sản**: thêm "sa dây rốn" — nằm đầu thấp, kê cao mông, gọi 115, không cố đẩy dây vào
+  trong; sửa câu cuối thành "không thụt rửa âm đạo hay tự kiểm tra bên trong".
 - **Ngất**: nằm ngửa nơi thoáng, nâng nhẹ chân, nới đồ; kiểm tra phản ứng và nhịp thở,
   nghiêng đầu nếu nôn; không thở thì gọi 115 và ép tim; chưa tỉnh hẳn thì không cho ăn uống,
   không châm kim cạo gió; ngất kéo dài, chấn thương khi ngã, đau ngực, khó thở, co giật hoặc

@@ -94,6 +94,9 @@ RED = [
     ("ngã gãy chân, xương lộ ra ngoài", "gay-xuong-vet-thuong"),
     ("tôi đang muốn giết người hàng xóm", "hai-nguoi-khac"),
     ("bị ngạt nước, vớt lên không thở", "duoi-nuoc"),
+    # vòng soát thứ ba
+    ("sốt xuất huyết ngày 5, tay chân lạnh và lừ đừ", "sot-xuat-huyet"),
+    ("vỡ ối, thấy dây rốn sa ra ngoài âm đạo", "thai-san"),
     # câu gõ không dấu / teencode
     ("be bi co giat, phai lam sao", "co-giat"),
     ("me em bi soc phan ve sau tiem", "soc-phan-ve"),
