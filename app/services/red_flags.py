@@ -56,7 +56,9 @@ def load_flags() -> tuple[Flag, ...]:
         # "..." = "cách nhau vài từ" (mang thai ... ra máu). Đây là quy ước của
         # riêng tệp này, không phải regex đầy đủ, để người soát nội dung viết được
         # câu có khoảng cách mà không phải biết regex.
-        gap = lambda s: s.replace("...", ".{0,25}?")   # tác giả đã có dấu cách hai bên
+        # "..." = cách nhau vài từ, kể cả khi hai vế dính liền một dấu cách
+        # ("bé 2 tháng ... quấy khóc" phải khớp "bé 2 tháng quấy khóc").
+        gap = lambda s: re.sub(r"\s*\.\.\.\s*", ".{0,30}?", s)
         pats = [gap(p.strip()) for p in r.get("mau", []) if p.strip()]
         if not pats:
             continue

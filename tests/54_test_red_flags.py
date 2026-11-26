@@ -94,6 +94,14 @@ RED = [
     ("ngã gãy chân, xương lộ ra ngoài", "gay-xuong-vet-thuong"),
     ("tôi đang muốn giết người hàng xóm", "hai-nguoi-khac"),
     ("bị ngạt nước, vớt lên không thở", "duoi-nuoc"),
+    # vòng soát thứ năm (chấn thương, chảy máu, nhóm chưa soát)
+    ("ngã đập đầu xuống nền, tê yếu tay chân", "chan-thuong-dau"),
+    ("tai nạn xe máy, đập đầu xuống đường", "chan-thuong-dau"),
+    ("tai nạn xe, đứt chân chảy máu thành tia", "chay-mau"),
+    ("đứt lìa ngón tay khi làm máy", "gay-xuong-vet-thuong"),
+    ("bé 2 tháng quấy khóc, nóng đầu", "tre-duoi-3-thang-sot"),
+    ("sốt 39 độ, cứng cổ, sợ ánh sáng", "viem-mang-nao"),
+    ("mạt sắt bắn vào mắt, đau nhiều", "mat-thi-luc-dot-ngot"),
     # vòng soát thứ tư (tai nạn thương tích)
     ("sét đánh khi đang làm ruộng", "dien-giat"),
     ("bị bỏng điện ở tay", "dien-giat"),

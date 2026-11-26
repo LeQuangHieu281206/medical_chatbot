@@ -230,7 +230,7 @@ Nội dung nằm ở `data/sources/red_flags.jsonl`, code đọc ở `app/servic
 .venv/bin/python scripts/validate_data.py data/sources/red_flags.jsonl --strict
 ```
 
-Hiện tại: 33 nhóm, 310 mẫu, recall 64/64 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
+Hiện tại: 33 nhóm, 328 mẫu, recall 71/71 câu mẫu, báo nhầm 0/49 câu bệnh thường (trong đó
 có bộ câu bẫy "có từ khoá nhưng không nguy hiểm"). Trên dữ liệu thật, cảnh báo xuất hiện ở
 150/2.311 câu `eval.jsonl` và 1.203/16.961 câu `kb.jsonl` (bộ regex cũ: 89 và 712).
 
@@ -268,6 +268,16 @@ Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
   đủ chặt để vẫn bắt được mạch, kèm nẹp bất động; tuyệt đối không garô. `ran-luc`: **không**
   băng ép, vì nọc gây sưng nề, hoại tử tại chỗ và rối loạn đông máu — chỉ bất động, để chi
   ngang hoặc thấp hơn tim và chuyển đi cấp cứu nhanh.
+- **Vòng soát thứ năm** (chấn thương đầu, gãy xương, chảy máu, và 5 nhóm chưa ai soát):
+  chảy máu da đầu không nhét bông vào tai, mũi; không rửa vết thương đang phun máu hoặc lộ
+  xương; garo có ghi giờ khi máu phun thành tia ở chi mà ép không cầm; trẻ dưới 3 tháng bú mẹ
+  hoặc sữa, không uống nước lọc; Oresol pha đúng hướng dẫn trên gói, không ép uống khi li bì;
+  vôi bột phải lấy sạch bụi khô quanh mắt trước khi xả nước. Bỏ mẫu quá rộng "tai nạn xe",
+  "cứng cổ", "mất nước", "dị vật vào mắt", "sặc nước" và thay bằng dạng có ngữ cảnh.
+
+- **Quy ước "..."**: nay khớp cả khi hai vế dính liền một dấu cách ("bé 2 tháng ... quấy khóc"
+  khớp "bé 2 tháng quấy khóc"). Trước đây phải có từ đệm ở giữa.
+
 - **Tai nạn thương tích** (vòng soát thứ tư): bỏng nhận thêm "bỏng điện", "bỏng mặt", "bỏng
   đường thở", "da phồng rộp lớn" và loại trừ "bỏng nắng nhẹ", "bỏng bô xe máy nhỏ", "rát da
   nhẹ"; lời khuyên nêu rõ phủi vôi bột trước khi xả nước và cấm kem đánh răng, nước mắm, mỡ
@@ -287,6 +297,16 @@ Ba chỗ đã chốt câu chữ sau khi người soát duyệt:
   "sốt xuất huyết, tay chân lạnh, lừ đừ" không bị bỏ sót.
 - **Thai sản**: thêm "sa dây rốn" — nằm đầu thấp, kê cao mông, gọi 115, không cố đẩy dây vào
   trong; sửa câu cuối thành "không thụt rửa âm đạo hay tự kiểm tra bên trong".
+- **Đuối nước, thứ tự hô hấp**: giữ 5 lần thổi ngạt trước rồi 30:2 (ERC, phù hợp thực hành
+  ngạt nước), kèm câu "nếu đã được tập ép tim trước thì làm theo cách đã học, đừng dừng lại
+  để đổi cách" để không mâu thuẫn với lớp tập huấn theo AHA. **Chờ hội đồng chuyên môn chốt
+  một chuẩn duy nhất.**
+- **Trẻ dưới 3 tháng sốt**: giữ khuyến cáo không tự dùng thuốc hạ sốt, an toàn cho người dùng
+  phổ thông; một số bác sĩ nhi cho phép paracetamol liều đơn khi đường đi viện xa, nên cần
+  bác sĩ nhi khoa chốt trước khi nới.
+- **Ưu tiên chấn thương đầu và chảy máu**: đã bỏ mẫu chung "tai nạn xe" khỏi chấn thương đầu
+  (thay bằng "tai nạn ... đập đầu", "tai nạn ... bất tỉnh") để ca "tai nạn xe, đứt chân chảy
+  máu thành tia" rơi đúng vào nhóm chảy máu.
 - **Ngất**: nằm ngửa nơi thoáng, nâng nhẹ chân, nới đồ; kiểm tra phản ứng và nhịp thở,
   nghiêng đầu nếu nôn; không thở thì gọi 115 và ép tim; chưa tỉnh hẳn thì không cho ăn uống,
   không châm kim cạo gió; ngất kéo dài, chấn thương khi ngã, đau ngực, khó thở, co giật hoặc
